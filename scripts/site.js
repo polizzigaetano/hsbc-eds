@@ -153,3 +153,28 @@ export function pathOf(href) {
   if (!url) return href;
   return url.pathname.replace(/\.html$/, '').replace(/\/$/, '') || '/';
 }
+
+/* ---------- Universal Editor (da.live content edited through *.ue.da.live) ---------- */
+
+/** true when the page is rendered inside the Universal Editor */
+export function isUE() {
+  return /\.(stage-ue|ue)\.da\.live$/.test(window.location.hostname);
+}
+
+/**
+ * Moves the Universal Editor instrumentation (data-aue-*, data-richtext-*) from an authored
+ * element that decoration discards (a block row or cell) to the element that now renders it.
+ * A no-op outside the editor, where the attributes are absent.
+ * @param {Element} from the authored row / cell
+ * @param {Element} to the decorated element taking its place
+ */
+export function moveInstrumentation(from, to) {
+  if (!from || !to || from === to) return;
+  [...from.attributes]
+    .map(({ nodeName }) => nodeName)
+    .filter((name) => name.startsWith('data-aue-') || name.startsWith('data-richtext-'))
+    .forEach((name) => {
+      if (!to.hasAttribute(name)) to.setAttribute(name, from.getAttribute(name));
+      from.removeAttribute(name);
+    });
+}

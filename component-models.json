@@ -1,0 +1,623 @@
+[
+  {
+    "id": "page-metadata",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "title",
+        "label": "Title"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "description",
+        "label": "Description"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "keywords",
+        "label": "Keywords"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "publication-date",
+        "label": "Publication date (articles, YYYY-MM-DD)"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "theme",
+        "label": "Theme",
+        "description": "flush-end: the page ends without the 82px page-end gap"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Share image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "robots",
+        "label": "Robots",
+        "description": "Index control via robots"
+      }
+    ]
+  },
+  {
+    "id": "image",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Alt text"
+      }
+    ]
+  },
+  {
+    "id": "section",
+    "fields": [
+      {
+        "component": "multiselect",
+        "name": "style",
+        "label": "Style",
+        "valueType": "string",
+        "maxSize": 1,
+        "description": "One value per section (a second style is not applied on delivery)",
+        "options": [
+          {
+            "name": "Style",
+            "children": [
+              {
+                "name": "Full width (12 columns)",
+                "value": "full"
+              },
+              {
+                "name": "Notes to editors (small print)",
+                "value": "disclaimer"
+              }
+            ]
+          },
+          {
+            "name": "Layout (advanced: live page rhythm)",
+            "children": [
+              {
+                "name": "Continues the previous section (no row gap)",
+                "value": "continued"
+              },
+              {
+                "name": "Leading blank line",
+                "value": "spaced"
+              },
+              {
+                "name": "Full width with leading blank line (home)",
+                "value": "dropcap"
+              },
+              {
+                "name": "Blank line (empty section)",
+                "value": "break"
+              },
+              {
+                "name": "Empty row gap (9-3)",
+                "value": "gap"
+              },
+              {
+                "name": "Empty row gap (6-3-3)",
+                "value": "gap-wide"
+              },
+              {
+                "name": "Extra space above (52px)",
+                "value": "spaced-top"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "accordion",
+    "fields": [
+      {
+        "component": "multiselect",
+        "name": "classes",
+        "label": "Options",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "News archive (years, months, index top-up)",
+            "value": "news-archive"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "accordion-item",
+    "fields": [
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "title",
+        "label": "Item heading (h2 or h3)",
+        "value": "",
+        "required": true
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "text",
+        "label": "Panel: rich text; lists become document / article rows; one-level-down headings open nested items",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "id": "aside-item",
+    "fields": [
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "text",
+        "label": "Rich text (a heading followed by a list renders as a factbox)",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "id": "aside",
+    "fields": []
+  },
+  {
+    "id": "cards",
+    "fields": [
+      {
+        "component": "multiselect",
+        "name": "classes",
+        "label": "Options",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Two per row (6-6)",
+            "value": "halves"
+          },
+          {
+            "name": "Four per row, no image (3-3-3-3)",
+            "value": "quarters"
+          },
+          {
+            "name": "Latest news (index top-up)",
+            "value": "latest"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "card",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Alt text"
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "text",
+        "label": "Title (h2 with the link), optional date (\"24 September 2026\"), description",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "id": "carousel-item",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Alt text"
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "text",
+        "label": "Caption",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "id": "carousel",
+    "fields": []
+  },
+  {
+    "id": "cinemagraph",
+    "fields": [
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "text",
+        "label": "Video link (.mp4 on the code origin), poster, facts",
+        "value": ""
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "poster",
+        "label": "Poster image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "posterAlt",
+        "label": "Poster alt text (the facts it shows)"
+      }
+    ]
+  },
+  {
+    "id": "columns",
+    "fields": [
+      {
+        "component": "number",
+        "valueType": "number",
+        "name": "columns",
+        "label": "Columns",
+        "value": 2
+      },
+      {
+        "component": "multiselect",
+        "name": "classes",
+        "label": "Options",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "3-3-6 layout (two narrow, one wide)",
+            "value": "layout-3-3-6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "columns-row",
+    "fields": []
+  },
+  {
+    "id": "columns-cell",
+    "fields": []
+  },
+  {
+    "id": "factbox",
+    "fields": [
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "text",
+        "label": "Content (optional heading, paragraphs or a list)",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "id": "hero",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Banner image (1520x400)",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Alt text"
+      }
+    ]
+  },
+  {
+    "id": "inline-image",
+    "fields": [
+      {
+        "component": "multiselect",
+        "name": "classes",
+        "label": "Options",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Float right",
+            "value": "right"
+          },
+          {
+            "name": "Float left",
+            "value": "left"
+          },
+          {
+            "name": "Half width",
+            "value": "half"
+          },
+          {
+            "name": "Third width",
+            "value": "third"
+          },
+          {
+            "name": "Bottom margin",
+            "value": "bottom-margin"
+          },
+          {
+            "name": "Uncropped (vertical)",
+            "value": "vertical"
+          },
+          {
+            "name": "Caption over image",
+            "value": "infographic"
+          }
+        ]
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Alt text"
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "text",
+        "label": "Picture and caption paragraph(s)",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "id": "page-description",
+    "fields": [
+      {
+        "component": "multiselect",
+        "name": "classes",
+        "label": "Options",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Article (ultra-light heading)",
+            "value": "tertiary"
+          },
+          {
+            "name": "Rich-text summary",
+            "value": "rich-summary"
+          }
+        ]
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "text",
+        "label": "Date (optional paragraph before the heading), heading (h1), summary",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "id": "profile-item",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Alt text"
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "text",
+        "label": "Name or year (h2), position (first paragraph), text",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "id": "profile",
+    "fields": []
+  },
+  {
+    "id": "promo",
+    "fields": [
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "text",
+        "label": "Content (heading + paragraphs)",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "id": "search",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "label",
+        "label": "Field label / placeholder"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "empty",
+        "label": "No-results message"
+      }
+    ]
+  },
+  {
+    "id": "share",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "label",
+        "label": "Label"
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "x",
+        "label": "X link ({URL} = this page)",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "facebook",
+        "label": "Facebook link ({URL} = this page)",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "linkedin",
+        "label": "LinkedIn link ({URL}, {title})",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "id": "table",
+    "fields": [
+      {
+        "component": "multiselect",
+        "name": "classes",
+        "label": "Options",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "First row is the caption",
+            "value": "caption"
+          },
+          {
+            "name": "Header row",
+            "value": "header"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "table-row",
+    "fields": [
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "cell1",
+        "label": "Column 1",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "cell2",
+        "label": "Column 2",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "cell3",
+        "label": "Column 3",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "cell4",
+        "label": "Column 4",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "cell5",
+        "label": "Column 5",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "cell6",
+        "label": "Column 6",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "cell7",
+        "label": "Column 7",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "cell8",
+        "label": "Column 8",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "id": "terms-gate",
+    "fields": [
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "text",
+        "label": "Heading, terms, acknowledgement, then \"Accept\" (link #accept) and \"Decline\" (link to the exit page)",
+        "value": ""
+      }
+    ]
+  }
+]

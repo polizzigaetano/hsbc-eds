@@ -1,3 +1,5 @@
+import { moveInstrumentation } from '../../scripts/site.js';
+
 /**
  * aside — the live 9-3 layout's secondary column (media-relations contacts, sidebar image +
  * caption, factbox). The aside section sits AFTER the sections it accompanies; on desktop it is
@@ -47,8 +49,14 @@ export default function decorate(block) {
       item.append(inner);
     } else {
       item.className = 'aside__text text';
-      item.append(...cell.children);
+      const body = document.createElement('div');
+      body.className = 'aside__body';
+      body.append(...cell.children);
+      moveInstrumentation(cell, body);
+      item.append(body);
     }
+    // Universal Editor: the authored row's item markers move to the rendered item
+    moveInstrumentation(row, item);
     return item;
   });
   block.replaceChildren(...items);

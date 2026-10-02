@@ -1,0 +1,45 @@
+{
+  "definitions": [
+    {
+      "title": "Search",
+      "id": "search",
+      "plugins": {
+        "da": {
+          "name": "search",
+          "unsafeHTML": "<div class=\"search\"><div><div><p>Search</p></div></div><div><div><p>No results found. Please try a different search term.</p></div></div></div>",
+          "fields": [
+            {
+              "name": "label",
+              "selector": "div:nth-child(1)>div"
+            },
+            {
+              "name": "empty",
+              "selector": "div:nth-child(2)>div"
+            }
+          ]
+        }
+      },
+      "model": "search"
+    }
+  ],
+  "models": [
+    {
+      "id": "search",
+      "fields": [
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "label",
+          "label": "Field label / placeholder"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "empty",
+          "label": "No-results message"
+        }
+      ]
+    }
+  ],
+  "filters": []
+}

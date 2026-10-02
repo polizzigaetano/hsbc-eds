@@ -1,0 +1,37 @@
+{
+  "definitions": [
+    {
+      "title": "Promo box",
+      "id": "promo",
+      "plugins": {
+        "da": {
+          "name": "promo",
+          "rows": 1,
+          "columns": 1,
+          "fields": [
+            {
+              "name": "text",
+              "selector": "div>div"
+            }
+          ]
+        }
+      },
+      "model": "promo"
+    }
+  ],
+  "models": [
+    {
+      "id": "promo",
+      "fields": [
+        {
+          "component": "richtext",
+          "valueType": "string",
+          "name": "text",
+          "label": "Content (heading + paragraphs)",
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "filters": []
+}

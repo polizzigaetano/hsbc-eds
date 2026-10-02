@@ -1,4 +1,5 @@
 import { loadCSS } from '../../scripts/aem.js';
+import { isUE } from '../../scripts/site.js';
 
 /**
  * terms-gate — the live "Terms of Access" modal shown on load (Covered Bond programme).
@@ -34,7 +35,9 @@ export default async function decorate(block) {
   const textParas = paragraphs.filter((p) => !linkParas.includes(p));
   const labelPara = textParas.pop();
 
-  if (accepted) {
+  // in the Universal Editor the gate renders in the page (no modal, no cookie) so it can be edited
+  const editor = isUE();
+  if (accepted && !editor) {
     // live omits the gate markup once the terms were accepted
     block.replaceChildren();
     section?.classList.add('terms-gate--accepted');
@@ -129,5 +132,9 @@ export default async function decorate(block) {
     }
   });
 
+  if (editor) {
+    block.classList.add('terms-gate--editor');
+    return;
+  }
   open();
 }

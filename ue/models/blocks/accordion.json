@@ -1,0 +1,85 @@
+{
+  "definitions": [
+    {
+      "title": "Accordion",
+      "id": "accordion",
+      "plugins": {
+        "da": {
+          "name": "accordion",
+          "rows": 1,
+          "columns": 2
+        }
+      },
+      "model": "accordion",
+      "filter": "accordion"
+    },
+    {
+      "title": "Accordion item",
+      "id": "accordion-item",
+      "plugins": {
+        "da": {
+          "rows": 2,
+          "columns": 0,
+          "fields": [
+            {
+              "name": "title",
+              "selector": "div:nth-child(1)"
+            },
+            {
+              "name": "text",
+              "selector": "div:nth-child(2)"
+            }
+          ]
+        }
+      },
+      "model": "accordion-item"
+    }
+  ],
+  "models": [
+    {
+      "id": "accordion",
+      "fields": [
+        {
+          "component": "multiselect",
+          "name": "classes",
+          "label": "Options",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "News archive (years, months, index top-up)",
+              "value": "news-archive"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "accordion-item",
+      "fields": [
+        {
+          "component": "richtext",
+          "valueType": "string",
+          "name": "title",
+          "label": "Item heading (h2 or h3)",
+          "value": "",
+          "required": true
+        },
+        {
+          "component": "richtext",
+          "valueType": "string",
+          "name": "text",
+          "label": "Panel: rich text; lists become document / article rows; one-level-down headings open nested items",
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "id": "accordion",
+      "components": [
+        "accordion-item"
+      ]
+    }
+  ]
+}

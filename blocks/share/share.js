@@ -1,3 +1,5 @@
+import { moveInstrumentation } from '../../scripts/site.js';
+
 /**
  * share — the live share bar (X / Facebook / LinkedIn intent links), positioned over the banner.
  *
@@ -30,6 +32,8 @@ export default function decorate(block) {
   root.className = 'share-actions';
 
   if (label) {
+    // Universal Editor: the label field marker onto the label paragraph
+    moveInstrumentation(label.closest('.share > div > div'), label);
     const outer = document.createElement('div');
     outer.className = 'share-actions__label';
     const inner = document.createElement('div');

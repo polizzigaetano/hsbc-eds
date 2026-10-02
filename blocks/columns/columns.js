@@ -1,3 +1,5 @@
+import { moveInstrumentation } from '../../scripts/site.js';
+
 /**
  * columns — the live multi-column layouts of inline images and rich text (home 6-6 "Our
  * headquarters" / "Our CEO", article 6-6 and 3-3-6 image grids). Template-slotted per column.
@@ -22,9 +24,12 @@ export default function decorate(block) {
   const layout = document.createElement('div');
   layout.className = 'columns__layout';
 
+  // Universal Editor: row and cell containers keep their markers on the rendered layout
+  if (row) moveInstrumentation(row, layout);
   cells.forEach((cell) => {
     const col = document.createElement('div');
     col.className = 'columns__col';
+    moveInstrumentation(cell, col);
     let text = null;
     [...cell.children].forEach((child) => {
       const media = child.matches('picture, img') ? child : child.querySelector('picture, img');

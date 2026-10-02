@@ -1,6 +1,6 @@
 import { createOptimizedPicture } from '../../scripts/aem.js';
 import {
-  isExternal, fetchArticles, formatDate, parseDate, pathOf,
+  isExternal, fetchArticles, formatDate, parseDate, pathOf, moveInstrumentation,
 } from '../../scripts/site.js';
 
 /**
@@ -84,7 +84,7 @@ function readRow(row) {
   const body = paragraphs.filter((p) => p !== date);
   const mediaHolder = media ? (media.closest('p') || media) : null;
   return {
-    href, media: mediaHolder, heading, date, body, path: pathOf(href),
+    href, media: mediaHolder, heading, date, body, path: pathOf(href), row,
   };
 }
 
@@ -106,7 +106,12 @@ function cardFromIndex(entry) {
 
 function render(block, items) {
   const grid = el('div', 'cards__grid');
-  items.forEach((item) => grid.append(el('div', 'cards__item', item.node)));
+  items.forEach((item) => {
+    const cell = el('div', 'cards__item', item.node);
+    // Universal Editor: the authored row's item markers move to the rendered card
+    if (item.row) moveInstrumentation(item.row, cell);
+    grid.append(cell);
+  });
   block.replaceChildren(grid);
 }
 

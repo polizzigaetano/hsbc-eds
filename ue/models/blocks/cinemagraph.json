@@ -1,0 +1,57 @@
+{
+  "definitions": [
+    {
+      "title": "Cinemagraph (looping video)",
+      "id": "cinemagraph",
+      "plugins": {
+        "da": {
+          "name": "cinemagraph",
+          "unsafeHTML": "<div class=\"cinemagraph\"><div><div><p><a href=\"/media/cinemagraph/video.mp4\">/media/cinemagraph/video.mp4</a></p><p><picture><img src=\"\" alt=\"\"></picture></p><p>Screen-reader description of the facts</p></div></div></div>",
+          "fields": [
+            {
+              "name": "text",
+              "selector": "div>div"
+            },
+            {
+              "name": "poster",
+              "selector": "div>div picture>img[src]"
+            },
+            {
+              "name": "posterAlt",
+              "selector": "div>div picture>img[alt]"
+            }
+          ]
+        }
+      },
+      "model": "cinemagraph"
+    }
+  ],
+  "models": [
+    {
+      "id": "cinemagraph",
+      "fields": [
+        {
+          "component": "richtext",
+          "valueType": "string",
+          "name": "text",
+          "label": "Video link (.mp4 on the code origin), poster, facts",
+          "value": ""
+        },
+        {
+          "component": "reference",
+          "valueType": "string",
+          "name": "poster",
+          "label": "Poster image",
+          "multi": false
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "posterAlt",
+          "label": "Poster alt text (the facts it shows)"
+        }
+      ]
+    }
+  ],
+  "filters": []
+}

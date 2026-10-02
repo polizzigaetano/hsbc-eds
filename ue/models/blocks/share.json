@@ -1,0 +1,68 @@
+{
+  "definitions": [
+    {
+      "title": "Share bar",
+      "id": "share",
+      "plugins": {
+        "da": {
+          "name": "share",
+          "unsafeHTML": "<div class=\"share\"><div><div><p>Share</p></div></div><div><div><p><a href=\"http://twitter.com/intent/tweet?url={URL}\">Share link to this page on X</a></p></div></div><div><div><p><a href=\"https://www.facebook.com/sharer/sharer.php?u={URL}\">Share link to this page on Facebook</a></p></div></div><div><div><p><a href=\"http://www.linkedin.com/shareArticle?mini=true&amp;url={URL}&amp;title={title}\">Share link to this page on LinkedIn</a></p></div></div></div>",
+          "fields": [
+            {
+              "name": "label",
+              "selector": "div:nth-child(1)>div"
+            },
+            {
+              "name": "x",
+              "selector": "div:nth-child(2)>div"
+            },
+            {
+              "name": "facebook",
+              "selector": "div:nth-child(3)>div"
+            },
+            {
+              "name": "linkedin",
+              "selector": "div:nth-child(4)>div"
+            }
+          ]
+        }
+      },
+      "model": "share"
+    }
+  ],
+  "models": [
+    {
+      "id": "share",
+      "fields": [
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "label",
+          "label": "Label"
+        },
+        {
+          "component": "richtext",
+          "valueType": "string",
+          "name": "x",
+          "label": "X link ({URL} = this page)",
+          "value": ""
+        },
+        {
+          "component": "richtext",
+          "valueType": "string",
+          "name": "facebook",
+          "label": "Facebook link ({URL} = this page)",
+          "value": ""
+        },
+        {
+          "component": "richtext",
+          "valueType": "string",
+          "name": "linkedin",
+          "label": "LinkedIn link ({URL}, {title})",
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "filters": []
+}

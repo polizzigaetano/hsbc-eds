@@ -1,0 +1,60 @@
+{
+  "definitions": [
+    {
+      "title": "Sidebar",
+      "id": "aside",
+      "plugins": {
+        "da": {
+          "name": "aside",
+          "rows": 1,
+          "columns": 1
+        }
+      },
+      "model": "aside",
+      "filter": "aside"
+    },
+    {
+      "title": "Sidebar item",
+      "id": "aside-item",
+      "plugins": {
+        "da": {
+          "rows": 1,
+          "columns": 1,
+          "fields": [
+            {
+              "name": "text",
+              "selector": "div:nth-child(1)"
+            }
+          ]
+        }
+      },
+      "model": "aside-item"
+    }
+  ],
+  "models": [
+    {
+      "id": "aside-item",
+      "fields": [
+        {
+          "component": "richtext",
+          "valueType": "string",
+          "name": "text",
+          "label": "Rich text (a heading followed by a list renders as a factbox)",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "aside",
+      "fields": []
+    }
+  ],
+  "filters": [
+    {
+      "id": "aside",
+      "components": [
+        "aside-item"
+      ]
+    }
+  ]
+}

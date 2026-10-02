@@ -1,0 +1,52 @@
+{
+  "definitions": [
+    {
+      "title": "Page description",
+      "id": "page-description",
+      "plugins": {
+        "da": {
+          "name": "page-description",
+          "unsafeHTML": "<div class=\"page-description\"><div><div><p>1 January 2026</p><h1>Page title</h1><p>Summary</p></div></div></div>",
+          "fields": [
+            {
+              "name": "text",
+              "selector": "div>div"
+            }
+          ]
+        }
+      },
+      "model": "page-description"
+    }
+  ],
+  "models": [
+    {
+      "id": "page-description",
+      "fields": [
+        {
+          "component": "multiselect",
+          "name": "classes",
+          "label": "Options",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "Article (ultra-light heading)",
+              "value": "tertiary"
+            },
+            {
+              "name": "Rich-text summary",
+              "value": "rich-summary"
+            }
+          ]
+        },
+        {
+          "component": "richtext",
+          "valueType": "string",
+          "name": "text",
+          "label": "Date (optional paragraph before the heading), heading (h1), summary",
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "filters": []
+}

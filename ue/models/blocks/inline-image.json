@@ -1,0 +1,93 @@
+{
+  "definitions": [
+    {
+      "title": "Inline image",
+      "id": "inline-image",
+      "plugins": {
+        "da": {
+          "name": "inline-image",
+          "unsafeHTML": "<div class=\"inline-image\"><div><div><p><picture><img src=\"\" alt=\"\"></picture></p><p>Caption</p></div></div></div>",
+          "fields": [
+            {
+              "name": "image",
+              "selector": "div>div picture>img[src]"
+            },
+            {
+              "name": "imageAlt",
+              "selector": "div>div picture>img[alt]"
+            },
+            {
+              "name": "text",
+              "selector": "div>div"
+            }
+          ]
+        }
+      },
+      "model": "inline-image"
+    }
+  ],
+  "models": [
+    {
+      "id": "inline-image",
+      "fields": [
+        {
+          "component": "multiselect",
+          "name": "classes",
+          "label": "Options",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "Float right",
+              "value": "right"
+            },
+            {
+              "name": "Float left",
+              "value": "left"
+            },
+            {
+              "name": "Half width",
+              "value": "half"
+            },
+            {
+              "name": "Third width",
+              "value": "third"
+            },
+            {
+              "name": "Bottom margin",
+              "value": "bottom-margin"
+            },
+            {
+              "name": "Uncropped (vertical)",
+              "value": "vertical"
+            },
+            {
+              "name": "Caption over image",
+              "value": "infographic"
+            }
+          ]
+        },
+        {
+          "component": "reference",
+          "valueType": "string",
+          "name": "image",
+          "label": "Image",
+          "multi": false
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "imageAlt",
+          "label": "Alt text"
+        },
+        {
+          "component": "richtext",
+          "valueType": "string",
+          "name": "text",
+          "label": "Picture and caption paragraph(s)",
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "filters": []
+}

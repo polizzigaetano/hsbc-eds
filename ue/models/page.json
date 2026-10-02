@@ -1,0 +1,54 @@
+{
+  "models": [
+    {
+      "id": "page-metadata",
+      "fields": [
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "title",
+          "label": "Title"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "description",
+          "label": "Description"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "keywords",
+          "label": "Keywords"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "publication-date",
+          "label": "Publication date (articles, YYYY-MM-DD)"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "theme",
+          "label": "Theme",
+          "description": "flush-end: the page ends without the 82px page-end gap"
+        },
+        {
+          "component": "reference",
+          "valueType": "string",
+          "name": "image",
+          "label": "Share image",
+          "multi": false
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "robots",
+          "label": "Robots",
+          "description": "Index control via robots"
+        }
+      ]
+    }
+  ]
+}

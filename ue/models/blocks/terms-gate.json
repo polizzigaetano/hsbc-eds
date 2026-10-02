@@ -1,0 +1,37 @@
+{
+  "definitions": [
+    {
+      "title": "Terms of Access gate",
+      "id": "terms-gate",
+      "plugins": {
+        "da": {
+          "name": "terms-gate",
+          "rows": 1,
+          "columns": 1,
+          "fields": [
+            {
+              "name": "text",
+              "selector": "div>div"
+            }
+          ]
+        }
+      },
+      "model": "terms-gate"
+    }
+  ],
+  "models": [
+    {
+      "id": "terms-gate",
+      "fields": [
+        {
+          "component": "richtext",
+          "valueType": "string",
+          "name": "text",
+          "label": "Heading, terms, acknowledgement, then \"Accept\" (link #accept) and \"Decline\" (link to the exit page)",
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "filters": []
+}

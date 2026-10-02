@@ -1,0 +1,47 @@
+{
+  "definitions": [
+    {
+      "title": "Hero (banner)",
+      "id": "hero",
+      "plugins": {
+        "da": {
+          "name": "hero",
+          "rows": 1,
+          "columns": 1,
+          "fields": [
+            {
+              "name": "image",
+              "selector": "div>div picture>img[src]"
+            },
+            {
+              "name": "imageAlt",
+              "selector": "div>div picture>img[alt]"
+            }
+          ]
+        }
+      },
+      "model": "hero"
+    }
+  ],
+  "models": [
+    {
+      "id": "hero",
+      "fields": [
+        {
+          "component": "reference",
+          "valueType": "string",
+          "name": "image",
+          "label": "Banner image (1520x400)",
+          "multi": false
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "imageAlt",
+          "label": "Alt text"
+        }
+      ]
+    }
+  ],
+  "filters": []
+}
