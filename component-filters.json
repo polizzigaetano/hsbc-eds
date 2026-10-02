@@ -1,0 +1,86 @@
+[
+  {
+    "id": "main",
+    "components": [
+      "section"
+    ]
+  },
+  {
+    "id": "section",
+    "components": [
+      "text",
+      "image",
+      "accordion",
+      "aside",
+      "cards",
+      "carousel",
+      "cinemagraph",
+      "columns",
+      "factbox",
+      "hero",
+      "inline-image",
+      "page-description",
+      "profile",
+      "promo",
+      "search",
+      "share",
+      "table",
+      "terms-gate"
+    ]
+  },
+  {
+    "id": "accordion",
+    "components": [
+      "accordion-item"
+    ]
+  },
+  {
+    "id": "aside",
+    "components": [
+      "aside-item"
+    ]
+  },
+  {
+    "id": "cards",
+    "components": [
+      "card"
+    ]
+  },
+  {
+    "id": "carousel",
+    "components": [
+      "carousel-item"
+    ]
+  },
+  {
+    "id": "columns",
+    "components": [
+      "columns-row"
+    ]
+  },
+  {
+    "id": "columns-row",
+    "components": [
+      "columns-cell"
+    ]
+  },
+  {
+    "id": "columns-cell",
+    "components": [
+      "text",
+      "image"
+    ]
+  },
+  {
+    "id": "profile",
+    "components": [
+      "profile-item"
+    ]
+  },
+  {
+    "id": "table",
+    "components": [
+      "table-row"
+    ]
+  }
+]

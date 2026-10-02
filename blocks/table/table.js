@@ -1,3 +1,5 @@
+import { moveInstrumentation } from '../../scripts/site.js';
+
 /**
  * table — the live rich-text data table (.inline-table). Variants: `caption` (the first row is
  * the table caption, the live navy bar), `header` (the next row is the column header row, live
@@ -24,8 +26,10 @@ export default function decorate(block) {
       const td = document.createElement(isHead ? 'th' : 'td');
       if (isHead) td.scope = 'col';
       td.append(...cell.childNodes);
+      moveInstrumentation(cell, td);
       tr.append(td);
     });
+    moveInstrumentation(row, tr);
     (isHead ? thead : tbody).append(tr);
   });
   if (thead.children.length) table.append(thead);

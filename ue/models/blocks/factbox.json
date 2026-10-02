@@ -1,0 +1,37 @@
+{
+  "definitions": [
+    {
+      "title": "Factbox",
+      "id": "factbox",
+      "plugins": {
+        "da": {
+          "name": "factbox",
+          "rows": 1,
+          "columns": 1,
+          "fields": [
+            {
+              "name": "text",
+              "selector": "div>div"
+            }
+          ]
+        }
+      },
+      "model": "factbox"
+    }
+  ],
+  "models": [
+    {
+      "id": "factbox",
+      "fields": [
+        {
+          "component": "richtext",
+          "valueType": "string",
+          "name": "text",
+          "label": "Content (optional heading, paragraphs or a list)",
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "filters": []
+}

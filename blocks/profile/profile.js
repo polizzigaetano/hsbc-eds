@@ -1,3 +1,5 @@
+import { moveInstrumentation } from '../../scripts/site.js';
+
 /**
  * profile — the live exec-bio rows (management team, history timeline). Reconstructive: one row
  * per profile.
@@ -48,6 +50,8 @@ export default function decorate(block) {
       copy.append(wrap);
     }
     bio.append(copy);
+    // Universal Editor: the authored row's item markers move to the rendered profile
+    moveInstrumentation(row, bio);
     return bio;
   });
   block.replaceChildren(...rows);

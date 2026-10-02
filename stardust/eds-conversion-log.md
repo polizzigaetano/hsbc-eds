@@ -101,3 +101,16 @@ three roles, cinemagraph/terms-gate are widgets, aside is a grid placement.
 - **Sample gate (11 articles vs live captures, 1440):** 7 within ±4px height; residuals: great-block
   (stacked tables, −69), Loughborough (carousel + inline small-print span, −99), Lincoln (image gallery,
   −15), Footasylum (−9). Mobile (360) spot checks aligned except one-line font wraps.
+
+## Universal Editor (2026-10-02, branch `universal-editor`)
+
+- All 16 content blocks + section, page metadata, default text and image have UE definitions
+  (`ue/models/**` from `tools/ue/models.py`, bundled by the dependency-free `tools/ue/build-json.mjs`).
+- Blocks move `data-aue-*` from authored rows/cells to the rendered items (no-op outside the editor);
+  inline editing only where the rendered element equals the authored content, otherwise panel-only.
+- `ue/scripts/ue.js` re-renders the edited block from the editor response (reload fallback) and
+  reveals selected accordion items / carousel slides. Terms gate in-page in the editor.
+- Section style: one grouped picker (Style / Layout advanced), `maxSize: 1`.
+- Verified by a simulated-instrumentation harness (`stardust/.work/eds/ue-sim.mjs`): every block,
+  item and field marker survives decoration, no duplicates; synthetic patch re-renders the block.
+  Published rendering unchanged (8 archetypes identical, 23/23 behaviours). Real UE check: pending.

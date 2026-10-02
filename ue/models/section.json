@@ -1,0 +1,103 @@
+{
+  "definitions": [
+    {
+      "title": "Section",
+      "id": "section",
+      "plugins": {
+        "da": {
+          "unsafeHTML": "<div></div>"
+        }
+      },
+      "filter": "section",
+      "model": "section"
+    }
+  ],
+  "models": [
+    {
+      "id": "section",
+      "fields": [
+        {
+          "component": "multiselect",
+          "name": "style",
+          "label": "Style",
+          "valueType": "string",
+          "maxSize": 1,
+          "description": "One value per section (a second style is not applied on delivery)",
+          "options": [
+            {
+              "name": "Style",
+              "children": [
+                {
+                  "name": "Full width (12 columns)",
+                  "value": "full"
+                },
+                {
+                  "name": "Notes to editors (small print)",
+                  "value": "disclaimer"
+                }
+              ]
+            },
+            {
+              "name": "Layout (advanced: live page rhythm)",
+              "children": [
+                {
+                  "name": "Continues the previous section (no row gap)",
+                  "value": "continued"
+                },
+                {
+                  "name": "Leading blank line",
+                  "value": "spaced"
+                },
+                {
+                  "name": "Full width with leading blank line (home)",
+                  "value": "dropcap"
+                },
+                {
+                  "name": "Blank line (empty section)",
+                  "value": "break"
+                },
+                {
+                  "name": "Empty row gap (9-3)",
+                  "value": "gap"
+                },
+                {
+                  "name": "Empty row gap (6-3-3)",
+                  "value": "gap-wide"
+                },
+                {
+                  "name": "Extra space above (52px)",
+                  "value": "spaced-top"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "id": "section",
+      "components": [
+        "text",
+        "image",
+        "accordion",
+        "aside",
+        "cards",
+        "carousel",
+        "cinemagraph",
+        "columns",
+        "factbox",
+        "hero",
+        "inline-image",
+        "page-description",
+        "profile",
+        "promo",
+        "search",
+        "share",
+        "table",
+        "terms-gate"
+      ]
+    }
+  ]
+}

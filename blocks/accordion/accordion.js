@@ -1,5 +1,5 @@
 import {
-  fetchArticles, formatDate, monthName, parseDate, pathOf,
+  fetchArticles, formatDate, monthName, parseDate, pathOf, moveInstrumentation,
 } from '../../scripts/site.js';
 
 /**
@@ -277,7 +277,11 @@ export default function decorate(block) {
     }
     level = headingLevel(heading);
     const nodes = contentCell ? [...contentCell.children] : [];
-    return buildItem('accordion', heading, renderPanel(nodes, level, archive));
+    const item = buildItem('accordion', heading, renderPanel(nodes, level, archive));
+    // Universal Editor: item markers onto the item, the title field onto the title wrapper
+    moveInstrumentation(row, item);
+    moveInstrumentation(titleCell, item.querySelector('.accordion__title'));
+    return item;
   }).filter(Boolean);
   block.replaceChildren(...items);
 

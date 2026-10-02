@@ -1,0 +1,97 @@
+{
+  "definitions": [
+    {
+      "title": "Columns",
+      "id": "columns",
+      "plugins": {
+        "da": {
+          "name": "columns",
+          "rows": 1,
+          "columns": 2,
+          "behaviour": "columns"
+        }
+      },
+      "model": "columns",
+      "filter": "columns"
+    },
+    {
+      "title": "Columns row",
+      "id": "columns-row",
+      "plugins": {
+        "da": {
+          "name": "columns-row",
+          "behaviour": "columns-row"
+        }
+      },
+      "model": "columns-row",
+      "filter": "columns-row"
+    },
+    {
+      "title": "Column",
+      "id": "columns-cell",
+      "plugins": {
+        "da": {
+          "unsafeHTML": "<div></div>",
+          "behaviour": "columns-cell"
+        }
+      },
+      "model": "columns-cell",
+      "filter": "columns-cell"
+    }
+  ],
+  "models": [
+    {
+      "id": "columns",
+      "fields": [
+        {
+          "component": "number",
+          "valueType": "number",
+          "name": "columns",
+          "label": "Columns",
+          "value": 2
+        },
+        {
+          "component": "multiselect",
+          "name": "classes",
+          "label": "Options",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "3-3-6 layout (two narrow, one wide)",
+              "value": "layout-3-3-6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "columns-row",
+      "fields": []
+    },
+    {
+      "id": "columns-cell",
+      "fields": []
+    }
+  ],
+  "filters": [
+    {
+      "id": "columns",
+      "components": [
+        "columns-row"
+      ]
+    },
+    {
+      "id": "columns-row",
+      "components": [
+        "columns-cell"
+      ]
+    },
+    {
+      "id": "columns-cell",
+      "components": [
+        "text",
+        "image"
+      ]
+    }
+  ]
+}

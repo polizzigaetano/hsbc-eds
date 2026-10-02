@@ -1,0 +1,154 @@
+{
+  "definitions": [
+    {
+      "title": "Table",
+      "id": "table",
+      "plugins": {
+        "da": {
+          "name": "table",
+          "rows": 1,
+          "columns": 2
+        }
+      },
+      "model": "table",
+      "filter": "table"
+    },
+    {
+      "title": "Table row",
+      "id": "table-row",
+      "plugins": {
+        "da": {
+          "rows": 1,
+          "columns": 2,
+          "fields": [
+            {
+              "name": "cell1",
+              "selector": "div:nth-child(1)"
+            },
+            {
+              "name": "cell2",
+              "selector": "div:nth-child(2)"
+            },
+            {
+              "name": "cell3",
+              "selector": "div:nth-child(3)"
+            },
+            {
+              "name": "cell4",
+              "selector": "div:nth-child(4)"
+            },
+            {
+              "name": "cell5",
+              "selector": "div:nth-child(5)"
+            },
+            {
+              "name": "cell6",
+              "selector": "div:nth-child(6)"
+            },
+            {
+              "name": "cell7",
+              "selector": "div:nth-child(7)"
+            },
+            {
+              "name": "cell8",
+              "selector": "div:nth-child(8)"
+            }
+          ]
+        }
+      },
+      "model": "table-row"
+    }
+  ],
+  "models": [
+    {
+      "id": "table",
+      "fields": [
+        {
+          "component": "multiselect",
+          "name": "classes",
+          "label": "Options",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "First row is the caption",
+              "value": "caption"
+            },
+            {
+              "name": "Header row",
+              "value": "header"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "table-row",
+      "fields": [
+        {
+          "component": "richtext",
+          "valueType": "string",
+          "name": "cell1",
+          "label": "Column 1",
+          "value": ""
+        },
+        {
+          "component": "richtext",
+          "valueType": "string",
+          "name": "cell2",
+          "label": "Column 2",
+          "value": ""
+        },
+        {
+          "component": "richtext",
+          "valueType": "string",
+          "name": "cell3",
+          "label": "Column 3",
+          "value": ""
+        },
+        {
+          "component": "richtext",
+          "valueType": "string",
+          "name": "cell4",
+          "label": "Column 4",
+          "value": ""
+        },
+        {
+          "component": "richtext",
+          "valueType": "string",
+          "name": "cell5",
+          "label": "Column 5",
+          "value": ""
+        },
+        {
+          "component": "richtext",
+          "valueType": "string",
+          "name": "cell6",
+          "label": "Column 6",
+          "value": ""
+        },
+        {
+          "component": "richtext",
+          "valueType": "string",
+          "name": "cell7",
+          "label": "Column 7",
+          "value": ""
+        },
+        {
+          "component": "richtext",
+          "valueType": "string",
+          "name": "cell8",
+          "label": "Column 8",
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "id": "table",
+      "components": [
+        "table-row"
+      ]
+    }
+  ]
+}

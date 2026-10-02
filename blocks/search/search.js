@@ -1,4 +1,6 @@
-import { fetchIndex, formatDate, parseDate } from '../../scripts/site.js';
+import {
+  fetchIndex, formatDate, parseDate, moveInstrumentation,
+} from '../../scripts/site.js';
 
 /**
  * search — site search on /search, backed by the query index (interim: replaces the live
@@ -41,6 +43,9 @@ export default async function decorate(block) {
   const labelPara = rows[0]?.querySelector('p') || rows[0]?.firstElementChild;
   const emptyPara = rows[1]?.querySelector('p') || rows[1]?.firstElementChild;
   const labelText = labelPara?.textContent.trim() || '';
+  // Universal Editor: the two text fields' markers onto the paragraphs that render them
+  moveInstrumentation(rows[0]?.firstElementChild, labelPara);
+  moveInstrumentation(rows[1]?.firstElementChild, emptyPara);
 
   const params = new URLSearchParams(window.location.search);
   const query = (params.get('q') || params.get('query') || '').trim();

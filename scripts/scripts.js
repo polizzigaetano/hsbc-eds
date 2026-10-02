@@ -11,7 +11,7 @@ import {
   loadCSS,
   buildBlock,
 } from './aem.js';
-import { decorateLinks } from './site.js';
+import { decorateLinks, isUE } from './site.js';
 
 if (window.trustedTypes && window.trustedTypes.createPolicy) {
   const innerTT = window.trustedTypes.createPolicy('tt-inner', {
@@ -141,7 +141,7 @@ function buildAutoBlocks(main) {
  * Decorates formatted links to style them as buttons.
  * @param {HTMLElement} main The main container element
  */
-function decorateButtons(main) {
+export function decorateButtons(main) {
   main.querySelectorAll('p a[href]').forEach((a) => {
     a.title = a.title || a.textContent;
     const p = a.closest('p');
@@ -187,8 +187,9 @@ export function decorateMain(main) {
   decorateSections(main);
   decorateBlocks(main);
   decorateButtons(main);
-  // page content only: nav/footer fragments are decorated while still detached
-  if (main.isConnected) decorateLinks(main);
+  // page content only: nav/footer fragments are decorated while still detached; not in the
+  // Universal Editor, where inline editing would save the presentational glyphs into content
+  if (main.isConnected && !isUE()) decorateLinks(main);
 }
 
 /**
@@ -231,8 +232,9 @@ async function loadLazy(doc) {
 
   loadFooter(doc.querySelector('body > footer'));
 
-  // live leaving-HSBC / e-mail confirmations (delegated, loads its dialog on first use)
-  import('./leaving-confirmation.js').then(({ default: init }) => init());
+  // live leaving-HSBC / e-mail confirmations (delegated, loads its dialog on first use);
+  // not in the Universal Editor, where links do not navigate
+  if (!isUE()) import('./leaving-confirmation.js').then(({ default: init }) => init());
 
   loadCSS(`${window.hlx.codeBasePath}/styles/lazy-styles.css`);
   loadFonts();
@@ -251,6 +253,12 @@ async function loadPage() {
   await loadEager(document);
   await loadLazy(document);
   loadDelayed();
+}
+
+// Universal Editor support (da.live content edited through *.ue.da.live), before the page loads
+if (isUE()) {
+  // eslint-disable-next-line import/no-cycle
+  await import(`${window.hlx.codeBasePath}/ue/scripts/ue.js`).then(({ default: ue }) => ue());
 }
 
 loadPage();

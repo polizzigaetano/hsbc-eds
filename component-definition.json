@@ -1,0 +1,532 @@
+{
+  "groups": [
+    {
+      "title": "Default Content",
+      "id": "default",
+      "components": [
+        {
+          "title": "Text",
+          "id": "text",
+          "model": "text",
+          "plugins": {
+            "da": {
+              "name": "text",
+              "type": "text"
+            }
+          }
+        },
+        {
+          "title": "Image",
+          "id": "image",
+          "model": "image",
+          "plugins": {
+            "da": {
+              "name": "image",
+              "type": "image",
+              "fields": [
+                {
+                  "name": "image",
+                  "selector": "img[src]"
+                },
+                {
+                  "name": "imageAlt",
+                  "selector": "img[alt]"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "title": "Sections",
+      "id": "sections",
+      "components": [
+        {
+          "title": "Section",
+          "id": "section",
+          "plugins": {
+            "da": {
+              "unsafeHTML": "<div></div>"
+            }
+          },
+          "filter": "section",
+          "model": "section"
+        }
+      ]
+    },
+    {
+      "title": "Blocks",
+      "id": "blocks",
+      "components": [
+        {
+          "title": "Accordion",
+          "id": "accordion",
+          "plugins": {
+            "da": {
+              "name": "accordion",
+              "rows": 1,
+              "columns": 2
+            }
+          },
+          "model": "accordion",
+          "filter": "accordion"
+        },
+        {
+          "title": "Accordion item",
+          "id": "accordion-item",
+          "plugins": {
+            "da": {
+              "rows": 2,
+              "columns": 0,
+              "fields": [
+                {
+                  "name": "title",
+                  "selector": "div:nth-child(1)"
+                },
+                {
+                  "name": "text",
+                  "selector": "div:nth-child(2)"
+                }
+              ]
+            }
+          },
+          "model": "accordion-item"
+        },
+        {
+          "title": "Sidebar",
+          "id": "aside",
+          "plugins": {
+            "da": {
+              "name": "aside",
+              "rows": 1,
+              "columns": 1
+            }
+          },
+          "model": "aside",
+          "filter": "aside"
+        },
+        {
+          "title": "Sidebar item",
+          "id": "aside-item",
+          "plugins": {
+            "da": {
+              "rows": 1,
+              "columns": 1,
+              "fields": [
+                {
+                  "name": "text",
+                  "selector": "div:nth-child(1)"
+                }
+              ]
+            }
+          },
+          "model": "aside-item"
+        },
+        {
+          "title": "Cards",
+          "id": "cards",
+          "plugins": {
+            "da": {
+              "name": "cards",
+              "rows": 1,
+              "columns": 2
+            }
+          },
+          "model": "cards",
+          "filter": "cards"
+        },
+        {
+          "title": "Card",
+          "id": "card",
+          "plugins": {
+            "da": {
+              "rows": 1,
+              "columns": 2,
+              "fields": [
+                {
+                  "name": "image",
+                  "selector": "div:nth-child(1) picture>img[src]"
+                },
+                {
+                  "name": "imageAlt",
+                  "selector": "div:nth-child(1) picture>img[alt]"
+                },
+                {
+                  "name": "text",
+                  "selector": "div:nth-child(2)"
+                }
+              ]
+            }
+          },
+          "model": "card"
+        },
+        {
+          "title": "Carousel",
+          "id": "carousel",
+          "plugins": {
+            "da": {
+              "name": "carousel",
+              "rows": 1,
+              "columns": 2
+            }
+          },
+          "model": "carousel",
+          "filter": "carousel"
+        },
+        {
+          "title": "Slide",
+          "id": "carousel-item",
+          "plugins": {
+            "da": {
+              "rows": 1,
+              "columns": 2,
+              "fields": [
+                {
+                  "name": "image",
+                  "selector": "div:nth-child(1) picture>img[src]"
+                },
+                {
+                  "name": "imageAlt",
+                  "selector": "div:nth-child(1) picture>img[alt]"
+                },
+                {
+                  "name": "text",
+                  "selector": "div:nth-child(2)"
+                }
+              ]
+            }
+          },
+          "model": "carousel-item"
+        },
+        {
+          "title": "Cinemagraph (looping video)",
+          "id": "cinemagraph",
+          "plugins": {
+            "da": {
+              "name": "cinemagraph",
+              "unsafeHTML": "<div class=\"cinemagraph\"><div><div><p><a href=\"/media/cinemagraph/video.mp4\">/media/cinemagraph/video.mp4</a></p><p><picture><img src=\"\" alt=\"\"></picture></p><p>Screen-reader description of the facts</p></div></div></div>",
+              "fields": [
+                {
+                  "name": "text",
+                  "selector": "div>div"
+                },
+                {
+                  "name": "poster",
+                  "selector": "div>div picture>img[src]"
+                },
+                {
+                  "name": "posterAlt",
+                  "selector": "div>div picture>img[alt]"
+                }
+              ]
+            }
+          },
+          "model": "cinemagraph"
+        },
+        {
+          "title": "Columns",
+          "id": "columns",
+          "plugins": {
+            "da": {
+              "name": "columns",
+              "rows": 1,
+              "columns": 2,
+              "behaviour": "columns"
+            }
+          },
+          "model": "columns",
+          "filter": "columns"
+        },
+        {
+          "title": "Columns row",
+          "id": "columns-row",
+          "plugins": {
+            "da": {
+              "name": "columns-row",
+              "behaviour": "columns-row"
+            }
+          },
+          "model": "columns-row",
+          "filter": "columns-row"
+        },
+        {
+          "title": "Column",
+          "id": "columns-cell",
+          "plugins": {
+            "da": {
+              "unsafeHTML": "<div></div>",
+              "behaviour": "columns-cell"
+            }
+          },
+          "model": "columns-cell",
+          "filter": "columns-cell"
+        },
+        {
+          "title": "Factbox",
+          "id": "factbox",
+          "plugins": {
+            "da": {
+              "name": "factbox",
+              "rows": 1,
+              "columns": 1,
+              "fields": [
+                {
+                  "name": "text",
+                  "selector": "div>div"
+                }
+              ]
+            }
+          },
+          "model": "factbox"
+        },
+        {
+          "title": "Hero (banner)",
+          "id": "hero",
+          "plugins": {
+            "da": {
+              "name": "hero",
+              "rows": 1,
+              "columns": 1,
+              "fields": [
+                {
+                  "name": "image",
+                  "selector": "div>div picture>img[src]"
+                },
+                {
+                  "name": "imageAlt",
+                  "selector": "div>div picture>img[alt]"
+                }
+              ]
+            }
+          },
+          "model": "hero"
+        },
+        {
+          "title": "Inline image",
+          "id": "inline-image",
+          "plugins": {
+            "da": {
+              "name": "inline-image",
+              "unsafeHTML": "<div class=\"inline-image\"><div><div><p><picture><img src=\"\" alt=\"\"></picture></p><p>Caption</p></div></div></div>",
+              "fields": [
+                {
+                  "name": "image",
+                  "selector": "div>div picture>img[src]"
+                },
+                {
+                  "name": "imageAlt",
+                  "selector": "div>div picture>img[alt]"
+                },
+                {
+                  "name": "text",
+                  "selector": "div>div"
+                }
+              ]
+            }
+          },
+          "model": "inline-image"
+        },
+        {
+          "title": "Page description",
+          "id": "page-description",
+          "plugins": {
+            "da": {
+              "name": "page-description",
+              "unsafeHTML": "<div class=\"page-description\"><div><div><p>1 January 2026</p><h1>Page title</h1><p>Summary</p></div></div></div>",
+              "fields": [
+                {
+                  "name": "text",
+                  "selector": "div>div"
+                }
+              ]
+            }
+          },
+          "model": "page-description"
+        },
+        {
+          "title": "Profiles",
+          "id": "profile",
+          "plugins": {
+            "da": {
+              "name": "profile",
+              "rows": 1,
+              "columns": 2
+            }
+          },
+          "model": "profile",
+          "filter": "profile"
+        },
+        {
+          "title": "Profile",
+          "id": "profile-item",
+          "plugins": {
+            "da": {
+              "rows": 1,
+              "columns": 2,
+              "fields": [
+                {
+                  "name": "image",
+                  "selector": "div:nth-child(1) picture>img[src]"
+                },
+                {
+                  "name": "imageAlt",
+                  "selector": "div:nth-child(1) picture>img[alt]"
+                },
+                {
+                  "name": "text",
+                  "selector": "div:nth-child(2)"
+                }
+              ]
+            }
+          },
+          "model": "profile-item"
+        },
+        {
+          "title": "Promo box",
+          "id": "promo",
+          "plugins": {
+            "da": {
+              "name": "promo",
+              "rows": 1,
+              "columns": 1,
+              "fields": [
+                {
+                  "name": "text",
+                  "selector": "div>div"
+                }
+              ]
+            }
+          },
+          "model": "promo"
+        },
+        {
+          "title": "Search",
+          "id": "search",
+          "plugins": {
+            "da": {
+              "name": "search",
+              "unsafeHTML": "<div class=\"search\"><div><div><p>Search</p></div></div><div><div><p>No results found. Please try a different search term.</p></div></div></div>",
+              "fields": [
+                {
+                  "name": "label",
+                  "selector": "div:nth-child(1)>div"
+                },
+                {
+                  "name": "empty",
+                  "selector": "div:nth-child(2)>div"
+                }
+              ]
+            }
+          },
+          "model": "search"
+        },
+        {
+          "title": "Share bar",
+          "id": "share",
+          "plugins": {
+            "da": {
+              "name": "share",
+              "unsafeHTML": "<div class=\"share\"><div><div><p>Share</p></div></div><div><div><p><a href=\"http://twitter.com/intent/tweet?url={URL}\">Share link to this page on X</a></p></div></div><div><div><p><a href=\"https://www.facebook.com/sharer/sharer.php?u={URL}\">Share link to this page on Facebook</a></p></div></div><div><div><p><a href=\"http://www.linkedin.com/shareArticle?mini=true&amp;url={URL}&amp;title={title}\">Share link to this page on LinkedIn</a></p></div></div></div>",
+              "fields": [
+                {
+                  "name": "label",
+                  "selector": "div:nth-child(1)>div"
+                },
+                {
+                  "name": "x",
+                  "selector": "div:nth-child(2)>div"
+                },
+                {
+                  "name": "facebook",
+                  "selector": "div:nth-child(3)>div"
+                },
+                {
+                  "name": "linkedin",
+                  "selector": "div:nth-child(4)>div"
+                }
+              ]
+            }
+          },
+          "model": "share"
+        },
+        {
+          "title": "Table",
+          "id": "table",
+          "plugins": {
+            "da": {
+              "name": "table",
+              "rows": 1,
+              "columns": 2
+            }
+          },
+          "model": "table",
+          "filter": "table"
+        },
+        {
+          "title": "Table row",
+          "id": "table-row",
+          "plugins": {
+            "da": {
+              "rows": 1,
+              "columns": 2,
+              "fields": [
+                {
+                  "name": "cell1",
+                  "selector": "div:nth-child(1)"
+                },
+                {
+                  "name": "cell2",
+                  "selector": "div:nth-child(2)"
+                },
+                {
+                  "name": "cell3",
+                  "selector": "div:nth-child(3)"
+                },
+                {
+                  "name": "cell4",
+                  "selector": "div:nth-child(4)"
+                },
+                {
+                  "name": "cell5",
+                  "selector": "div:nth-child(5)"
+                },
+                {
+                  "name": "cell6",
+                  "selector": "div:nth-child(6)"
+                },
+                {
+                  "name": "cell7",
+                  "selector": "div:nth-child(7)"
+                },
+                {
+                  "name": "cell8",
+                  "selector": "div:nth-child(8)"
+                }
+              ]
+            }
+          },
+          "model": "table-row"
+        },
+        {
+          "title": "Terms of Access gate",
+          "id": "terms-gate",
+          "plugins": {
+            "da": {
+              "name": "terms-gate",
+              "rows": 1,
+              "columns": 1,
+              "fields": [
+                {
+                  "name": "text",
+                  "selector": "div>div"
+                }
+              ]
+            }
+          },
+          "model": "terms-gate"
+        }
+      ]
+    }
+  ]
+}

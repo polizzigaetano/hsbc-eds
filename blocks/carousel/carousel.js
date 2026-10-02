@@ -1,3 +1,5 @@
+import { moveInstrumentation } from '../../scripts/site.js';
+
 /**
  * carousel — the live image carousel (slides of a picture + caption overlay, prev/next controls
  * and a "1 / 3" counter). Reconstructive: one row per slide.
@@ -27,9 +29,13 @@ export default function decorate(block) {
     if (media) frame.append(media.closest('p') || media);
     slide.append(frame);
     const caption = captionCell ? [...captionCell.children] : [];
-    if (caption.length) {
-      slide.append(el('div', 'carousel__overlay', el('div', 'carousel__overlay-inner', ...caption)));
+    if (caption.length || (captionCell && captionCell.hasAttribute('data-aue-prop'))) {
+      const inner = el('div', 'carousel__overlay-inner', ...caption);
+      // Universal Editor: the caption field marker onto the element holding the caption
+      moveInstrumentation(captionCell, inner);
+      slide.append(el('div', 'carousel__overlay', inner));
     }
+    moveInstrumentation(row, slide);
     return slide;
   });
   if (!slides.length) return;
@@ -64,6 +70,8 @@ export default function decorate(block) {
     current.textContent = String(index + 1);
     status.textContent = `${index + 1} / ${slides.length}`;
   };
+  // Universal Editor: selecting a slide in the editor shows it (ue/scripts/ue.js)
+  block.addEventListener('carousel:show', (e) => show(e.detail.index));
   prev.addEventListener('click', () => show(index - 1));
   next.addEventListener('click', () => show(index + 1));
   show(0);
