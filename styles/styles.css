@@ -438,6 +438,9 @@ main .default-content-wrapper,
 
 :is(main .default-content-wrapper, .text) a:has(> img) { background-image: none; }
 
+/* live rich-text images stay inline on the text line (the strut adds its descender below) */
+:is(main .default-content-wrapper, .text) img { display: inline; }
+
 :is(main .default-content-wrapper, .text) .icon--external {
   font-family: var(--ff-italic);
   font-size: 0.8em;

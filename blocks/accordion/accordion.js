@@ -226,7 +226,13 @@ async function topUpArchive(block, prefixLevel) {
   const articles = await fetchArticles();
   if (!articles.length) return;
   const known = new Set([...block.querySelectorAll('.tabular-list a[href]')].map((a) => pathOf(a.getAttribute('href'))));
-  const fresh = articles.filter((a) => !known.has(a.path)).reverse(); // oldest first, prepend
+  // only releases newer than the newest authored row: the archive's own selection stands
+  // (live omits some older pages, e.g. 2019), new releases appear without editing it
+  const newest = [...block.querySelectorAll('.tabular-list__date')]
+    .reduce((max, d) => Math.max(max, parseDate(d.textContent.trim())?.getTime() || 0), 0);
+  const fresh = articles
+    .filter((a) => !known.has(a.path) && a.parsedDate.getTime() > newest)
+    .reverse(); // oldest first, prepend
   fresh.forEach((entry) => {
     const year = String(entry.parsedDate.getUTCFullYear());
     let item = [...block.querySelectorAll(':scope > .accordion__item')].find((i) => yearOf(i) === year);
