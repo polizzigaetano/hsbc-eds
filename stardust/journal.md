@@ -63,3 +63,10 @@
 - **Content:** one importer for every archetype (layout-row walker) → 8 pages + /search, /nav, /footer, 2 confirmation fragments; uploaded to DA and previewed (13/13 200, one h1, 0 about:error). Query index configured (admin API); it fills on publish.
 - **Gates:** EDS vs prototypes ≤ 3.5% / |Δh| ≤ 3 (16 pairs, local and pipeline-delivered); vs live 13/16 pass, 3 = the accepted 360 font residuals; states ≤ 0.05%; 23/23 behaviours; lint clean; EW 0 dead.
 - **Open:** publish to aem.live (index), push the branch (preview with branch code + PR link), owner decisions (CMP/Tealium, Compliance copy, PDF hosting).
+
+## 2026-10-02T14:12:46Z — Wave 2: notes fragment + all 284 articles
+- **Prompt:** "create the fragment and migrate all the articles"
+- **Decision:** notes to editors stay per article (232 distinct variants across 267 articles, dated facts); `/fragments/notes-hsbc-uk` carries the current boilerplate for new releases.
+- **Built:** inline-image, table, promo, factbox, carousel blocks; columns 3-3-6; importer handles nested components, wrappers, multiple notes blocks, rich summaries, blank-line breaks.
+- **Content:** 297 documents imported (284 articles ≥ 90% completeness), uploaded to DA and previewed; delivered check 297/297 (200, one h1, 0 about:error).
+- **Gates:** archetypes unchanged vs prototypes; 11-article sample vs live: 7 within ±4px, 4 one-off residuals (great-block, Loughborough, Lincoln, Footasylum).

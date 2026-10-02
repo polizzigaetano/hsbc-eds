@@ -1,0 +1,9 @@
+/* promo — live .promo (application.css): #d7d8d6 box, 32px 20px */
+
+/* sits inside the live rich text: no margins of its own */
+.promo {
+  padding: 32px 20px;
+  background: var(--c-rule);
+}
+
+.promo .text { margin-bottom: 0; }

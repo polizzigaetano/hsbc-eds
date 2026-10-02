@@ -30,11 +30,36 @@ export function parsePageDescription(document, el) {
   if (meta) cell.push(p(document, meta));
   const h = el.querySelector('.page-description__heading');
   if (h) cell.push(heading(document, 1, visibleText(h)));
-  const summary = visibleText(el.querySelector('.page-description__summary'));
-  if (summary) cell.push(p(document, summary));
-  const tertiary = el.classList.contains('page-description--tertiary');
+  const summaryEl = el.querySelector('.page-description__summary');
+  // a summary authored as a rich-text component keeps its inline formatting and links
+  const rich = !!summaryEl?.querySelector('.text, a, em, strong');
+  if (summaryEl && visibleText(summaryEl)) {
+    if (rich) {
+      const clone = cleanRichText(summaryEl.cloneNode(true));
+      let holder = clone;
+      while (holder.children.length === 1 && holder.firstElementChild.tagName === 'DIV') holder = holder.firstElementChild;
+      // block children (p, lists) as authored; loose inline content gathered into paragraphs
+      let para = null;
+      [...holder.childNodes].forEach((n) => {
+        if (n.nodeType === 1 && ['P', 'UL', 'OL'].includes(n.tagName)) {
+          para = null;
+          if (n.textContent.trim()) cell.push(n);
+        } else if (n.nodeType === 1 && n.tagName === 'BR') {
+          para = null;
+        } else if (n.textContent.trim() || n.nodeType === 1) {
+          if (!para) { para = p(document); cell.push(para); }
+          para.append(n);
+        }
+      });
+    } else {
+      cell.push(p(document, visibleText(summaryEl)));
+    }
+  }
+  const variants = [];
+  if (el.classList.contains('page-description--tertiary')) variants.push('tertiary');
+  if (summaryEl?.querySelector('.text')) variants.push('rich-summary');
   return {
-    table: block(document, tertiary ? 'Page Description (tertiary)' : 'Page Description', [[cell]]),
+    table: block(document, variants.length ? `Page Description (${variants.join(', ')})` : 'Page Description', [[cell]]),
     date: meta,
   };
 }
@@ -53,20 +78,27 @@ export function parseCinemagraph(document, el) {
   return block(document, 'Cinemagraph', [[cell]]);
 }
 
-/** live 6-6 .inline-image + .text columns → Columns */
-export function parseColumns(document, layout) {
-  const cols = [...layout.querySelectorAll(':scope > .layout__primary, :scope > .layout__secondary')];
+/** live 6-6 / 3-3-6 columns of inline images + rich text → Columns (authored order kept) */
+export function parseColumns(document, layout, variant = '') {
+  const cols = [...layout.querySelectorAll(':scope > .layout__primary, :scope > .layout__secondary, :scope > .layout__tertiary')];
   const cells = cols.map((col) => {
     const cell = [];
-    const image = col.querySelector('.inline-image__image img');
-    if (image) cell.push(img(document, liveImageSrc(image), image.getAttribute('alt') || ''));
-    col.querySelectorAll('.text').forEach((t) => {
-      const clone = cleanRichText(t.cloneNode(true));
-      [...clone.children].forEach((n) => { if (n.tagName !== 'BR') cell.push(n); });
+    [...col.children].forEach((child) => {
+      if (child.matches('.inline-image')) {
+        const image = child.querySelector('.inline-image__image img');
+        if (image) cell.push(img(document, liveImageSrc(image), image.getAttribute('alt') || ''));
+        child.querySelectorAll('.inline-image__content p').forEach((para) => {
+          if (para.textContent.trim()) cell.push(cleanRichText(para.cloneNode(true)));
+        });
+      } else if (child.matches('.text')) {
+        const clone = cleanRichText(child.cloneNode(true));
+        [...clone.children].forEach((n) => { if (n.tagName !== 'BR') cell.push(n); });
+      }
     });
-    return cell;
+    return cell.length ? cell : '';
   });
-  return block(document, 'Columns', [cells]);
+  while (cells.length > 1 && cells[cells.length - 1] === '') cells.pop();
+  return block(document, variant ? `Columns (${variant})` : 'Columns', [cells]);
 }
 
 /** a live .long-form-promo → one Cards row */

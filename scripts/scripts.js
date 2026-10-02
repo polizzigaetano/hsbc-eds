@@ -95,7 +95,15 @@ function applyMetadataFallback(main) {
     });
     meta.remove();
   });
-  main.querySelectorAll(':scope > div > .metadata').forEach((meta) => meta.remove());
+  main.querySelectorAll(':scope > div > .metadata').forEach((meta) => {
+    [...meta.children].forEach((row) => {
+      const [key, value] = [...row.children].map((c) => c.textContent.trim());
+      if (['template', 'theme'].includes(toClassName(key || '')) && value) {
+        value.split(',').map(toClassName).filter(Boolean).forEach((c) => document.body.classList.add(c));
+      }
+    });
+    meta.remove();
+  });
 }
 
 /**

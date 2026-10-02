@@ -283,6 +283,25 @@ main > .section:is(.gap, .gap-wide)[data-section-status="loaded"] { display: blo
   main > .section.gap-wide { height: 40px; }
 }
 
+/* a live <br> blank line between blocks of rich text (24px line box, margins of the text around it) */
+main > .section.break {
+  height: 24px;
+  margin-top: calc(-25px - var(--row-extra));
+}
+
+main > .section.break[data-section-status="loaded"] { display: block !important; }
+main > .section.break + .section.disclaimer { margin-top: calc(-20px - var(--row-extra)); }
+
+/* live .layout--spaced-top / .layout--no-bottom-margin rows */
+main > .section.spaced-top { margin-top: 52px; }
+
+/* page theme flush-end: the live last container drops its 82px page-end gap (the row keeps its own) */
+body.flush-end main > .section:last-child { margin-bottom: var(--row-gap); }
+
+@media (width <= 800px) {
+  main > .section.spaced-top { margin-top: 40px; }
+}
+
 /* rich text led by a live <br> spacer line (24px line box) */
 main > .section.spaced > .default-content-wrapper:not(.default-content-wrapper ~ *) { padding-top: 24px; }
 
@@ -350,6 +369,31 @@ main .default-content-wrapper,
 }
 
 :is(main .default-content-wrapper, .text) li p { margin: -4px 0 0; }
+
+:is(main .default-content-wrapper, .text) ol {
+  margin: 24px 0 24px 34px;
+  list-style-type: decimal;
+}
+
+:is(main .default-content-wrapper, .text) ol li { list-style-type: decimal; }
+
+:is(main .default-content-wrapper, .text) ol ol {
+  margin: 12px 0;
+  list-style-type: lower-roman;
+}
+:is(main .default-content-wrapper, .text) ul ul { margin: 12px 0 12px 17px; }
+:is(main .default-content-wrapper, .text) ul li li { list-style-type: circle; }
+:is(main .default-content-wrapper, .text) ul li li li { list-style-type: disc; }
+
+:is(main .default-content-wrapper, .text) sup {
+  font-size: 11px;
+  vertical-align: super;
+}
+
+:is(main .default-content-wrapper, .text) sub {
+  font-size: 13px;
+  vertical-align: sub;
+}
 
 /* a leading <br> spacer line, as the live rich text renders it */
 :is(main .default-content-wrapper, .text) p.spacer { margin: 0; }
@@ -433,7 +477,12 @@ main .default-content-wrapper,
 /* ---------- section styles for default content ---------- */
 
 /* notes to editors: continues the article body (live: inside the same rich text, 15px − 4px) */
-main > .section.disclaimer { margin-top: calc(-25px - var(--row-extra)); }
+main > .section.disclaimer {
+  margin-top: calc(-25px - var(--row-extra));
+  font-family: var(--ff-light);
+  font-size: 12px;
+  line-height: 18px;
+}
 
 main .section.disclaimer .default-content-wrapper {
   margin-top: -3px;

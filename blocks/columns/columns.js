@@ -1,9 +1,20 @@
 /**
- * columns — the live 6-6 layout of an inline image over rich text (home "Our headquarters" /
- * "Our CEO"). Template-slotted per column.
+ * columns — the live multi-column layouts of inline images and rich text (home 6-6 "Our
+ * headquarters" / "Our CEO", article 6-6 and 3-3-6 image grids). Template-slotted per column.
+ * Variant `3-3-6`: two narrow columns and one wide one.
  *
- * Authoring: one row; each cell holds a picture followed by the column's rich text (h2, p…).
+ * Authoring: one row; each cell holds pictures and rich text in reading order.
  */
+function figure(holder) {
+  const fig = document.createElement('div');
+  fig.className = 'inline-image inline-image--vertical inline-image--with-bottom-margin';
+  const frame = document.createElement('div');
+  frame.className = 'inline-image__image';
+  frame.append(holder);
+  fig.append(frame);
+  return fig;
+}
+
 export default function decorate(block) {
   const row = block.firstElementChild;
   const cells = row ? [...row.children] : [];
@@ -14,21 +25,21 @@ export default function decorate(block) {
   cells.forEach((cell) => {
     const col = document.createElement('div');
     col.className = 'columns__col';
-    const media = cell.querySelector('picture') || cell.querySelector('img');
-    if (media) {
-      const holder = media.closest('p') || media;
-      const figure = document.createElement('div');
-      figure.className = 'inline-image inline-image--vertical inline-image--with-bottom-margin';
-      const frame = document.createElement('div');
-      frame.className = 'inline-image__image';
-      frame.append(holder);
-      figure.append(frame);
-      col.append(figure);
-    }
-    const text = document.createElement('div');
-    text.className = 'text';
-    text.append(...cell.children);
-    if (text.children.length) col.append(text);
+    let text = null;
+    [...cell.children].forEach((child) => {
+      const media = child.matches('picture, img') ? child : child.querySelector('picture, img');
+      if (media && !child.textContent.trim()) {
+        text = null;
+        col.append(figure(child));
+        return;
+      }
+      if (!text) {
+        text = document.createElement('div');
+        text.className = 'text';
+        col.append(text);
+      }
+      text.append(child);
+    });
     layout.append(col);
   });
 

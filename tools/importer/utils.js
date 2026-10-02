@@ -7,6 +7,8 @@
  * presentation the EDS runtime re-creates, so they are dropped from authored content.
  */
 
+import MIGRATED_ARTICLES from './migrated-articles.js';
+
 export const LIVE_ORIGIN = 'https://www.about.hsbc.co.uk';
 
 /**
@@ -17,13 +19,13 @@ export const LIVE_ORIGIN = 'https://www.about.hsbc.co.uk';
 export const MIGRATED_PATHS = [
   '/',
   '/news-and-media',
-  '/news-and-media/ambitious-uk-businesses-encouraged-to-go-for-gold',
   '/hsbc-uk/inclusion',
   '/hsbc-uk/regulated-covered-bond-programme',
   '/accessibility',
   '/history-timeline',
   '/management-team',
   '/search',
+  ...MIGRATED_ARTICLES,
 ];
 
 const KEEP_ATTRS = {
@@ -61,7 +63,7 @@ export function pageHref(href) {
 
 /** strip presentation from a rich-text subtree, in place */
 export function cleanRichText(root) {
-  root.querySelectorAll('script, style, noscript, i.icon, i[class*="icon"], span.a11y, .share-actions').forEach((n) => n.remove());
+  root.querySelectorAll('script, style, noscript, i.icon, i[class*="icon"], em[class*="icon"], span[class*="icon"], span.a11y, .share-actions').forEach((n) => n.remove());
   root.querySelectorAll('*').forEach((el) => {
     const keep = KEEP_ATTRS[el.tagName] || [];
     [...el.attributes].forEach((attr) => {
@@ -85,7 +87,7 @@ export function cleanRichText(root) {
 export function visibleText(el) {
   if (!el) return '';
   const clone = el.cloneNode(true);
-  clone.querySelectorAll('.a11y, i[class*="icon"], script, style').forEach((n) => n.remove());
+  clone.querySelectorAll('.a11y, i[class*="icon"], em[class*="icon"], span[class*="icon"], script, style').forEach((n) => n.remove());
   return clone.textContent.replace(/\s+/g, ' ').trim();
 }
 

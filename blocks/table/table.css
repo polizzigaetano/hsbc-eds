@@ -1,0 +1,55 @@
+/* table — live `.text table` / `.inline-table table` (application.css) */
+/* stylelint-disable no-descending-specificity */
+.table { margin-bottom: 20px; }
+.table .inline-table-wrapper { overflow-x: auto; }
+
+.table table {
+  width: 100%;
+  margin: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.table tr { background: var(--c-panel); }
+.table thead tr { background: var(--c-rule); }
+
+.table :is(td, th) {
+  padding: 10px 10px 10px 20px;
+  border-bottom: 1px solid var(--c-rule);
+  text-align: left;
+  vertical-align: baseline;
+}
+
+.table td { color: var(--c-black); }
+
+.table th {
+  font-family: var(--ff-bold);
+  font-weight: normal;
+}
+
+.table tbody th { width: 15%; }
+.table :is(td, th) p { margin: 0; }
+.table :is(td, th) p + p { margin-top: 10px; }
+
+/* live caption bar */
+.table caption {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 17px 20px 19px;
+  background: #3e505d;
+  color: var(--c-white);
+  font-family: var(--ff-light);
+  font-size: 30px;
+  line-height: 1;
+  letter-spacing: -0.028em;
+  text-align: left;
+}
+
+.table caption p { margin: 0; }
+
+@media (width <= 640px) {
+  .table caption {
+    font-family: var(--ff-regular);
+    font-size: 24px;
+  }
+}
