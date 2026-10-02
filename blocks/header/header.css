@@ -39,6 +39,10 @@ header .skip-links__inner {
 }
 
 header .skip-links:focus-within .skip-links__inner { margin-top: 0; }
+
+@media (prefers-reduced-motion: reduce) {
+  header .skip-links__inner { transition: none; }
+}
 header .skip-links__list { overflow: hidden; }
 
 header .skip-links__list-label {
