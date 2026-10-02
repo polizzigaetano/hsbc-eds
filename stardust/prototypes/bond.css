@@ -1,0 +1,110 @@
+/* provenance: stardust:replica Phase 3 — A6 document-library archetype layer (nested accordions,
+   document tables as <ul>, Terms-of-Access gate). Values lifted from application.css + computed styles
+   in the gate browser, closed / open / nested-open / gate-open / gate-checked states at 1440 / 360
+   (stardust/.work/replica/a6-*.json). Outer accordion + tabular list come from news.css. */
+
+/* ---------- document tables rendered as lists ---------- */
+ul.tabular-list { margin: 0 0 26px; padding: 0; list-style: none; }
+ul.tabular-list .tabular-list__item { list-style: none; }
+div.tabular-list__details { display: table-row; }
+@media (max-width: 640px) { ul.tabular-list > li.tabular-list__item + li.tabular-list__item { margin-top: -3px; } } /* measured: list rows (not the div rows of the news archive) */
+
+/* ---------- nested accordion (year groups inside "Investor reports") ---------- */
+.accordion-nested__mid--hiddenitems { margin: -31px 0 -47px; }
+.accordion-nested__item { margin: -20px -20px 20px; }
+.accordion-nested__heading {
+  position: relative;
+  border-top: 1px solid #afb0ae;
+  font-family: var(--ff-light);
+  font-size: 30px;
+  line-height: 1;
+  letter-spacing: -0.028em;
+}
+.accordion-nested__heading button {
+  display: block; width: 100%; box-sizing: border-box; min-height: 73.43px;
+  padding: 22px 12px 19px 20px;
+  border: 0; border-radius: 0;
+  background: #e2e2e1; color: #000;
+  font: inherit; letter-spacing: inherit; text-align: left;
+  cursor: pointer;
+}
+.accordion-nested__heading button span { display: inline-block; vertical-align: middle; width: 90%; cursor: pointer; }
+.accordion-nested__heading .icon--chevron-down::after, .accordion-nested__heading .icon--chevron-up::after {
+  position: absolute; right: 12px; top: 50%; margin-top: calc(-5px - 0.5em); width: 1em; height: 1em;
+}
+.accordion-nested__content { height: 0; overflow: hidden; background: #ededed; }
+.accordion-nested__item--active .accordion-nested__heading button { background: #505050; color: var(--c-white); }
+.accordion-nested__item--active .accordion-nested__content { height: auto; border-bottom: 1px solid #c6c6c6; }
+.accordion-nested__inner { padding: 29px 20px 27px; container-type: inline-size; }
+.accordion-nested__bottom { margin: 20px 0 -47px; }
+@media (max-width: 640px) {
+  .accordion-nested__heading { font-family: var(--ff-regular); font-size: 18px; }
+  .accordion-nested__heading button { min-height: 60.17px; }
+}
+
+/* ---------- Terms-of-Access gate (lightbox) ---------- */
+.no-scroll, .no-scroll body { height: 100%; overflow: hidden; }
+.lightbox {
+  position: absolute; top: -999999px; left: -999999px; z-index: 100; /* parked off-screen when closed (live base rule) */
+  width: 100%; max-width: 580px; box-sizing: border-box; height: auto;
+  padding: 30px;
+  background: var(--c-white);
+  visibility: hidden; opacity: 0;
+  transform: translateX(-50%) translateY(-50%);
+}
+.lightbox.lightbox--active { top: 20%; left: 50%; max-height: 80vh; visibility: visible; opacity: 1; transform: translateX(-50%); }
+.lightbox.lightbox--active.lightbox--scroll { bottom: 20px; overflow-y: auto; }
+.lightbox__inner { position: relative; z-index: 100; height: 100%; overflow-y: auto; }
+.lightbox__close {
+  position: absolute; top: 0; right: 18px; margin-top: 2.5px;
+  color: #929292; font-family: var(--ff-thin); font-size: 45px; line-height: 0.8888888889;
+}
+.lightbox__close::after { content: "×"; }
+.lightbox__close:hover::after, .lightbox__close:focus::after { color: #6d6d6d; }
+.lightbox-overlay { position: fixed; top: 0; left: 0; z-index: 99; width: 100%; height: 100%; background: #000; opacity: 0; visibility: hidden; }
+.lightbox-overlay.lightbox-overlay--active { opacity: 0.7; visibility: visible; cursor: pointer; }
+@media (max-width: 640px) {
+  .lightbox.lightbox--active { left: 20px; right: 20px; top: 20px; width: auto; max-height: none; transform: translateX(0); }
+}
+@media (max-width: 500px) {
+  .lightbox.lightbox--active { left: 0; right: 0; top: 0 !important; bottom: 0; height: 100% !important; }
+  .lightbox__close { right: 10px; top: -5px; }
+}
+
+.leaving-confirmation__heading { max-width: 380px; margin: -4px 0 12px; font-family: var(--ff-thin); font-size: 40px; line-height: 1.2; word-break: break-all; }
+.leaving-confirmation__copy { margin: -3px 0 50px; font-family: var(--ff-light); font-size: 12px; line-height: 18px; }
+.leaving-confirmation__copy strong { font-family: var(--ff-bold); }
+.leaving-confirmation__checkbox-wrap { position: relative; margin-bottom: 44px; }
+.leaving-confirmation__checkbox-wrap::before, .leaving-confirmation__checkbox-wrap::after { content: " "; display: table; }
+.leaving-confirmation__checkbox-wrap::after { clear: both; }
+.leaving-confirmation__checkbox { position: absolute; left: -9999px; }
+.leaving-confirmation__checkbox-label {
+  position: relative; display: block; float: left;
+  margin-top: -3px; padding: 2px 0 0 36px;
+  font-family: var(--ff-light); font-size: 12px; line-height: 18px; cursor: pointer;
+}
+.leaving-confirmation__checkbox-label::before { content: ""; position: absolute; left: 0; top: 2px; width: 24px; height: 24px; box-sizing: border-box; border: 1px solid var(--c-rule); }
+.leaving-confirmation__checkbox-label::after {
+  content: ""; position: absolute; left: 1px; top: 3px; width: 24px; height: 24px; opacity: 0;
+  background-color: #178481; -webkit-mask: url("assets/icons/check.svg") no-repeat 3px 3px / 18px 18px; mask: url("assets/icons/check.svg") no-repeat 3px 3px / 18px 18px;
+}
+.leaving-confirmation__checkbox:checked + .leaving-confirmation__checkbox-label::before { border-color: #404040; }
+.leaving-confirmation__checkbox:checked + .leaving-confirmation__checkbox-label::after { opacity: 1; }
+.leaving-confirmation__links::after { content: ""; display: table; clear: both; }
+.leaving-confirmation__links .button {
+  display: inline-block; box-sizing: border-box; padding: 14px 20px 11px;
+  border: 1px solid transparent; font-size: 18px; line-height: 23.4px; cursor: pointer;
+}
+.leaving-confirmation__links .leaving-confirmation__proceed { float: right; display: block; border-color: var(--c-red); background: var(--c-red); color: var(--c-white); }
+.leaving-confirmation__links .leaving-confirmation__proceed:hover, .leaving-confirmation__links .leaving-confirmation__proceed:focus { border-color: #b1000e; background: #b1000e; }
+.leaving-confirmation__links .leaving-confirmation__proceed.button--disabled,
+.leaving-confirmation__links .leaving-confirmation__proceed.button--disabled:hover { border-color: var(--c-rule); background: var(--c-rule); color: var(--c-text); cursor: default; }
+.leaving-confirmation__close { padding-left: 0 !important; padding-right: 0 !important; color: var(--c-text); }
+.leaving-confirmation__close:hover, .leaving-confirmation__close:focus { text-decoration: underline; }
+@media (max-width: 640px) {
+  .leaving-confirmation__links a { float: none; display: block; margin-bottom: 20px; text-align: center; }
+  .leaving-confirmation__proceed { padding: 14px 40px 11px 50px !important; white-space: normal; }
+}
+@media (max-width: 560px) {
+  .leaving-confirmation__heading { max-width: 100%; padding-right: 30px; margin-top: -1.5px; font-size: 35px; line-height: 1.0857142857; }
+}

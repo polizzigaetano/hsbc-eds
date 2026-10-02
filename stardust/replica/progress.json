@@ -1,0 +1,721 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:replica",
+    "writtenAt": "2026-10-01T14:12:35Z",
+    "againstInput": "https://www.about.hsbc.co.uk/",
+    "readArtifacts": [
+      "stardust/current/pages/news-and-media-ambitious-uk-businesses-encouraged-to-go-for-gold.json",
+      "stardust/.work/replica/a1-lift.json",
+      "stardust/.work/replica/a1-lift-chrome.json",
+      "stardust/replica/motion/article.json"
+    ]
+  },
+  "fonts": {
+    "policy": "licensed kit (UniversNext for HSBC W02) NOT rehosted; live family names first in every stack; Noto Sans (OFL) static per-weight instances self-hosted as substitute",
+    "calibration": {
+      "method": "canvas width ratio vs live Univers (4 sample strings \u00d7 6 weights) then per-element line-count sweep in the gate browser; all calibration now runs in the gate browser (bundled Chromium)",
+      "sizeAdjust": {
+        "ultra-light": "96.5%",
+        "light": "100.4%",
+        "regular": "99.6%",
+        "medium": "103.3% (re-swept in gate browser across A1/A2/A3 mobile headings)",
+        "bold": "102.6%",
+        "italic": "104.8%",
+        "thin": "99.9% (Noto Sans 100)"
+      },
+      "verticalMetrics": "ascent/descent overridden to Univers 95/25 per 100 (ultra-light 92/25)",
+      "regularResweep": {
+        "at": "2026-10-01T16:36:16Z",
+        "values": "99.6\u2013100.4 across A1/A4/A5 at 360+1440",
+        "finding": "100.0% halves mobile wrap mismatches (11\u21925) and clears A4 \u039424, but pushes A1 360 to \u0394\u221243 / 10.18% (fails pixel bar); kept 99.6% to protect the 284-page article archetype",
+        "evidence": "stardust/.work/replica/sweep-regular.json"
+      }
+    },
+    "permanent": true,
+    "note": "Replace substitute with the licensed kit once HSBC confirms web licence covers the EDS domains; re-run the gate then."
+  },
+  "archetypes": [
+    {
+      "pageType": "article",
+      "archetype": "news-and-media-ambitious-uk-businesses-encouraged-to-go-for-gold",
+      "prototype": "stardust/prototypes/news-and-media-ambitious-uk-businesses-encouraged-to-go-for-gold-proposed.html",
+      "css": [
+        "stardust/prototypes/canon.css",
+        "stardust/prototypes/article.css"
+      ],
+      "breakpoints": {
+        "1440": {
+          "iterations": 3,
+          "result": {
+            "structuralRed": 0,
+            "visualFlags": "none",
+            "pixelPct": 3.71,
+            "heightDelta": -1,
+            "chromeHeaderPct": 1.85,
+            "chromeFooterPct": 3.94,
+            "pass": false,
+            "passNote": "content, visual, pixel, height and header-chrome bars pass; footer chrome band 3.94% > 2% bar"
+          },
+          "justified": [
+            {
+              "probe": "content",
+              "flag": "\ud83d\udfe1 MISSING BODY noscript <img> text",
+              "why": "fixed in iter3 by mirroring the live <noscript> byte order"
+            },
+            {
+              "probe": "chrome-parity",
+              "flag": "text widths \u00b12\u20138px (header nav, divisions, footer links)",
+              "why": "font substitution \u2014 licensed Univers not rehosted",
+              "permanent": true
+            }
+          ],
+          "residuals": [
+            {
+              "region": "footer",
+              "pct": 3.94,
+              "cause": "font-substitution: per-word width variance (Accessibility \u22126px \u2026 cumulative \u0394x \u2264 8px); row total within 0.7%",
+              "texture": {
+                "thickPct": 54.4
+              },
+              "flaggedFor": "user"
+            },
+            {
+              "band": "y 500\u20132500",
+              "pct": 5.0,
+              "cause": "font-substitution glyph shapes in body copy (no wrap mismatches: 0/36 blocks differ)",
+              "flaggedFor": "user"
+            }
+          ]
+        },
+        "360": {
+          "iterations": 3,
+          "result": {
+            "structuralRed": 0,
+            "visualFlags": "none",
+            "pixelPct": 9.77,
+            "heightDelta": 30,
+            "chromeHeaderPct": 0.0,
+            "chromeFooterPct": 8.34,
+            "pass": false,
+            "passNote": "content, visual, pixel (\u226410%) and header-chrome pass; height \u0394 30px > 8px; footer chrome 8.34%"
+          },
+          "justified": [
+            {
+              "probe": "content",
+              "flag": "\ud83d\udfe1 noscript img attribute order",
+              "why": "fixed in iter3 (alt-before-src mirrored)"
+            }
+          ],
+          "residuals": [
+            {
+              "region": "page height",
+              "px": 30,
+              "cause": "font-substitution: 18px body wraps differ on 6 of 36 text blocks in the gate browser; sweep of regular size-adjust 99.0\u2013100.3% has no zero-mismatch value (99.6% \u2192 \u221230px, 100.0% \u2192 +43px)",
+              "evidence": "stardust/.work/replica/probe-sweep.mjs output",
+              "flaggedFor": "user"
+            },
+            {
+              "region": "footer",
+              "pct": 8.34,
+              "cause": "offset by the 30px height residual + substitute glyph widths",
+              "flaggedFor": "user"
+            }
+          ]
+        }
+      },
+      "interactions": {
+        "evidence": "stardust/replica/motion/article.json",
+        "observed": [
+          "hover .share-actions__item a \u2192 background #de0011 (0.3s)",
+          "hover .primary-nav__link \u2192 background #d7d8d6",
+          "hover .text a \u2192 color #de0011",
+          "class header--cookie-dissabled added on scroll (no visual change)"
+        ],
+        "implemented": [
+          "share hover",
+          "primary-nav hover",
+          "body-link hover"
+        ],
+        "dead": [
+          "header--cookie-dissabled (no rendered effect)"
+        ],
+        "headerMorph": "none \u2014 fixed 91px (desktop) / 49px (\u2264959) at every scroll position",
+        "pixelReverify": "3.71% / 9.77% unchanged after interaction CSS"
+      },
+      "captureState": [
+        {
+          "what": "live link markup carried tabindex=-1 aria-hidden=true from the open consent dialog in the crawl",
+          "handling": "dropped in prototype (capture-state, not content)"
+        }
+      ],
+      "instrumentNotes": [
+        "Browser-tool Chromium renders live at 4772px @360; gate Chromium (bundled) renders 4802px \u2014 gate browser is authoritative; calibration redone there"
+      ],
+      "status": "approved \u2014 residuals accepted by user pending licensed font",
+      "approvedAt": "2026-10-01T14:23:32Z",
+      "approvedBy": "user"
+    },
+    {
+      "pageType": "landing",
+      "archetype": "index",
+      "prototype": "stardust/prototypes/index-proposed.html",
+      "css": [
+        "stardust/prototypes/canon.css",
+        "stardust/prototypes/home.css"
+      ],
+      "js": [
+        "stardust/prototypes/home.js"
+      ],
+      "canonChanges": [
+        "page-description (default + tertiary) moved to canon",
+        ".text editorial base (+h2) moved to canon",
+        "thin face added; medium size-adjust 102.5\u2192102.1%",
+        "icons: chevron, play, pause"
+      ],
+      "canonRegression": "A1 re-gated after canon changes: 3.71% / 9.77%, \u0394 \u22121 / +30 \u2014 identical to approved values",
+      "breakpoints": {
+        "1440": {
+          "iterations": 3,
+          "result": {
+            "structuralRed": 0,
+            "contentFindings": "none",
+            "visualFlags": "none",
+            "pixelPct": 1.72,
+            "heightDelta": 0,
+            "chromeHeaderPct": 1.81,
+            "chromeFooterPct": 3.94,
+            "pass": false,
+            "passNote": "all bars pass except footer chrome band (same canon footer as A1; accepted font-substitution class)"
+          },
+          "residuals": [
+            {
+              "region": "footer",
+              "pct": 3.94,
+              "cause": "font-substitution (identical to A1 accepted residual)",
+              "flaggedFor": "user",
+              "accepted": true
+            }
+          ],
+          "justified": [
+            {
+              "probe": "chrome-parity",
+              "flag": "text widths \u00b12\u20137px",
+              "why": "font substitution",
+              "permanent": true
+            }
+          ]
+        },
+        "360": {
+          "iterations": 3,
+          "result": {
+            "structuralRed": 0,
+            "contentFindings": "none",
+            "visualFlags": "none",
+            "pixelPct": 4.48,
+            "heightDelta": 1,
+            "chromeHeaderPct": 0.0,
+            "chromeFooterPct": 8.55,
+            "pass": false,
+            "passNote": "all bars pass except footer chrome band (accepted font-substitution class)"
+          },
+          "residuals": [
+            {
+              "region": "footer",
+              "pct": 8.55,
+              "cause": "font-substitution (as A1)",
+              "flaggedFor": "user",
+              "accepted": true
+            },
+            {
+              "region": "y 150\u2013235",
+              "px": 1,
+              "cause": "share bar inline-block line box 67 vs 68px (substitute strut metrics); systematic on all pages",
+              "flaggedFor": "user"
+            }
+          ]
+        }
+      },
+      "iterationLog": [
+        "iter1 map: 6-6 text margin override removed (\u221220px), card heading icon line box (+3px/card at 360)",
+        "iter2: 1.72% / 4.48%; noscript fallbacks mirrored; cinemagraph state machine aligned to live (inactive <780, server-default label)",
+        "iter3: card title hover (measured) added; content-diff none at both widths"
+      ],
+      "interactions": {
+        "evidence": [
+          "stardust/replica/motion/home.json",
+          "stardust/replica/motion/home-card-span.json",
+          "stardust/.work/replica/probe-hover.mjs"
+        ],
+        "observed": [
+          "cinemagraph toggle click: cinemagraph--paused + icon-play/icon-pause swap",
+          "hover .long-form-promo__heading \u2192 title span underline gradient 0.15em",
+          "hover .primary-nav__link \u2192 #d7d8d6",
+          "hover share \u2192 #de0011",
+          "header--cookie-dissabled on scroll (no visual effect)"
+        ],
+        "implemented": [
+          "cinemagraph state machine (home.js)",
+          "card title underline",
+          "nav + share hovers (canon)"
+        ],
+        "dead": [
+          "header--cookie-dissabled",
+          "inline-image hover: none fired"
+        ]
+      },
+      "captureState": [
+        {
+          "what": "cinemagraph video frozen at t=0 by stitch-shot on both sides (same mp4)",
+          "where": "cinemagraph"
+        }
+      ],
+      "status": "approved \u2014 footer font residual accepted",
+      "approvedAt": "2026-10-01T14:57:37Z",
+      "approvedBy": "user"
+    },
+    {
+      "pageType": "listing",
+      "archetype": "news-and-media",
+      "prototype": "stardust/prototypes/news-and-media-proposed.html",
+      "css": [
+        "stardust/prototypes/canon.css",
+        "stardust/prototypes/news.css"
+      ],
+      "js": [
+        "stardust/prototypes/news.js"
+      ],
+      "content": {
+        "archiveRows": 323,
+        "years": 7,
+        "months": 80,
+        "pdfRows": 13,
+        "plainRows": 5,
+        "source": "stardust/.work/replica/a3-archive.json (parsed from current/pages/news-and-media.html)"
+      },
+      "canonChanges": [
+        "long-form-promo module (+meta/date) moved from home.css to canon",
+        ".text base margin-bottom 20px (was .text--editorial only)",
+        "medium size-adjust 102.1\u2192103.3%",
+        ".text a:hover underline gradient turns red (measured on A1 + A3 live)"
+      ],
+      "canonRegression": "A1 3.71%/9.77% (\u0394\u22121/+30) identical; A2 1.72%/4.44% (\u03940/+1) \u2014 unchanged or better",
+      "breakpoints": {
+        "1440": {
+          "iterations": 4,
+          "overCap": true,
+          "result": {
+            "structuralRed": 0,
+            "contentFindings": "none",
+            "visualFlags": "none",
+            "pixelPct": 2.0,
+            "heightDelta": 0,
+            "chromeHeaderPct": 1.85,
+            "chromeFooterPct": 3.94,
+            "pass": false,
+            "passNote": "all bars pass except footer chrome (accepted font class)"
+          },
+          "residuals": [
+            {
+              "region": "footer",
+              "pct": 3.94,
+              "cause": "font-substitution (as A1/A2, accepted)",
+              "flaggedFor": "user",
+              "accepted": true
+            }
+          ]
+        },
+        "360": {
+          "iterations": 4,
+          "overCap": true,
+          "result": {
+            "structuralRed": 0,
+            "contentFindings": "none",
+            "visualFlags": "none",
+            "pixelPct": 6.23,
+            "heightDelta": 2,
+            "chromeHeaderPct": 0.0,
+            "chromeFooterPct": 8.01,
+            "pass": false,
+            "passNote": "all bars pass except footer chrome (accepted font class)"
+          },
+          "residuals": [
+            {
+              "region": "footer",
+              "pct": 8.01,
+              "cause": "font-substitution (accepted class)",
+              "flaggedFor": "user",
+              "accepted": true
+            },
+            {
+              "region": "sidebar <br> lines",
+              "px": 4,
+              "cause": "substitute strut: standalone <br> line boxes 21px vs 22px (\u00d74)",
+              "flaggedFor": "user"
+            }
+          ]
+        }
+      },
+      "compensations": [
+        {
+          "what": ".accordion__heading button min-height 73.43px / 60.17px",
+          "why": "substitute strut renders the middle-aligned label line 73/60px; values lifted from live; harmless once the licensed font is installed"
+        }
+      ],
+      "iterationLog": [
+        "iter1: 1440 3.51% \u03943; 360 13.71% \u039441 \u2014 accordion pitch, sidebar p.text margin, one card title wrap (medium weight)",
+        "iter2: medium size-adjust swept (103.3%), accordion min-height, .text mb20 \u2192 1440 2.12% \u03940; 360 9.68% \u039417",
+        "iter3: p.text specificity \u2192 360 overshoot \u0394\u221218 (last sidebar p has no bottom margin)",
+        "iter4 (OVER CAP, user-visible): content-parity fixes required for 0 structural red \u2014 download link whitespace (12 \ud83d\udd34), inline <style> text, noscript hash \u2014 plus diagnosed last-child margin \u2192 1440 2.00% \u03940; 360 6.23% \u03942; content-diff none"
+      ],
+      "interactions": {
+        "evidence": [
+          "stardust/replica/motion/news.json",
+          "stardust/.work/replica/probe-hover.mjs"
+        ],
+        "observed": [
+          "accordion click \u2192 accordion__item--active, background transition 0.2s; multiple items may be open (data-toggle=false)",
+          "accordion heading hover \u2192 #ededed",
+          "archive row hover \u2192 title underline",
+          "body/sidebar link hover \u2192 red text + red underline gradient"
+        ],
+        "implemented": [
+          "accordion state machine (news.js)",
+          "all four hovers"
+        ],
+        "dead": [
+          "header--cookie-dissabled"
+        ]
+      },
+      "status": "approved \u2014 footer font residual accepted; 4th iteration acknowledged",
+      "approvedAt": "2026-10-01T15:31:12Z",
+      "approvedBy": "user"
+    },
+    {
+      "pageType": "static",
+      "archetype": "hsbc-uk-inclusion",
+      "variants": {
+        "legal": "accessibility"
+      },
+      "prototype": [
+        "stardust/prototypes/hsbc-uk-inclusion-proposed.html",
+        "stardust/prototypes/accessibility-proposed.html"
+      ],
+      "css": [
+        "stardust/prototypes/canon.css",
+        "stardust/prototypes/content.css"
+      ],
+      "generator": "stardust/.work/replica/gen-content.py (attribute-allowlist re-serializer; reused for siblings)",
+      "canonChanges": [
+        ".text h2 58px top margin unless first child (replaces A2 dropcap-only rule)",
+        ".page-description clearfix (rect parity, pixels unchanged)"
+      ],
+      "canonRegression": "A1 3.71%/9.77%, A2 1.72%/4.44%, A3 2.00%/6.23% \u2014 unchanged",
+      "breakpoints": {
+        "inclusion-1440": {
+          "iterations": 3,
+          "result": {
+            "structuralRed": 0,
+            "contentFindings": "none",
+            "visualFlags": "none",
+            "pixelPct": 3.58,
+            "heightDelta": 0,
+            "chromeHeaderPct": 1.83,
+            "chromeFooterPct": 3.94,
+            "pass": false,
+            "passNote": "all bars pass except footer chrome (accepted font class)"
+          }
+        },
+        "inclusion-360": {
+          "iterations": 3,
+          "result": {
+            "structuralRed": 0,
+            "contentFindings": "none",
+            "visualFlags": "none",
+            "pixelPct": 8.09,
+            "heightDelta": 24,
+            "chromeHeaderPct": 0.0,
+            "chromeFooterPct": 8.01,
+            "pass": false,
+            "passNote": "height \u039424 (one partner paragraph wraps one line shorter \u2014 font substitution) + footer chrome"
+          },
+          "residuals": [
+            {
+              "region": "partners list (Working with others\u2026)",
+              "px": 24,
+              "cause": "font-substitution: 18px regular wrap",
+              "flaggedFor": "user"
+            }
+          ]
+        },
+        "legal-1440": {
+          "iterations": 2,
+          "result": {
+            "structuralRed": 0,
+            "contentFindings": "none",
+            "visualFlags": "none",
+            "pixelPct": 2.6,
+            "heightDelta": 0,
+            "chromeHeaderPct": 1.81,
+            "chromeFooterPct": 3.94,
+            "pass": false,
+            "passNote": "all bars pass except footer chrome (accepted font class)"
+          }
+        },
+        "legal-360": {
+          "iterations": 2,
+          "result": {
+            "structuralRed": 0,
+            "contentFindings": "none",
+            "visualFlags": "none",
+            "pixelPct": 6.99,
+            "heightDelta": 0,
+            "pass": false,
+            "passNote": "all bars pass except footer chrome (accepted font class)"
+          }
+        }
+      },
+      "iterationLog": [
+        "inclusion iter1: 1440 \u039482 (empty page__mask div defeated the last-container margin) / 360 \u0394106",
+        "inclusion iter2: page__mask dropped \u2192 1440 3.58% \u03940; 360 8.09% \u039424 (font wrap)",
+        "inclusion iter3: noscript entity escaping \u2192 content none both",
+        "legal iter1: \u039443 both \u2014 .text h2 58px top margin (general rule)",
+        "legal iter2: 2.60% / 6.99%, \u03940, content none both"
+      ],
+      "interactions": {
+        "evidence": [
+          "stardust/replica/motion/content.json",
+          "probe-hover.mjs"
+        ],
+        "observed": [
+          "no-image card title hover \u2192 underline",
+          "sidebar image link hover \u2192 red text, no underline (inline style background-image:none)",
+          "body links \u2192 canon hover"
+        ],
+        "implemented": [
+          "all (canon + content.css)"
+        ],
+        "dead": [
+          "header--cookie-dissabled"
+        ]
+      },
+      "notCoveredYet": [
+        "cookie-notice inline tables + \"manage cookies\" button (sibling tier; consent decision pending)",
+        "postcode-lending-data layout--6-3-3",
+        "working-with-fintechs"
+      ],
+      "status": "approved \u2014 font residuals accepted",
+      "approvedAt": "2026-10-01T16:14:07Z",
+      "approvedBy": "user"
+    },
+    {
+      "pageType": "unique-profile",
+      "archetype": "history-timeline",
+      "variants": {
+        "names-only": "management-team"
+      },
+      "prototype": [
+        "stardust/prototypes/history-timeline-proposed.html",
+        "stardust/prototypes/management-team-proposed.html"
+      ],
+      "css": [
+        "stardust/prototypes/canon.css",
+        "stardust/prototypes/profile.css"
+      ],
+      "canonChanges": [
+        ".text p:last-child margin-bottom 0 (measured on 4 live pages) + accordion exception 15px; removed A2 6-6-only rule"
+      ],
+      "canonRegression": "A1 3.71%/9.77%, A2 1.72%/4.44%, A3 2.00%/6.23%, A4 3.58%/8.09% + legal 2.60%/6.99% \u2014 unchanged",
+      "breakpoints": {
+        "timeline-1440": {
+          "iterations": 2,
+          "result": {
+            "structuralRed": 0,
+            "contentFindings": "none",
+            "visualFlags": "none",
+            "pixelPct": 1.79,
+            "heightDelta": 0,
+            "chromeHeaderPct": 1.87,
+            "chromeFooterPct": 3.94,
+            "pass": false,
+            "passNote": "all bars pass except footer chrome (accepted font class)"
+          }
+        },
+        "timeline-360": {
+          "iterations": 2,
+          "result": {
+            "structuralRed": 0,
+            "contentFindings": "none",
+            "visualFlags": "none",
+            "pixelPct": 7.52,
+            "heightDelta": 72,
+            "pass": false,
+            "passNote": "height \u039472: three entries (rows 10, 12, 16) wrap one line shorter \u2014 font substitution; footer chrome"
+          },
+          "residuals": [
+            {
+              "region": "timeline rows 10/12/16 body text",
+              "px": 72,
+              "cause": "font-substitution: 18px regular wraps; regular re-sweep could not fix without breaking A1",
+              "flaggedFor": "user"
+            }
+          ]
+        },
+        "mgmt-1440": {
+          "iterations": 1,
+          "result": {
+            "structuralRed": 0,
+            "contentFindings": "none",
+            "visualFlags": "none",
+            "pixelPct": 0.79,
+            "heightDelta": 0,
+            "pass": false,
+            "passNote": "footer chrome only (accepted)"
+          }
+        },
+        "mgmt-360": {
+          "iterations": 1,
+          "result": {
+            "structuralRed": 0,
+            "contentFindings": "none",
+            "visualFlags": "none",
+            "pixelPct": 3.7,
+            "heightDelta": 0,
+            "chromeHeaderPct": 0.0,
+            "chromeFooterPct": 7.62,
+            "pass": false,
+            "passNote": "footer chrome only (accepted)"
+          }
+        }
+      },
+      "iterationLog": [
+        "timeline iter1: 1440 \u0394\u221282 (+5px per row: last paragraph margin) / 360 \u0394\u221223",
+        "timeline iter2: .text p:last-child 0 (general rule) \u2192 1440 1.79% \u03940; 360 7.52% \u039472 (font wraps)",
+        "mgmt iter1: 0.79% / 3.70%, \u03940, content none"
+      ],
+      "captureState": [
+        {
+          "what": "exec-bio__text inline height/transition written by the live collapser JS",
+          "handling": "dropped; all entries render --view-all (no \"more\" controls on live)"
+        }
+      ],
+      "interactions": {
+        "evidence": "stardust/replica/motion/profile.json",
+        "observed": [
+          "no hover or animation on rows/images"
+        ],
+        "implemented": [],
+        "dead": [
+          "header--cookie-dissabled"
+        ]
+      },
+      "status": "approved \u2014 font residuals accepted",
+      "approvedAt": "2026-10-02T08:38:11Z",
+      "approvedBy": "user"
+    },
+    {
+      "pageType": "unique-library",
+      "archetype": "hsbc-uk-regulated-covered-bond-programme",
+      "prototype": "stardust/prototypes/hsbc-uk-regulated-covered-bond-programme-proposed.html",
+      "css": [
+        "canon.css",
+        "news.css",
+        "bond.css"
+      ],
+      "js": [
+        "news.js",
+        "bond.js"
+      ],
+      "gateBehaviour": {
+        "evidence": "stardust/.work/replica/a6-gate.json (live) vs a6-gate-proto.json",
+        "observed": "opens on load (html.no-scroll); Accept disabled until checkbox; Accept \u2192 closes + cookie \"/hsbc-uk/regulated-covered-bond-programme\" for 90 days, gate markup absent on later visits; Decline and \u00d7 \u2192 data-return-url /hsbc-uk (301 \u2192 /); Accept without tick \u2192 no-op",
+        "implemented": "bond.js \u2014 identical state machine; prototype pins the cookie name via data-gate-path because it is served from another path"
+      },
+      "canonChanges": [
+        "news.css: .tabular-list__title line-height 1 (substitute-bold line-box compensation)",
+        "news.css: container-query list margin 30px now wins inside accordions (fixes A3 open state)"
+      ],
+      "canonRegression": "all 8 gated pages re-run at both widths \u2014 unchanged",
+      "breakpoints": {
+        "1440": {
+          "iterations": 2,
+          "result": {
+            "structuralRed": 0,
+            "contentFindings": "none",
+            "visualFlags": "none",
+            "pixelPct": 1.81,
+            "heightDelta": 0,
+            "chromeHeaderPct": 1.83,
+            "chromeFooterPct": 3.94,
+            "pass": false,
+            "passNote": "all bars pass except footer chrome (accepted font class)"
+          }
+        },
+        "360": {
+          "iterations": 2,
+          "result": {
+            "structuralRed": 0,
+            "contentFindings": "none",
+            "visualFlags": "none",
+            "pixelPct": 5.2,
+            "heightDelta": 0,
+            "chromeHeaderPct": 0.0,
+            "pass": false,
+            "passNote": "footer chrome only (accepted)"
+          }
+        }
+      },
+      "stateChecks": {
+        "method": "stardust/.work/replica/probe-stateshot.mjs \u2014 symmetric click sequence + full-page/viewport capture both sides (stitch-shot cannot drive the live jQuery accordion)",
+        "opened(prospectus+investor reports+2026)-1440": {
+          "pixelPct": 1.76,
+          "heightDelta": 0
+        },
+        "opened-360": {
+          "pixelPct": 4.78,
+          "heightDelta": 2
+        },
+        "gate-open-1440": {
+          "pixelPct": 3.36
+        },
+        "gate-checked-1440": {
+          "pixelPct": 2.91
+        },
+        "gate-open-360": {
+          "pixelPct": 10.1,
+          "residual": "heading \"Regulated Covered Bond Programme\" hard-breaks one character later (word-break: break-all, substitute thin face wider at 35px) \u2014 everything below shifts one line; font-substitution"
+        },
+        "gate-checked-360": {
+          "pixelPct": 13.92,
+          "residual": "same one-line shift as gate-open-360"
+        },
+        "A3-archive-opened-1440": {
+          "pixelPct": 2.13,
+          "heightDelta": 0
+        },
+        "A3-archive-opened-360": {
+          "pixelPct": 7.85,
+          "heightDelta": 21,
+          "residual": "font wraps"
+        }
+      },
+      "iterationLog": [
+        "iter1: 1440 1.81% \u03940; 360 \u0394\u2212431 (closed gate panel not parked off-screen)",
+        "iter2: live base rule (\u2212999999px) mirrored \u2192 360 5.20% \u03940; content none both",
+        "state work: icons mapped by context; bold-title line box; li-row \u22123px mobile margin; Accept specificity; accepted gate removed from DOM"
+      ],
+      "interactions": {
+        "observed": [
+          "outer + nested accordions (multi-open, --active, \u2304/\u02f0)",
+          "heading hover #ededed (outer); nested heading \u2014 no hover change",
+          "gate: checkbox tick (border #404040, teal \u2714), Accept enabled #de0011 \u2192 hover #b1000e, Decline hover underline"
+        ],
+        "implemented": [
+          "all"
+        ]
+      },
+      "status": "approved \u2014 font residuals accepted",
+      "approvedAt": "2026-10-02T09:31:14Z",
+      "approvedBy": "user"
+    }
+  ]
+}

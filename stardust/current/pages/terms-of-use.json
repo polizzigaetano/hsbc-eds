@@ -1,0 +1,251 @@
+{
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-10-01T13:07:43.720Z",
+    "waitMode": "medium",
+    "waitMs": 2500,
+    "httpStatus": 200
+  },
+  "slug": "terms-of-use",
+  "url": "https://www.about.hsbc.co.uk/terms-of-use",
+  "renderedBy": "playwright",
+  "fetchedAt": "2026-10-01T13:07:43.720Z",
+  "finalUrl": "https://www.about.hsbc.co.uk/terms-of-use",
+  "title": "Terms of use - About HSBC | HSBC in the UK",
+  "description": "Find out more about the legal information, and terms of use, of the HBSC website in the UK. By accessing the site, you are agreeing to the terms.",
+  "og": {
+    "title": null,
+    "description": null,
+    "image": null,
+    "type": null
+  },
+  "headings": [
+    {
+      "tag": "h1",
+      "text": "Terms of use"
+    },
+    {
+      "tag": "h2",
+      "text": "In these provisions:"
+    },
+    {
+      "tag": "h2",
+      "text": "Site terms"
+    },
+    {
+      "tag": "h2",
+      "text": "Privacy"
+    },
+    {
+      "tag": "h2",
+      "text": "Information not recommendation"
+    },
+    {
+      "tag": "h2",
+      "text": "Users of the site"
+    },
+    {
+      "tag": "h2",
+      "text": "No warranties"
+    },
+    {
+      "tag": "h2",
+      "text": "Third party sites and endorsements"
+    },
+    {
+      "tag": "h2",
+      "text": "Trademarks and copyright"
+    },
+    {
+      "tag": "h2",
+      "text": "Internet e-mail"
+    },
+    {
+      "tag": "h2",
+      "text": "Social media"
+    },
+    {
+      "tag": "h3",
+      "text": "X"
+    },
+    {
+      "tag": "h3",
+      "text": "Facebook"
+    },
+    {
+      "tag": "h3",
+      "text": "YouTube"
+    },
+    {
+      "tag": "h2",
+      "text": "Governing law"
+    },
+    {
+      "tag": "h2",
+      "text": "Your queries"
+    },
+    {
+      "tag": "h2",
+      "text": "Cookies on this website"
+    }
+  ],
+  "body": [
+    "This document sets out the Terms of use ('Terms') of hsbc.co.uk and any sub-domain e.g about.hsbc.co.uk (the 'Site'). This Site is operated by HSBC UK Bank plc, which is owned by HSBC Holdings plc. By accessing this Site, you agree to be bound by the Terms. Before using this Site, you should read the Terms carefully, as well as our Cookie Policy ('Cookie Policy').",
+    "HSBC UK Bank plc is authorised by the Prudential Regulation Authority and regulated by the Financial Conduct Authority and the Prudential Regulation Authority. It is listed with the registration number 765112. HSBC UK Bank plc is a company incorporated under the laws of England and Wales with company registration number 09928412 and its registered office at 1 Centenary Square, Birmingham, B1 1HQ, United Kingdom. HSBC UK Bank plc’s registered VAT Number is GB 365684514.",
+    "HSBC UK Bank plc is a member of the Financial Ombudsman Scheme and adheres to the Lending Code. More detail about this is available on the Lending Standards Board website Opens in new window",
+    "For information about accounts and other products you can refer to the Money Advice Service Opens in new window and the Financial Conduct Authority (FCA)'s Opens in new window website.",
+    "'Content' means all pages, screens, information and materials included in or accessible through this Site (including any content available on any email or SMS services)",
+    "'you', 'your' and 'yours' means you, the person(s) accessing this Site and the party on whose behalf you are doing so",
+    "'we', 'us' and 'our' means HSBC UK Bank plc",
+    "'HSBC Group' means HSBC Holdings plc, its subsidiaries and associated companies from time to time",
+    "These Terms cover your use of this Site. All products and services provided by members of the HSBC Group have their own terms and conditions (the 'Product Terms'). You must read both the Product Terms and these Terms. To the extent that the Product Terms conflict with these Terms then the Product Terms will prevail.",
+    "Information or opinions contained on this Site do not constitute an offer to sell or a solicitation, or offer to buy, any securities or financial instruments or investment advice or any advice or recommendation in respect of such securities or other financial instruments.",
+    "Should you seek to rely in any way whatsoever upon any content contained on this Site, you do so at your own risk.",
+    "Before you make any decision or take any action that might affect you or your personal finances or business, you should always consult a suitably qualified professional adviser(s) to obtain appropriate financial, legal, accounting, tax and other advice.",
+    "The Site is currently intended for those who access it from within the United Kingdom. Because of this we cannot guarantee that the Site or the information thereon complies with law or regulation, or is appropriate for use, in other places.",
+    "You are wholly responsible for use of the Site by any person using your computer and you must ensure that any such person complies with these Terms.",
+    "Products or services on this Site do not constitute an offer or recommendation of any products or services provided by any of the HSBC Group members. The information provided on this Site is not intended for distribution to, or use by, any person in any jurisdiction where such distribution or use would be contrary to law or regulation. This Site should not be considered as communicating any invitation or inducement to engage in banking or investment activity or any offer to buy or sell any securities or other instruments outside Authorised Countries which are any jurisdictions where HSBC UK Bank plc is licensed or authorised to perform such activities.",
+    "Not all the products and services that you may be able to view via this Site may be available in all geographical locations served by HSBC Group members. You should access only the local site(s) associated with your country of residence (“Your Local Site”). If you own products that are not discussed on Your Local Site, information about such products may be accessible on another HSBC website. Products and services discussed outside Your Local Site may not be available in your jurisdiction of residence or in the Authorised Countries and may not be appropriate for you. Your use of this Site is subject to the applicable laws and regulations of any relevant jurisdiction. HSBC Group members may decline to provide you with products and services subject to status.",
+    "Products discussed on this Site may not have been registered or authorised by any central bank, governmental or regulatory authority in the Authorised Countries or in the country of your residence. Accordingly, you may not have the benefit of protection from the securities laws, banking laws and other relevant laws and regulations of your country of residence with respect to products or services referred to on or through this Site.",
+    "No representation is given that any securities, products, or services discussed in or accessible through this Site are suitable for you or any particular person. You acknowledge that your use of this Site and any requests for information you have made as a result of visiting this Site are not the result of an offer made by HSBC UK Bank plc or any of its affiliates and that the provision of any information through this Site shall not constitute or be considered investment or financial advice.",
+    "The following clauses exclude or limit our legal liability for the Site. You should read them carefully. They all apply only as far as the law permits, and in particular we do not exclude or restrict our duties and liabilities to you under the Financial Services and Markets Act 2000 (the \"Act\"), or the rules of the FCA for the conduct of business.",
+    "While we have taken reasonable steps to ensure the accuracy, currency, availability correctness and completeness of the information contained on the Site, information is provided on an \"as is\", \"as available\" basis and we do not give or make any warranty or representation of any kind, whether express or implied. The use of the Site is at your sole risk. We shall not be liable for any loss or damage whatsoever and howsoever arising as a result of your use of or reliance on the information contained on the Site to the maximum extent permitted by law.",
+    "We do not represent or warrant that the Site will be available and meet your requirements, that access will be uninterrupted, that there will be no delays, failures, errors or omissions or loss of transmitted information, that no viruses or other contaminating or destructive properties will be transmitted or that no damage will occur to your computer system. You have sole responsibility for adequate protection and back up of data and/or equipment and for undertaking reasonable and appropriate precautions to scan for computer viruses or other destructive properties.",
+    "We make no representations or warranties regarding the accuracy, functionality or performance of any third party software that may be used in connection with the Site.",
+    "Where we provide hypertext links to other locations on the Internet, we do so for information purposes only. We are not responsible for the content of any other websites or pages linked from or linking to this Site. We have not verified the content of any such websites. Following links to any other websites or pages shall be at your own risk and we shall not be responsible or liable for any damages or in other way in connection with linking. Links to downloadable software sites are for convenience only and we are not responsible or liable for any difficulties or consequences associated with downloading the software. Use of any downloaded software is governed by the terms of the license agreement, if any, which accompanies or is provided with the software.",
+    "No endorsement or approval of any third parties or their advice, opinions, information, products or services is expressed or implied by any information on our Site.",
+    "Copyright in the pages screens, information and material in their arrangement included in this Site is owned by or licensed to HSBC UK Bank plc unless otherwise noted. You may imprint, copy, download or temporarily store extracts from our Site for your personal information or when you use our products and services. You must not alter anything. Any other use is prohibited unless you first get our written permission. In particular no one may use a part of our Site on any other website, or link any other website to our Site, without our prior written permission.",
+    "Messages sent over the Internet cannot be guaranteed to be completely secure as they are subject to possible interception or loss or possible alteration. We are not responsible for them and will not be liable to you or anyone else for any damages or otherwise in connection with any message sent by you to the Bank or any message sent by the Bank to you over the Internet.",
+    "HSBC operates channels, pages and accounts on some social media sites to inform, assist and engage with customers. Unless stated otherwise, these are intended for UK customers. We monitor and record comments and posts made on these channels about HSBC so that we can improve our services.",
+    "HSBC is not responsible for any information posted on those sites other than information we have posted ourselves. We do not endorse the social media sites themselves, or any information posted on them by third parties or other users.",
+    "HSBC doesn't give investment, tax or other professional advice via social media sites. You should always seek independent advice before making such decisions.",
+    "When you engage with HSBC via social media your personal data may be stored on that social media site's servers, which are outside the control of HSBC and may be in the US or elsewhere outside the EU. Any information posted to such sites may be accessed and read by the general public. It is not an appropriate forum to discuss customers' products or financial arrangements. HSBC will not ask you to share personal, account or security information via social media sites, and you should not post such information on those channels.",
+    "HSBC regularly updates and monitors our social media accounts and welcomes feedback and ideas submitted via these channels. HSBC endeavours to join the conversation whenever possible, however cannot guarantee to read or reply to all messages sent to official HSBC social media accounts.",
+    "Emerging themes and helpful suggestions are passed to the relevant people within HSBC for consideration, but no guarantee is made that any proposals will be acted upon.",
+    "HSBC operates the following official social media pages in the UK:",
+    "@HSBC_UK Opens in new window",
+    "If any of the HSBC streams above follow another user then this does not imply endorsement of any kind.",
+    "HSBC UK Opens in new window",
+    "HSBC UK Opens in new window",
+    "Please visit our social media pages for the full terms of use for those channels.",
+    "The Terms are governed by and interpreted in accordance with the laws of England and Wales and the courts of the above jurisdiction will have non-exclusive jurisdiction in respect of any dispute, which may arise.",
+    "If you wish to contact HSBC UK Bank plc, please refer to the Contact and Support Opens in new window link which can be found on each page of the site."
+  ],
+  "codeBlocks": [],
+  "ctas": [
+    {
+      "label": "Cookie Notice",
+      "href": "https://www.about.hsbc.co.uk/cookie-notice"
+    }
+  ],
+  "links": [
+    "https://www.about.hsbc.co.uk/terms-of-use#",
+    "https://www.about.hsbc.co.uk/terms-of-use#nav-tray-sub-view-1",
+    "https://www.about.hsbc.co.uk/terms-of-use#nav-tray-sub-view-2",
+    "https://www.about.hsbc.co.uk/terms-of-use#nav-tray-sub-view-3",
+    "https://www.about.hsbc.co.uk/terms-of-use#nav-tray-sub-view-4",
+    "https://www.hsbc.co.uk/",
+    "https://www.business.hsbc.uk/en-gb",
+    "https://www.about.hsbc.co.uk/hsbc-uk",
+    "https://www.about.hsbc.co.uk/hsbc-uk/postcode-lending-data",
+    "https://www.about.hsbc.co.uk/hsbc-uk/inclusion",
+    "https://www.about.hsbc.co.uk/hsbc-uk/working-with-fintechs",
+    "https://www.about.hsbc.co.uk/hsbc-uk/regulated-covered-bond-programme",
+    "https://www.about.hsbc.co.uk/news-and-media",
+    "https://www.about.hsbc.co.uk/management-team",
+    "https://www.about.hsbc.co.uk/history-timeline",
+    "https://www.about.hsbc.co.uk/terms-of-use#page",
+    "https://www.about.hsbc.co.uk/",
+    "https://www.about.hsbc.co.uk/cookie-policy",
+    "http://www.lendingstandardsboard.org.uk/",
+    "https://www.moneyadviceservice.org.uk/en",
+    "http://www.fca.org.uk/",
+    "https://www.about.hsbc.co.uk/privacy-notice",
+    "https://www.twitter.com/hsbc_uk",
+    "https://www.facebook.com/HSBCUK/",
+    "https://www.youtube.com/user/hsbcuk",
+    "https://www.hsbc.co.uk/help/",
+    "https://www.about.hsbc.co.uk/accessibility",
+    "https://www.about.hsbc.co.uk/terms-of-use",
+    "https://www.about.hsbc.co.uk/cookie-notice"
+  ],
+  "media": {
+    "imgs": [
+      {
+        "src": "https://www.about.hsbc.co.uk/-/media/pws171/Logos/HSBC-logo.svg",
+        "alt": "HSBC",
+        "w": 125,
+        "h": 24
+      },
+      {
+        "src": "https://www.about.hsbc.co.uk/-/media/pws171/Logos/HSBC-logo.svg",
+        "alt": "HSBC",
+        "w": 125,
+        "h": 24
+      }
+    ],
+    "allImgCount": 2,
+    "cssBackgrounds": [],
+    "modals": [
+      "Cookies on this websiteWe use cookies to help keep our website and services working properly. These cookies are necessary and set automatically.We'd also like to use some optional cookies that:Make your visit more personalImprove our website based on how you use itSupport our marketingYou can either 'Accept' or 'Decline' these cookies or choose what cookies to accept in 'Manage cookies'.To learn more about how we use cookies, visit our Cookie Notice."
+    ],
+    "videos": [],
+    "iframes": []
+  },
+  "customProps": {},
+  "_signals": {
+    "filteredInterstitials": 1,
+    "distinctHeadings": 17,
+    "mainTextLen": 11599,
+    "realImageCount": 2,
+    "trackingOnlyMedia": false,
+    "spaShellSuspect": false,
+    "screenshotMode": "fullPage"
+  },
+  "dynamic": {
+    "endpoints": [
+      {
+        "method": "GET",
+        "host": "akamai.tiqcdn.com",
+        "path": "/location/location.js",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/x-javascript",
+        "status": 200,
+        "bytes": 18,
+        "hits": 1,
+        "example": "https://akamai.tiqcdn.com/location/location.js",
+        "sameSite": false
+      }
+    ],
+    "thirdPartyScriptHosts": [
+      {
+        "host": "tags.tiqcdn.com",
+        "count": 2
+      },
+      {
+        "host": "sadmin.brightcove.com",
+        "count": 1
+      }
+    ],
+    "truncated": false,
+    "inlineData": [],
+    "globalState": [],
+    "frameworkHints": [],
+    "forms": [],
+    "ariaLiveRegions": 0,
+    "triggers": [],
+    "mediaIds": [],
+    "summary": {
+      "sameSiteEndpoints": 0,
+      "thirdPartyEndpoints": 1,
+      "thirdPartyScriptHosts": 2,
+      "inlineDataBlobs": 0,
+      "forms": 0,
+      "searchForms": 0,
+      "hydrated": false
+    }
+  },
+  "screenshot": "assets/screenshots/terms-of-use.png",
+  "renderedHtml": "pages/terms-of-use.html"
+}

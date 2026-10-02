@@ -1,0 +1,92 @@
+{
+  "url": "https://www.about.hsbc.co.uk/",
+  "width": 1440,
+  "headerTimeline": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "widgetSamples": [],
+  "hoverSamples": [
+    {
+      "sel": ".long-form-promo__inner h2 span",
+      "changed": [],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(51, 51, 51)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "all"
+        },
+        "subs": []
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(51, 51, 51)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "all"
+        },
+        "subs": []
+      }
+    }
+  ],
+  "events": {
+    "animations": [],
+    "transitions": [],
+    "classMutations": [
+      {
+        "added": [
+          "header--cookie-dissabled"
+        ],
+        "el": "html.gt-ie9.js > body > div.site-wrapper.site-wrapper__header-variant > div.page-wrapper > div.header.header--shrunk.header--fixed",
+        "y": 400
+      },
+      {
+        "added": [
+          "icon-play"
+        ],
+        "el": "main.page > div.layout-container > div.cinemagraph.cinemagraph--active.cinemagraph--paused > button.cinemagraph__toggle.cinemagraph__toggle--bottom-left > span.icon.icon-play",
+        "y": 1200
+      },
+      {
+        "added": [
+          "icon-play"
+        ],
+        "el": "main.page > div.layout-container > div.cinemagraph.cinemagraph--active.cinemagraph--paused > button.cinemagraph__toggle.cinemagraph__toggle--bottom-left > span.icon.icon-play",
+        "y": 1200
+      },
+      {
+        "added": [
+          "cinemagraph--paused"
+        ],
+        "el": "div.site-wrapper.site-wrapper__header-variant > div.page-wrapper > main.page > div.layout-container > div.cinemagraph.cinemagraph--active.cinemagraph--paused",
+        "y": 1200
+      },
+      {
+        "added": [
+          "header--cookie-dissabled"
+        ],
+        "el": "html.gt-ie9.js > body > div.site-wrapper.site-wrapper__header-variant > div.page-wrapper > div.header.header--shrunk.header--fixed",
+        "y": 1856
+      }
+    ]
+  }
+}

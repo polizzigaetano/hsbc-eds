@@ -1,0 +1,170 @@
+{
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-10-01T13:02:19.935Z",
+    "waitMode": "medium",
+    "waitMs": 2500,
+    "httpStatus": 200
+  },
+  "slug": "hsbc-uk-working-with-fintechs",
+  "url": "https://www.about.hsbc.co.uk/hsbc-uk/working-with-fintechs",
+  "renderedBy": "playwright",
+  "fetchedAt": "2026-10-01T13:02:19.935Z",
+  "finalUrl": "https://www.about.hsbc.co.uk/hsbc-uk/working-with-fintechs",
+  "title": "Working with fintechs - About HSBC | HSBC UK",
+  "description": null,
+  "og": {
+    "title": null,
+    "description": null,
+    "image": null,
+    "type": null
+  },
+  "headings": [
+    {
+      "tag": "h1",
+      "text": "Working with fintechs"
+    },
+    {
+      "tag": "h2",
+      "text": "Our six-step fintech onboarding process"
+    },
+    {
+      "tag": "h2",
+      "text": "Cookies on this website"
+    }
+  ],
+  "body": [
+    "Share link to this page on X",
+    "Share link to this page on Facebook",
+    "Share link to this page on LinkedIn",
+    "We have produced a fintech-specific onboarding process that enables us to onboard eligible companies into our proof of concept (POC) process within 10 working days.",
+    "This process has six steps and it follows the principles of Technation’s Fintech Onboarding Pledge Opens in new window. HSBC is a signatory to this pledge, which aims to make the onboarding of fintechs as straightforward and simple as possible.",
+    "Upon successful completion of the POC onboarding activities, discussions between the supplier, business contact and procurement will begin to understand in greater detail the strategic path for the product or service. Further onboarding activities to run a pilot or full production rollout into the bank could potentially follow.",
+    "You will be contacted by a member of our global fintech onboarding team to let you know that your onboarding journey has begun and who your main contact point will be throughout the process.",
+    "You will then receive an email from our source-to-contract system. This message will contain a link to an online registration form you need to complete to allow you to be registered in our systems.",
+    "Next, we will send you a copy of our Software & SaaS Evaluation Agreement. Changes cannot be made to the terms and conditions of this agreement as our legal team have pre-approved this contract for the use of POCs under the parameters outlined in the contract. Review the contract and complete your business information at the top of the agreement and the schedule relating to the engagement at the end and send back to your contact.",
+    "As soon as we receive your copy of the agreement, your fintech contact and the business will review the schedule and the engagement as a whole to make sure the contract is reflective of this.",
+    "We’ll then send you an email asking for an authorised signatory to agree to the terms and conditions in the Software & SaaS Evaluation Agreement and sign the contract. Please then send the signed contract back to your fintech contact.",
+    "We’ll then countersign the contract and share a copy with you and issue any payment required via a purchase order (PO)."
+  ],
+  "codeBlocks": [],
+  "ctas": [
+    {
+      "label": "Cookie Notice",
+      "href": "https://www.about.hsbc.co.uk/cookie-notice"
+    }
+  ],
+  "links": [
+    "https://www.about.hsbc.co.uk/hsbc-uk/working-with-fintechs#",
+    "https://www.about.hsbc.co.uk/hsbc-uk/working-with-fintechs#nav-tray-sub-view-1",
+    "https://www.about.hsbc.co.uk/hsbc-uk/working-with-fintechs#nav-tray-sub-view-2",
+    "https://www.about.hsbc.co.uk/hsbc-uk/working-with-fintechs#nav-tray-sub-view-3",
+    "https://www.about.hsbc.co.uk/hsbc-uk/working-with-fintechs#nav-tray-sub-view-4",
+    "https://www.hsbc.co.uk/",
+    "https://www.business.hsbc.uk/en-gb",
+    "https://www.about.hsbc.co.uk/hsbc-uk",
+    "https://www.about.hsbc.co.uk/hsbc-uk/postcode-lending-data",
+    "https://www.about.hsbc.co.uk/hsbc-uk/inclusion",
+    "https://www.about.hsbc.co.uk/hsbc-uk/working-with-fintechs",
+    "https://www.about.hsbc.co.uk/hsbc-uk/regulated-covered-bond-programme",
+    "https://www.about.hsbc.co.uk/news-and-media",
+    "https://www.about.hsbc.co.uk/management-team",
+    "https://www.about.hsbc.co.uk/history-timeline",
+    "https://www.about.hsbc.co.uk/hsbc-uk/working-with-fintechs#page",
+    "https://www.about.hsbc.co.uk/",
+    "http://twitter.com/intent/tweet?url={URL}",
+    "https://www.facebook.com/sharer/sharer.php?u={URL}",
+    "http://www.linkedin.com/shareArticle?mini=true&url={URL}&title={title}",
+    "https://technationio.staging.wpengine.com/fintech-pledge/",
+    "https://www.about.hsbc.co.uk/accessibility",
+    "https://www.about.hsbc.co.uk/privacy-notice",
+    "https://www.about.hsbc.co.uk/terms-of-use",
+    "https://www.about.hsbc.co.uk/cookie-notice",
+    "https://www.hsbc.co.uk/help/"
+  ],
+  "media": {
+    "imgs": [
+      {
+        "src": "https://www.about.hsbc.co.uk/-/media/pws171/Logos/HSBC-logo.svg",
+        "alt": "HSBC",
+        "w": 125,
+        "h": 24
+      },
+      {
+        "src": "https://www.about.hsbc.co.uk/-/media/pws171/Logos/HSBC-logo.svg",
+        "alt": "HSBC",
+        "w": 125,
+        "h": 24
+      },
+      {
+        "src": "https://www.about.hsbc.co.uk/-/media/uk/images/hsbc-in-the-uk/corona-virus/200904-fintech-1520x400.jpg",
+        "alt": "",
+        "w": 1520,
+        "h": 400
+      }
+    ],
+    "allImgCount": 3,
+    "cssBackgrounds": [],
+    "modals": [
+      "Cookies on this websiteWe use cookies to help keep our website and services working properly. These cookies are necessary and set automatically.We'd also like to use some optional cookies that:Make your visit more personalImprove our website based on how you use itSupport our marketingYou can either 'Accept' or 'Decline' these cookies or choose what cookies to accept in 'Manage cookies'.To learn more about how we use cookies, visit our Cookie Notice."
+    ],
+    "videos": [],
+    "iframes": []
+  },
+  "customProps": {},
+  "_signals": {
+    "filteredInterstitials": 0,
+    "distinctHeadings": 3,
+    "mainTextLen": 2659,
+    "realImageCount": 3,
+    "trackingOnlyMedia": false,
+    "spaShellSuspect": false,
+    "screenshotMode": "fullPage"
+  },
+  "dynamic": {
+    "endpoints": [
+      {
+        "method": "GET",
+        "host": "akamai.tiqcdn.com",
+        "path": "/location/location.js",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/x-javascript",
+        "status": 200,
+        "bytes": 18,
+        "hits": 1,
+        "example": "https://akamai.tiqcdn.com/location/location.js",
+        "sameSite": false
+      }
+    ],
+    "thirdPartyScriptHosts": [
+      {
+        "host": "tags.tiqcdn.com",
+        "count": 2
+      },
+      {
+        "host": "sadmin.brightcove.com",
+        "count": 1
+      }
+    ],
+    "truncated": false,
+    "inlineData": [],
+    "globalState": [],
+    "frameworkHints": [],
+    "forms": [],
+    "ariaLiveRegions": 0,
+    "triggers": [],
+    "mediaIds": [],
+    "summary": {
+      "sameSiteEndpoints": 0,
+      "thirdPartyEndpoints": 1,
+      "thirdPartyScriptHosts": 2,
+      "inlineDataBlobs": 0,
+      "forms": 0,
+      "searchForms": 0,
+      "hydrated": false
+    }
+  },
+  "screenshot": "assets/screenshots/hsbc-uk-working-with-fintechs.png",
+  "renderedHtml": "pages/hsbc-uk-working-with-fintechs.html"
+}

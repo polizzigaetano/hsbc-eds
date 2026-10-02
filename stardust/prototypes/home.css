@@ -1,0 +1,54 @@
+/* provenance: stardust:replica Phase 3 — A2 landing archetype layer (cinemagraph, dropcap text,
+   6-6 columns with inline images, long-form promo cards). Values lifted from application.css and
+   computed styles at 1440 / 360 / 1920 in the gate browser (stardust/.work/replica/a2-lift*.json). */
+
+/* ---------- 12 / 6-6 layouts ---------- */
+.layout--12, .layout--6-6 { margin-bottom: 20px; clear: both; }
+.layout--12::before, .layout--12::after, .layout--6-6::before, .layout--6-6::after { content: " "; display: table; }
+.layout--12::after, .layout--6-6::after { clear: both; }
+.layout--12 .layout__primary { float: right; width: 100%; }
+.layout--6-6 .layout__primary, .layout--6-6 .layout__secondary { float: left; width: 49.1525423729%; margin-right: 1.6949152542%; }
+.layout--6-6 .layout__secondary { float: right; margin-right: 0; }
+@media (max-width: 800px) {
+  .layout--6-6 .layout__primary, .layout--6-6 .layout__secondary { float: right; width: 100%; margin-right: 0; margin-bottom: 40px; }
+  .layout--6-6 .layout__secondary { margin-bottom: 0; }
+}
+
+/* ---------- cinemagraph (muted looping video; poster under 780px or when paused) ---------- */
+.cinemagraph { position: relative; max-width: 1600px; margin: 0 auto; }
+.cinemagraph::before, .cinemagraph::after { content: " "; display: table; }
+.cinemagraph::after { clear: both; }
+.cinemagraph__video { display: none; max-width: 100%; height: auto; }
+.cinemagraph__poster { display: block; max-width: 100%; height: auto; }
+.cinemagraph__toggle {
+  display: none;
+  position: absolute; left: 0; bottom: 0; z-index: 2;
+  width: 44px; height: 44px; box-sizing: border-box;
+  padding: 22px 12px 2px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: var(--c-white);
+  text-align: center;
+  cursor: pointer;
+}
+.cinemagraph__toggle:hover, .cinemagraph__toggle:focus { background-color: rgba(0, 0, 0, 0.85); outline-offset: 2px; }
+.cinemagraph__toggle .icon { display: block; width: 20px; height: 20px; font-size: 20px; line-height: 0; }
+.cinemagraph__toggle .icon::after { vertical-align: top; }
+@media (min-width: 780px) {
+  .cinemagraph--active .cinemagraph__video { display: block; }
+  .cinemagraph--active .cinemagraph__poster { display: none; }
+  .cinemagraph--active .cinemagraph__toggle { display: block; }
+}
+.cinemagraph--paused[data-props-poster-on-pause="yes"] .cinemagraph__video { display: none; }
+.cinemagraph--paused[data-props-poster-on-pause="yes"] .cinemagraph__poster { display: block; }
+
+/* ---------- dropcap text block ---------- */
+/* dropcap h2 top margin = the general `.text h2` 58px rule in canon (h2 follows a <br>) */
+
+/* ---------- inline image ---------- */
+.inline-image--with-bottom-margin { margin-bottom: 20px; }
+.inline-image__image { overflow: hidden; max-height: 600px; }
+.inline-image--vertical .inline-image__image { max-height: none; }
+.inline-image__image img { display: block; width: 100%; max-width: none; height: auto; }
+
+/* long-form promo card lives in canon.css (shared with the news listing archetype) */

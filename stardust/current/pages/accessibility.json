@@ -1,0 +1,176 @@
+{
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-10-01T13:02:09.118Z",
+    "waitMode": "medium",
+    "waitMs": 2500,
+    "httpStatus": 200
+  },
+  "slug": "accessibility",
+  "url": "https://www.about.hsbc.co.uk/accessibility",
+  "renderedBy": "playwright",
+  "fetchedAt": "2026-10-01T13:02:09.118Z",
+  "finalUrl": "https://www.about.hsbc.co.uk/accessibility",
+  "title": "Accessibility - About HSBC | HSBC in the UK",
+  "description": "HSBC is committed to providing a website that is accessible to the widest possible audience, regardless of technology or ability.",
+  "og": {
+    "title": null,
+    "description": null,
+    "image": null,
+    "type": null
+  },
+  "headings": [
+    {
+      "tag": "h1",
+      "text": "Accessibility"
+    },
+    {
+      "tag": "h2",
+      "text": "Browsers that we support"
+    },
+    {
+      "tag": "h2",
+      "text": "Cookies on this website"
+    }
+  ],
+  "body": [
+    "HSBC is committed to providing a website that is accessible to the widest possible audience, regardless of technology or ability. We are actively working to increase the accessibility and usability of this website and, in doing so, adhere to internationally accepted standards and guidelines.",
+    "This website endeavours to meet the Web Content Accessibility Guidelines Version 2.0 (WCAG 2.0) Opens in new window at a minimum “Double-A” (AA) rating. The guidelines, drawn up by the World Wide Web Consortium Opens in new window (W3C), explain how to make web content more accessible to people with disabilities. We seek to ensure that this website is accessible to people who use assistive technology such as screen readers and speech-input software and those unable to use a mouse or a pointing device.",
+    "Accessibility features on this website include:",
+    "Strong colour contrasts",
+    "Text that can be resized",
+    "Page layouts are flexible, meaning that pages are resized according to the width of the browser window",
+    "Headings are coded so that they can be read by screen readers",
+    "Links have meaningful text that explain what the user can expect when they click on them. We don't use ‘click here’",
+    "Tables are laid out in tabular form, with headings and summaries",
+    "Form fields have labels and follow a logical tab sequence to ensure easy navigation",
+    "We use cascading style sheets (CSS) to determine the presentation of our website – this assists those using screen-reading devices",
+    "Images are accompanied by appropriate alternative text that can be read by screen readers",
+    "This website has been built using code that is compliant with W3C standards for HTML and CSS. Because of this, it displays correctly on current browser versions and will also do so on future versions.",
+    "To ensure that our website continues to offer a high level of accessibility, we perform periodic accessibility audits using a range of testing tools. While HSBC strives to adhere to accepted guidelines and standards for accessibility and usability, rapid changes in technology mean is it is not always possible to do so in all areas of the website. We are, however, continually seeking solutions to address accessibility issues.",
+    "Browser updates are available free of charge from the different browser providers (Microsoft, Firefox, Apple and Google). We recommend that users of our website upgrade their browser versions whenever possible, as new versions are faster, have the latest security features and provide an improved browsing experience.",
+    "Desktop",
+    "We support the latest version, and the two previous versions, of:",
+    "Google Chrome",
+    "Apple Safari",
+    "Microsoft Edge",
+    "Mozilla Firefox",
+    "Mobile and tablet",
+    "We support the latest version, and the previous version, of:",
+    "Apple Safari",
+    "Chrome Mobile",
+    "We will update our list of supported browsers on this page from time to time as the software used by our users changes."
+  ],
+  "codeBlocks": [],
+  "ctas": [
+    {
+      "label": "Cookie Notice",
+      "href": "https://www.about.hsbc.co.uk/cookie-notice"
+    }
+  ],
+  "links": [
+    "https://www.about.hsbc.co.uk/accessibility#",
+    "https://www.about.hsbc.co.uk/accessibility#nav-tray-sub-view-1",
+    "https://www.about.hsbc.co.uk/accessibility#nav-tray-sub-view-2",
+    "https://www.about.hsbc.co.uk/accessibility#nav-tray-sub-view-3",
+    "https://www.about.hsbc.co.uk/accessibility#nav-tray-sub-view-4",
+    "https://www.hsbc.co.uk/",
+    "https://www.business.hsbc.uk/en-gb",
+    "https://www.about.hsbc.co.uk/hsbc-uk",
+    "https://www.about.hsbc.co.uk/hsbc-uk/postcode-lending-data",
+    "https://www.about.hsbc.co.uk/hsbc-uk/inclusion",
+    "https://www.about.hsbc.co.uk/hsbc-uk/working-with-fintechs",
+    "https://www.about.hsbc.co.uk/hsbc-uk/regulated-covered-bond-programme",
+    "https://www.about.hsbc.co.uk/news-and-media",
+    "https://www.about.hsbc.co.uk/management-team",
+    "https://www.about.hsbc.co.uk/history-timeline",
+    "https://www.about.hsbc.co.uk/accessibility#page",
+    "https://www.about.hsbc.co.uk/",
+    "https://www.w3.org/TR/WCAG20/",
+    "https://www.w3.org/",
+    "https://www.about.hsbc.co.uk/accessibility",
+    "https://www.about.hsbc.co.uk/privacy-notice",
+    "https://www.about.hsbc.co.uk/terms-of-use",
+    "https://www.about.hsbc.co.uk/cookie-notice",
+    "https://www.hsbc.co.uk/help/"
+  ],
+  "media": {
+    "imgs": [
+      {
+        "src": "https://www.about.hsbc.co.uk/-/media/pws171/Logos/HSBC-logo.svg",
+        "alt": "HSBC",
+        "w": 125,
+        "h": 24
+      },
+      {
+        "src": "https://www.about.hsbc.co.uk/-/media/pws171/Logos/HSBC-logo.svg",
+        "alt": "HSBC",
+        "w": 125,
+        "h": 24
+      }
+    ],
+    "allImgCount": 2,
+    "cssBackgrounds": [],
+    "modals": [
+      "Cookies on this websiteWe use cookies to help keep our website and services working properly. These cookies are necessary and set automatically.We'd also like to use some optional cookies that:Make your visit more personalImprove our website based on how you use itSupport our marketingYou can either 'Accept' or 'Decline' these cookies or choose what cookies to accept in 'Manage cookies'.To learn more about how we use cookies, visit our Cookie Notice."
+    ],
+    "videos": [],
+    "iframes": []
+  },
+  "customProps": {},
+  "_signals": {
+    "filteredInterstitials": 0,
+    "distinctHeadings": 3,
+    "mainTextLen": 2892,
+    "realImageCount": 2,
+    "trackingOnlyMedia": false,
+    "spaShellSuspect": false,
+    "screenshotMode": "fullPage"
+  },
+  "dynamic": {
+    "endpoints": [
+      {
+        "method": "GET",
+        "host": "akamai.tiqcdn.com",
+        "path": "/location/location.js",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/x-javascript",
+        "status": 200,
+        "bytes": 18,
+        "hits": 1,
+        "example": "https://akamai.tiqcdn.com/location/location.js",
+        "sameSite": false
+      }
+    ],
+    "thirdPartyScriptHosts": [
+      {
+        "host": "tags.tiqcdn.com",
+        "count": 3
+      },
+      {
+        "host": "sadmin.brightcove.com",
+        "count": 1
+      }
+    ],
+    "truncated": false,
+    "inlineData": [],
+    "globalState": [],
+    "frameworkHints": [],
+    "forms": [],
+    "ariaLiveRegions": 0,
+    "triggers": [],
+    "mediaIds": [],
+    "summary": {
+      "sameSiteEndpoints": 0,
+      "thirdPartyEndpoints": 1,
+      "thirdPartyScriptHosts": 2,
+      "inlineDataBlobs": 0,
+      "forms": 0,
+      "searchForms": 0,
+      "hydrated": false
+    }
+  },
+  "screenshot": "assets/screenshots/accessibility.png",
+  "renderedHtml": "pages/accessibility.html"
+}

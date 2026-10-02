@@ -1,0 +1,200 @@
+{
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-10-01T13:02:19.091Z",
+    "waitMode": "medium",
+    "waitMs": 2500,
+    "httpStatus": 200
+  },
+  "slug": "hsbc-uk-postcode-lending-data",
+  "url": "https://www.about.hsbc.co.uk/hsbc-uk/postcode-lending-data",
+  "renderedBy": "playwright",
+  "fetchedAt": "2026-10-01T13:02:19.091Z",
+  "finalUrl": "https://www.about.hsbc.co.uk/hsbc-uk/postcode-lending-data",
+  "title": "Postcode lending data - About HSBC | HSBC UK",
+  "description": "HSBC data on its stock of lending in small and medium-sized enterprises, residential mortgages and unsecured personal loans.",
+  "og": {
+    "title": null,
+    "description": null,
+    "image": null,
+    "type": null
+  },
+  "headings": [
+    {
+      "tag": "h1",
+      "text": "Postcode lending data"
+    },
+    {
+      "tag": "h2",
+      "text": "What is being reported?"
+    },
+    {
+      "tag": "h2",
+      "text": "What is a sector postcode?"
+    },
+    {
+      "tag": "h2",
+      "text": "Customer confidentiality"
+    },
+    {
+      "tag": "h2",
+      "text": "Industry aggregated data and definitions"
+    },
+    {
+      "tag": "h2",
+      "text": "Publication dates"
+    },
+    {
+      "tag": "h2",
+      "text": "Cookies on this website"
+    }
+  ],
+  "body": [
+    "Share link to this page on X",
+    "Share link to this page on Facebook",
+    "Share link to this page on LinkedIn",
+    "The data published is restricted to Great Britain only, and so excludes Northern Ireland and the crown dependencies (Jersey, Guernsey and the Isle of Man).",
+    "HSBC is publishing data on its stock of lending in three separate areas: small and medium sized enterprises (SMEs), residential mortgages and unsecured personal loans.",
+    "All figures reflect the total amount of borrowing outstanding on customer accounts.",
+    "A postcode is a sorting and routing instruction to Royal Mail staff and not necessarily a geographically accurate description of where properties are located.",
+    "They are made up of several components, as follows:",
+    "The data published here reflects borrowing in 'live' postcodes (according to the list published by the Royal Mail).",
+    "A major consideration and necessary requirement has been to maintain customer confidentiality.",
+    "A general level of protection is afforded, by publishing postcode figures roughly six months in arrears. This is a deliberate part of the design of this exercise, and will be an ongoing feature.",
+    "We have also applied a number of specific rules agreed with the banking industry and Government to ensure that sensitive or confidential data is hidden and not capable of being accessed by users. For example, postcode sectors containing lending for less than 10 SMEs are excluded from reporting.",
+    "For this reason, a large number of postcode sectors cannot be published.",
+    "The BBA will publish aggregated data for SME lending and unsecured personal loans on its website at www.bba.org.uk Opens in new window",
+    "The CML will publish aggregated data for mortgage lending on its website at www.cml.org.uk Opens in new window",
+    "Future data will be made available on a quarterly basis, relating to a date point six months in arrears.",
+    "Published data on mortgages, loans and SME lending by area and sector Opens in new window",
+    "Your home may be repossessed if you do not keep up repayments on your mortgage."
+  ],
+  "codeBlocks": [],
+  "ctas": [
+    {
+      "label": "Cookie Notice",
+      "href": "https://www.about.hsbc.co.uk/cookie-notice"
+    }
+  ],
+  "links": [
+    "https://www.about.hsbc.co.uk/hsbc-uk/postcode-lending-data#",
+    "https://www.about.hsbc.co.uk/hsbc-uk/postcode-lending-data#nav-tray-sub-view-1",
+    "https://www.about.hsbc.co.uk/hsbc-uk/postcode-lending-data#nav-tray-sub-view-2",
+    "https://www.about.hsbc.co.uk/hsbc-uk/postcode-lending-data#nav-tray-sub-view-3",
+    "https://www.about.hsbc.co.uk/hsbc-uk/postcode-lending-data#nav-tray-sub-view-4",
+    "https://www.hsbc.co.uk/",
+    "https://www.business.hsbc.uk/en-gb",
+    "https://www.about.hsbc.co.uk/hsbc-uk",
+    "https://www.about.hsbc.co.uk/hsbc-uk/postcode-lending-data",
+    "https://www.about.hsbc.co.uk/hsbc-uk/inclusion",
+    "https://www.about.hsbc.co.uk/hsbc-uk/working-with-fintechs",
+    "https://www.about.hsbc.co.uk/hsbc-uk/regulated-covered-bond-programme",
+    "https://www.about.hsbc.co.uk/news-and-media",
+    "https://www.about.hsbc.co.uk/management-team",
+    "https://www.about.hsbc.co.uk/history-timeline",
+    "https://www.about.hsbc.co.uk/hsbc-uk/postcode-lending-data#page",
+    "https://www.about.hsbc.co.uk/",
+    "http://twitter.com/intent/tweet?url={URL}",
+    "https://www.facebook.com/sharer/sharer.php?u={URL}",
+    "http://www.linkedin.com/shareArticle?mini=true&url={URL}&title={title}",
+    "http://www.bba.org.uk/",
+    "http://www.cml.org.uk/",
+    "https://www.hsbc.co.uk/postcode-lending-historical-data/",
+    "https://www.about.hsbc.co.uk/accessibility",
+    "https://www.about.hsbc.co.uk/privacy-notice",
+    "https://www.about.hsbc.co.uk/terms-of-use",
+    "https://www.about.hsbc.co.uk/cookie-notice",
+    "https://www.hsbc.co.uk/help/"
+  ],
+  "media": {
+    "imgs": [
+      {
+        "src": "https://www.about.hsbc.co.uk/-/media/pws171/Logos/HSBC-logo.svg",
+        "alt": "HSBC",
+        "w": 125,
+        "h": 24
+      },
+      {
+        "src": "https://www.about.hsbc.co.uk/-/media/pws171/Logos/HSBC-logo.svg",
+        "alt": "HSBC",
+        "w": 125,
+        "h": 24
+      },
+      {
+        "src": "https://www.about.hsbc.co.uk/-/media/Images/images-v2/240115-postcode-lending-data-1520x400.jpg",
+        "alt": "",
+        "w": 1520,
+        "h": 400
+      },
+      {
+        "src": "https://www.about.hsbc.co.uk/hsbc-uk/~/media/uk/images/postcode-lending-data/postcode-diagram-260x130.jpg?la=en-gb&hash=945941C43E9DFAB576A97A9351843A3E",
+        "alt": "",
+        "w": 260,
+        "h": 130
+      }
+    ],
+    "allImgCount": 4,
+    "cssBackgrounds": [],
+    "modals": [
+      "Cookies on this websiteWe use cookies to help keep our website and services working properly. These cookies are necessary and set automatically.We'd also like to use some optional cookies that:Make your visit more personalImprove our website based on how you use itSupport our marketingYou can either 'Accept' or 'Decline' these cookies or choose what cookies to accept in 'Manage cookies'.To learn more about how we use cookies, visit our Cookie Notice."
+    ],
+    "videos": [],
+    "iframes": []
+  },
+  "customProps": {},
+  "_signals": {
+    "filteredInterstitials": 0,
+    "distinctHeadings": 7,
+    "mainTextLen": 2486,
+    "realImageCount": 4,
+    "trackingOnlyMedia": false,
+    "spaShellSuspect": false,
+    "screenshotMode": "fullPage"
+  },
+  "dynamic": {
+    "endpoints": [
+      {
+        "method": "GET",
+        "host": "akamai.tiqcdn.com",
+        "path": "/location/location.js",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/x-javascript",
+        "status": 200,
+        "bytes": 18,
+        "hits": 1,
+        "example": "https://akamai.tiqcdn.com/location/location.js",
+        "sameSite": false
+      }
+    ],
+    "thirdPartyScriptHosts": [
+      {
+        "host": "tags.tiqcdn.com",
+        "count": 2
+      },
+      {
+        "host": "sadmin.brightcove.com",
+        "count": 1
+      }
+    ],
+    "truncated": false,
+    "inlineData": [],
+    "globalState": [],
+    "frameworkHints": [],
+    "forms": [],
+    "ariaLiveRegions": 0,
+    "triggers": [],
+    "mediaIds": [],
+    "summary": {
+      "sameSiteEndpoints": 0,
+      "thirdPartyEndpoints": 1,
+      "thirdPartyScriptHosts": 2,
+      "inlineDataBlobs": 0,
+      "forms": 0,
+      "searchForms": 0,
+      "hydrated": false
+    }
+  },
+  "screenshot": "assets/screenshots/hsbc-uk-postcode-lending-data.png",
+  "renderedHtml": "pages/hsbc-uk-postcode-lending-data.html"
+}
