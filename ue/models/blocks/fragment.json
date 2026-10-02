@@ -1,0 +1,22 @@
+{
+  "definitions": [
+    {
+      "title": "Fragment",
+      "id": "fragment",
+      "plugins": {
+        "da": {
+          "name": "fragment",
+          "unsafeHTML": "<div class=\"fragment\"><div><div><p><a href=\"/fragments/example\">Fragment</a></p></div></div></div>"
+        }
+      },
+      "model": "fragment"
+    }
+  ],
+  "models": [
+    {
+      "id": "fragment",
+      "fields": []
+    }
+  ],
+  "filters": []
+}
