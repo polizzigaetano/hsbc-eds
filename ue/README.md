@@ -20,6 +20,9 @@ Reference: https://www.aem.live/docs/ew/developing/universal-editor and `aemsite
 2. `node tools/ue/build-json.mjs --check` exits 1 when the bundles are stale (no npm dependencies).
 3. A new block: add it to `models.py` — the section filter lists every block automatically.
 
+Every component definition needs `plugins.xwalk.page` creation metadata as well as the `plugins.da`
+configuration; without it, the Universal Editor cannot create the component.
+
 ## How the replica blocks behave in the editor
 
 - **Blocks and items** (cards, accordion items, sidebar items, profiles, slides, table rows, columns

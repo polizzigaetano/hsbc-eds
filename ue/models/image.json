@@ -18,6 +18,15 @@
               "selector": "img[alt]"
             }
           ]
+        },
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/image/v1/image",
+            "template": {
+              "name": "Image",
+              "model": "image"
+            }
+          }
         }
       }
     }

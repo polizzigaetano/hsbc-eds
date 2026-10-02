@@ -10,6 +10,31 @@ import json
 import os
 
 OUT = 'ue/models'
+ITEM_COMPONENTS = {
+    'accordion-item',
+    'aside-item',
+    'card',
+    'carousel-item',
+    'columns-cell',
+    'columns-row',
+    'profile-item',
+    'table-row',
+}
+
+
+def xwalk_page(title, model=None, filter_=None, item=False, resource_type=None):
+    template = {'name': title}
+    if model:
+        template['model'] = model
+    if filter_:
+        template['filter'] = filter_
+    return {'page': {
+        'resourceType': resource_type or (
+            'core/franklin/components/block/v1/block/item' if item
+            else 'core/franklin/components/block/v1/block'
+        ),
+        'template': template,
+    }}
 
 
 def opt(name, value):
@@ -34,7 +59,14 @@ def image(name='image', label='Image'):
 
 
 def block(id_, title, model=None, filter_=None, da=None):
-    d = {'title': title, 'id': id_, 'plugins': {'da': da or {'name': id_, 'rows': 1, 'columns': 1}}}
+    d = {
+        'title': title,
+        'id': id_,
+        'plugins': {
+            'da': da or {'name': id_, 'rows': 1, 'columns': 1},
+            'xwalk': xwalk_page(title, model, filter_, id_ in ITEM_COMPONENTS),
+        },
+    }
     if model:
         d['model'] = model
     if filter_:
@@ -344,17 +376,34 @@ write('page.json', {'models': [{'id': 'page-metadata', 'fields': [
 ]}]})
 
 write('text.json', {'definitions': [{'title': 'Text', 'id': 'text', 'model': 'text',
-                                     'plugins': {'da': {'name': 'text', 'type': 'text'}}}], 'models': []})
+                                     'plugins': {
+                                         'da': {'name': 'text', 'type': 'text'},
+                                         'xwalk': xwalk_page(
+                                             'Text',
+                                             resource_type='core/franklin/components/text/v1/text',
+                                         ),
+                                     }}], 'models': []})
 write('image.json', {
-    'definitions': [{'title': 'Image', 'id': 'image', 'model': 'image', 'plugins': {'da': {
-        'name': 'image', 'type': 'image',
-        'fields': [{'name': 'image', 'selector': 'img[src]'}, {'name': 'imageAlt', 'selector': 'img[alt]'}]}}}],
+    'definitions': [{'title': 'Image', 'id': 'image', 'model': 'image', 'plugins': {
+        'da': {
+            'name': 'image', 'type': 'image',
+            'fields': [{'name': 'image', 'selector': 'img[src]'}, {'name': 'imageAlt', 'selector': 'img[alt]'}],
+        },
+        'xwalk': xwalk_page(
+            'Image', 'image', resource_type='core/franklin/components/image/v1/image',
+        ),
+    }}],
     'models': [{'id': 'image', 'fields': [image(), text('imageAlt', 'Alt text')]}],
 })
 
 write('section.json', {
-    'definitions': [{'title': 'Section', 'id': 'section', 'plugins': {'da': {'unsafeHTML': '<div></div>'}},
-                     'filter': 'section', 'model': 'section'}],
+    'definitions': [{'title': 'Section', 'id': 'section', 'plugins': {
+        'da': {'unsafeHTML': '<div></div>'},
+        'xwalk': xwalk_page(
+            'Section', 'section', 'section',
+            resource_type='core/franklin/components/section/v1/section',
+        ),
+    }, 'filter': 'section', 'model': 'section'}],
     'models': [{'id': 'section', 'fields': [{
         'component': 'multiselect', 'name': 'style', 'label': 'Style', 'valueType': 'string', 'maxSize': 1,
         'description': 'One value per section (a second style is not applied on delivery)',
