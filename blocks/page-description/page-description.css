@@ -36,6 +36,9 @@
 
 .page-description .page-description__summary p + p { margin-top: 15px; }
 
+.page-description.rich-summary .page-description__summary { margin-bottom: 20px; }
+.page-description.rich-summary .page-description__summary p { margin: 0; }
+
 .page-description.tertiary .page-description__heading {
   margin: -7px 0 9px;
   font-family: var(--ff-ultra-light);

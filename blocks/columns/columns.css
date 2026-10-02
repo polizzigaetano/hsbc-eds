@@ -28,7 +28,31 @@ main > .section:has(.columns) { grid-column: content-start / content-end; }
   height: auto;
 }
 
+/* live .layout--3-3-6 (variant layout-3-3-6) */
+.columns.layout-3-3-6 .columns__layout { grid-template-columns: 23.7288135593% 23.7288135593% minmax(0, 1fr); }
+
+@media (width <= 1080px) {
+  .columns.layout-3-3-6 .columns__layout { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
 @media (width <= 800px) {
   .columns .columns__layout { grid-template-columns: minmax(0, 1fr); }
   .columns .columns__col:not(:last-child) { margin-bottom: 40px; }
+
+  .columns.layout-3-3-6 .columns__layout {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 2.5641025641%;
+  }
+
+  .columns.layout-3-3-6 .columns__col { margin-bottom: 0; }
+
+  .columns.layout-3-3-6 .columns__col:first-child {
+    grid-column: 1 / -1;
+    margin-bottom: 20px;
+  }
+}
+
+@media (width <= 560px) {
+  .columns.layout-3-3-6 .columns__layout { grid-template-columns: minmax(0, 1fr); }
+  .columns.layout-3-3-6 .columns__col:not(:last-child) { margin-bottom: 20px; }
 }

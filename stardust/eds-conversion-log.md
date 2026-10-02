@@ -82,3 +82,22 @@ three roles, cinemagraph/terms-gate are widgets, aside is a grid placement.
 - Mobile nav tray and the leaving-HSBC dialogs are not part of a gated archetype (interim styling).
 - Not migrated yet: 290 pages. Their links stay absolute to the live site until their wave ships
   (add the path to `MIGRATED_PATHS` in `tools/importer/utils.js` and re-run the import).
+
+## Wave 2 — all 284 news articles (2026-10-02, branch `articles-wave`)
+
+- **Fragment:** `/fragments/notes-hsbc-uk` — the current "HSBC UK" + "HSBC Holdings plc" boilerplate
+  (from the 19 Aug 2026 release, assets at 30 June 2026), for NEW press releases. Existing articles keep
+  their own dated notes (232 distinct variants measured across 267 articles; not centralised).
+- **New blocks:** inline-image (caption box; `right`/`left` + `half`/`third` floats from the live
+  floating-container, `bottom-margin`, `vertical`, `infographic`), table (`caption`, `header`; data tables
+  may exceed 4 columns), promo, factbox, carousel (image + caption slides, prev/next, counter).
+  Columns gained the `layout-3-3-6` variant and multi-image columns.
+- **Importer:** components nested in live rich text are split out as blocks in authored order; plain
+  wrapper divs are unwrapped; several notes-to-editors blocks per article; rich page-header summaries
+  (links, emphasis, lists) and rich text nested in the page header are kept; `<br>` blank lines between
+  blocks become `break` sections; `spaced-top` rows; page theme `flush-end`.
+- **Foundation:** live `.text ol` / nested list / `sup` / `sub` rules; disclaimer font on the section.
+- **Link localization:** `tools/importer/migrated-articles.js` (all 284 paths) feeds `MIGRATED_PATHS`.
+- **Sample gate (11 articles vs live captures, 1440):** 7 within ±4px height; residuals: great-block
+  (stacked tables, −69), Loughborough (carousel + inline small-print span, −99), Lincoln (image gallery,
+  −15), Footasylum (−9). Mobile (360) spot checks aligned except one-line font wraps.

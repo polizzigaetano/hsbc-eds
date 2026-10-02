@@ -1,0 +1,35 @@
+/* factbox — live .factbox.factbox--list (application.css) */
+.factbox {
+  margin-bottom: 20px;
+  background: var(--c-panel);
+  color: var(--c-black);
+}
+
+.factbox .factbox__inner { padding: 29px 28px 25px; }
+
+.factbox .factbox__heading {
+  margin: 0 0 20px;
+  font-family: var(--ff-light);
+  font-size: 30px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.factbox .factbox__heading :is(h2, h3, h4) {
+  font: inherit;
+  letter-spacing: inherit;
+}
+
+.factbox .factbox__list p { margin: -4px 0 15px; }
+.factbox .factbox__list p:last-child { margin-bottom: 0; }
+
+.factbox .factbox__list ul {
+  margin: 0 0 -11px;
+  list-style-type: square;
+}
+
+.factbox .factbox__list li {
+  margin: 0 0 11px 18px;
+  line-height: 1.5;
+  list-style-type: square;
+}
