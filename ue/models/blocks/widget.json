@@ -1,0 +1,22 @@
+{
+  "definitions": [
+    {
+      "title": "Widget",
+      "id": "widget",
+      "plugins": {
+        "da": {
+          "name": "widget",
+          "unsafeHTML": "<div class=\"widget\"><div><div><p><a href=\"/widgets/example\">Widget</a></p></div></div></div>"
+        }
+      },
+      "model": "widget"
+    }
+  ],
+  "models": [
+    {
+      "id": "widget",
+      "fields": []
+    }
+  ],
+  "filters": []
+}

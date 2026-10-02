@@ -330,6 +330,18 @@
     ]
   },
   {
+    "id": "footer",
+    "fields": []
+  },
+  {
+    "id": "fragment",
+    "fields": []
+  },
+  {
+    "id": "header",
+    "fields": []
+  },
+  {
     "id": "hero",
     "fields": [
       {
@@ -619,5 +631,9 @@
         "value": ""
       }
     ]
+  },
+  {
+    "id": "widget",
+    "fields": []
   }
 ]

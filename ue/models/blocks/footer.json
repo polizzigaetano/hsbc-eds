@@ -1,0 +1,22 @@
+{
+  "definitions": [
+    {
+      "title": "Footer",
+      "id": "footer",
+      "plugins": {
+        "da": {
+          "name": "footer",
+          "unsafeHTML": "<div class=\"footer\"><div><div><p>Useful links</p><p>Copyright</p></div></div></div>"
+        }
+      },
+      "model": "footer"
+    }
+  ],
+  "models": [
+    {
+      "id": "footer",
+      "fields": []
+    }
+  ],
+  "filters": []
+}

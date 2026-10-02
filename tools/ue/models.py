@@ -158,6 +158,43 @@ BLOCKS['search'] = {
     'filters': [],
 }
 
+# ---------------- template / metadata-driven blocks ----------------
+BLOCKS['header'] = {
+    'definitions': [block('header', 'Header', 'header', da={
+        'name': 'header',
+        'unsafeHTML': '<div class="header"><div><div><p><a href="/">HSBC</a></p><p>Menu</p><p>Search</p></div></div></div>',
+    })],
+    'models': [{'id': 'header', 'fields': []}],
+    'filters': [],
+}
+
+BLOCKS['footer'] = {
+    'definitions': [block('footer', 'Footer', 'footer', da={
+        'name': 'footer',
+        'unsafeHTML': '<div class="footer"><div><div><p>Useful links</p><p>Copyright</p></div></div></div>',
+    })],
+    'models': [{'id': 'footer', 'fields': []}],
+    'filters': [],
+}
+
+BLOCKS['fragment'] = {
+    'definitions': [block('fragment', 'Fragment', 'fragment', da={
+        'name': 'fragment',
+        'unsafeHTML': '<div class="fragment"><div><div><p><a href="/fragments/example">Fragment</a></p></div></div></div>',
+    })],
+    'models': [{'id': 'fragment', 'fields': []}],
+    'filters': [],
+}
+
+BLOCKS['widget'] = {
+    'definitions': [block('widget', 'Widget', 'widget', da={
+        'name': 'widget',
+        'unsafeHTML': '<div class="widget"><div><div><p><a href="/widgets/example">Widget</a></p></div></div></div>',
+    })],
+    'models': [{'id': 'widget', 'fields': []}],
+    'filters': [],
+}
+
 # ---------------- container blocks ----------------
 BLOCKS['cards'] = {
     'definitions': [

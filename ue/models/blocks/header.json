@@ -1,0 +1,22 @@
+{
+  "definitions": [
+    {
+      "title": "Header",
+      "id": "header",
+      "plugins": {
+        "da": {
+          "name": "header",
+          "unsafeHTML": "<div class=\"header\"><div><div><p><a href=\"/\">HSBC</a></p><p>Menu</p><p>Search</p></div></div></div>"
+        }
+      },
+      "model": "header"
+    }
+  ],
+  "models": [
+    {
+      "id": "header",
+      "fields": []
+    }
+  ],
+  "filters": []
+}

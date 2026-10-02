@@ -281,6 +281,39 @@
           "model": "factbox"
         },
         {
+          "title": "Footer",
+          "id": "footer",
+          "plugins": {
+            "da": {
+              "name": "footer",
+              "unsafeHTML": "<div class=\"footer\"><div><div><p>Useful links</p><p>Copyright</p></div></div></div>"
+            }
+          },
+          "model": "footer"
+        },
+        {
+          "title": "Fragment",
+          "id": "fragment",
+          "plugins": {
+            "da": {
+              "name": "fragment",
+              "unsafeHTML": "<div class=\"fragment\"><div><div><p><a href=\"/fragments/example\">Fragment</a></p></div></div></div>"
+            }
+          },
+          "model": "fragment"
+        },
+        {
+          "title": "Header",
+          "id": "header",
+          "plugins": {
+            "da": {
+              "name": "header",
+              "unsafeHTML": "<div class=\"header\"><div><div><p><a href=\"/\">HSBC</a></p><p>Menu</p><p>Search</p></div></div></div>"
+            }
+          },
+          "model": "header"
+        },
+        {
           "title": "Hero (banner)",
           "id": "hero",
           "plugins": {
@@ -525,6 +558,17 @@
             }
           },
           "model": "terms-gate"
+        },
+        {
+          "title": "Widget",
+          "id": "widget",
+          "plugins": {
+            "da": {
+              "name": "widget",
+              "unsafeHTML": "<div class=\"widget\"><div><div><p><a href=\"/widgets/example\">Widget</a></p></div></div></div>"
+            }
+          },
+          "model": "widget"
         }
       ]
     }
