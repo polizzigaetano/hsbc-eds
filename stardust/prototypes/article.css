@@ -1,0 +1,12 @@
+/* provenance: stardust:replica Phase 3 — A1 article archetype layer (page-description + editorial text
+   + notes-to-editors disclaimer). Values lifted from application.css + computed styles at 1440/360. */
+
+/* page description (date · H1 · lede) lives in canon.css (shared with the landing archetype) */
+
+/* editorial body (.text) lives in canon.css */
+
+/* notes to editors */
+.disclaimer { margin-top: -3px; font-family: var(--ff-light); font-size: 12px; line-height: 18px; }
+.disclaimer strong { font-family: var(--ff-bold); }
+.text .disclaimer p { margin: -4px 0 15px; }
+@media (max-width: 640px) { .text .disclaimer p { margin-top: -3px; } }

@@ -1,0 +1,231 @@
+{
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-10-01T13:02:10.758Z",
+    "waitMode": "medium",
+    "waitMs": 2500,
+    "httpStatus": 200
+  },
+  "slug": "hsbc-uk-community",
+  "url": "https://www.about.hsbc.co.uk/hsbc-uk/community",
+  "renderedBy": "playwright",
+  "fetchedAt": "2026-10-01T13:02:10.758Z",
+  "finalUrl": "https://www.about.hsbc.co.uk/",
+  "title": "About HSBC | HSBC UK",
+  "description": "Find out about the extensive range of services HSBC offers to its customers in the UK, along with information about our headquarters, our CEO, and our history.",
+  "og": {
+    "title": null,
+    "description": null,
+    "image": null,
+    "type": null
+  },
+  "headings": [
+    {
+      "tag": "h1",
+      "text": "HSBC UK"
+    },
+    {
+      "tag": "h2",
+      "text": "Our services"
+    },
+    {
+      "tag": "h2",
+      "text": "Our headquarters"
+    },
+    {
+      "tag": "h2",
+      "text": "Our CEO"
+    },
+    {
+      "tag": "h2",
+      "text": "Cookies on this website"
+    }
+  ],
+  "body": [
+    "Share link to this page on X",
+    "Share link to this page on Facebook",
+    "Share link to this page on LinkedIn",
+    "We are opening up a world of opportunity, supporting the financial health of individuals, businesses and communities across the UK – now and for the future.",
+    "Headquartered in Birmingham, HSBC UK serves over 15 million active customers across the UK, supported by over 23,000 colleagues.",
+    "HSBC UK helps millions of people look after their day-to-day finances and manage their wealth. We offer retail banking and wealth management to personal and private banking customers under our three brands: HSBC UK (including our Private Bank), first direct and Marks and Spencer (’M&S’) Financial Services plc.",
+    "We partner with businesses from small and medium sized enterprises to large corporates – supporting every stage of their growth, their international ambitions and their sustainability transitions – through our universal banking capabilities. This includes HSBC Innovation Banking, which supports clients and investors through all business life stages with our deep sector expertise, stability and international reach.",
+    "HSBC UK is a ring-fenced bank and wholly owned subsidiary of HSBC Holdings plc.",
+    "1 Centenary Square Birmingham B1 1HQ",
+    "David Lindberg, Chief Executive Officer",
+    "Our inclusion strategy is focused on three Rs: Representation, Respect and Reputation.",
+    "We are committed to making it as easy as possible for fintechs to become one of our suppliers.",
+    "Find data on HSBC’s lending to small and medium enterprises, residential mortgages and unsecured personal loans on our postcode lending page.",
+    "Find out information about HSBC UK Bank plc’s Regulated Covered Bond Programme, including monthly investor reports, programme documents and offering documents.",
+    "Find press releases and contact details for media representatives of HSBC in the UK.",
+    "Find out more information about the wide range of careers, job opportunities and reasons to work for HSBC in the United Kingdom."
+  ],
+  "codeBlocks": [],
+  "ctas": [
+    {
+      "label": "Cookie Notice",
+      "href": "https://www.about.hsbc.co.uk/cookie-notice"
+    }
+  ],
+  "links": [
+    "https://www.about.hsbc.co.uk/#",
+    "https://www.about.hsbc.co.uk/#nav-tray-sub-view-1",
+    "https://www.about.hsbc.co.uk/#nav-tray-sub-view-2",
+    "https://www.about.hsbc.co.uk/#nav-tray-sub-view-3",
+    "https://www.about.hsbc.co.uk/#nav-tray-sub-view-4",
+    "https://www.hsbc.co.uk/",
+    "https://www.business.hsbc.uk/en-gb",
+    "https://www.about.hsbc.co.uk/hsbc-uk",
+    "https://www.about.hsbc.co.uk/hsbc-uk/postcode-lending-data",
+    "https://www.about.hsbc.co.uk/hsbc-uk/inclusion",
+    "https://www.about.hsbc.co.uk/hsbc-uk/working-with-fintechs",
+    "https://www.about.hsbc.co.uk/hsbc-uk/regulated-covered-bond-programme",
+    "https://www.about.hsbc.co.uk/news-and-media",
+    "https://www.about.hsbc.co.uk/management-team",
+    "https://www.about.hsbc.co.uk/history-timeline",
+    "https://www.about.hsbc.co.uk/#page",
+    "https://www.about.hsbc.co.uk/",
+    "http://twitter.com/intent/tweet?url={URL}",
+    "https://www.facebook.com/sharer/sharer.php?u={URL}",
+    "http://www.linkedin.com/shareArticle?mini=true&url={URL}&title={title}",
+    "https://www.hsbc.com/careers/where-we-hire/united-kingdom",
+    "https://www.about.hsbc.co.uk/accessibility",
+    "https://www.about.hsbc.co.uk/privacy-notice",
+    "https://www.about.hsbc.co.uk/terms-of-use",
+    "https://www.about.hsbc.co.uk/cookie-notice",
+    "https://www.hsbc.co.uk/help/"
+  ],
+  "media": {
+    "imgs": [
+      {
+        "src": "https://www.about.hsbc.co.uk/-/media/pws171/Logos/HSBC-logo.svg",
+        "alt": "HSBC",
+        "w": 125,
+        "h": 24
+      },
+      {
+        "src": "https://www.about.hsbc.co.uk/-/media/pws171/Logos/HSBC-logo.svg",
+        "alt": "HSBC",
+        "w": 125,
+        "h": 24
+      },
+      {
+        "src": "https://www.about.hsbc.co.uk/-/media/uk/images/240703-hsbc-in-uk-1520x400.jpg",
+        "alt": "",
+        "w": 1520,
+        "h": 400
+      },
+      {
+        "src": "https://www.about.hsbc.co.uk/-/media/uk/images/240703-office-pic-580x635.jpg",
+        "alt": "",
+        "w": 580,
+        "h": 635
+      },
+      {
+        "src": "https://www.about.hsbc.co.uk/-/media/uk/images/251230-david-lindberg-ceo-580x635.jpg?sc_lang=en-GB",
+        "alt": "",
+        "w": 580,
+        "h": 635
+      },
+      {
+        "src": "https://www.about.hsbc.co.uk/-/media/uk/images/hsbc-in-the-uk/diversity-and-inclusion/diversity-and-inclusion-800x495.jpg",
+        "alt": "",
+        "w": 800,
+        "h": 495
+      },
+      {
+        "src": "https://www.about.hsbc.co.uk/-/media/uk/images/hsbc-in-the-uk/corona-virus/200904-fintech-880x495.jpg",
+        "alt": "",
+        "w": 320,
+        "h": 180
+      },
+      {
+        "src": "https://www.about.hsbc.co.uk/-/media/Images/images-v2/240115-postcode-lending-data-800x495.jpg",
+        "alt": "",
+        "w": 800,
+        "h": 495
+      },
+      {
+        "src": "https://www.about.hsbc.co.uk/-/media/uk/images/hsbc-in-the-uk/global-covered-bonds-programme/210326-uk-regulated-covered-bond-programme-800x495.jpg",
+        "alt": "",
+        "w": 800,
+        "h": 495
+      },
+      {
+        "src": "https://www.about.hsbc.co.uk/-/media/Images/images-v2/112323-news-and-media-new-800x495.jpg",
+        "alt": "",
+        "w": 800,
+        "h": 495
+      },
+      {
+        "src": "https://www.about.hsbc.co.uk/-/media/uk/images/260414-careers-in-uk-landing-page-800x495.jpg?sc_lang=en-GB",
+        "alt": "",
+        "w": 800,
+        "h": 495
+      }
+    ],
+    "allImgCount": 12,
+    "cssBackgrounds": [],
+    "modals": [
+      "Cookies on this websiteWe use cookies to help keep our website and services working properly. These cookies are necessary and set automatically.We'd also like to use some optional cookies that:Make your visit more personalImprove our website based on how you use itSupport our marketingYou can either 'Accept' or 'Decline' these cookies or choose what cookies to accept in 'Manage cookies'.To learn more about how we use cookies, visit our Cookie Notice."
+    ],
+    "videos": [],
+    "iframes": []
+  },
+  "customProps": {},
+  "_signals": {
+    "filteredInterstitials": 0,
+    "distinctHeadings": 5,
+    "mainTextLen": 2667,
+    "realImageCount": 11,
+    "trackingOnlyMedia": false,
+    "spaShellSuspect": false,
+    "screenshotMode": "fullPage",
+    "duplicateOf": "index"
+  },
+  "dynamic": {
+    "endpoints": [
+      {
+        "method": "GET",
+        "host": "akamai.tiqcdn.com",
+        "path": "/location/location.js",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/x-javascript",
+        "status": 200,
+        "bytes": 18,
+        "hits": 1,
+        "example": "https://akamai.tiqcdn.com/location/location.js",
+        "sameSite": false
+      }
+    ],
+    "thirdPartyScriptHosts": [
+      {
+        "host": "tags.tiqcdn.com",
+        "count": 3
+      },
+      {
+        "host": "sadmin.brightcove.com",
+        "count": 1
+      }
+    ],
+    "truncated": false,
+    "inlineData": [],
+    "globalState": [],
+    "frameworkHints": [],
+    "forms": [],
+    "ariaLiveRegions": 0,
+    "triggers": [],
+    "mediaIds": [],
+    "summary": {
+      "sameSiteEndpoints": 0,
+      "thirdPartyEndpoints": 1,
+      "thirdPartyScriptHosts": 2,
+      "inlineDataBlobs": 0,
+      "forms": 0,
+      "searchForms": 0,
+      "hydrated": false
+    }
+  },
+  "screenshot": "assets/screenshots/hsbc-uk-community.png",
+  "renderedHtml": "pages/hsbc-uk-community.html"
+}

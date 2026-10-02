@@ -1,0 +1,69 @@
+/* profile — live .exec-bio rows; element query [max-width~="560px"] → container query */
+.profile .exec-bio {
+  padding: 25px 0 22px;
+  overflow: hidden;
+  border-bottom: 1px solid var(--c-rule);
+  container-type: inline-size;
+}
+
+.profile .exec-bio__image {
+  float: left;
+  max-width: 100%;
+}
+
+.profile .exec-bio__image p { line-height: 0; }
+
+.profile .exec-bio__image img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.profile .exec-bio__copy {
+  margin-left: 200px;
+  padding-top: 5px;
+}
+
+.profile .exec-bio__no-image .exec-bio__copy { margin-left: 0; }
+.profile .exec-bio__copy :is(strong, b) { font-family: var(--ff-bold); }
+.profile .exec-bio__copy :is(em, i) { font-family: var(--ff-italic); }
+
+.profile .exec-bio__name {
+  margin: 0 0 10px;
+  font-family: var(--ff-thin);
+  font-size: 36px;
+  line-height: 1;
+  letter-spacing: -0.005em;
+}
+
+.profile .exec-bio__name :is(h2, h3) {
+  font: inherit;
+  letter-spacing: inherit;
+}
+
+.profile .exec-bio__position {
+  margin: 0 0 20px;
+  font-family: var(--ff-bold);
+  font-size: 23px;
+  line-height: 1;
+}
+
+.profile .exec-bio__position p { margin: 0; }
+
+.profile .exec-bio__text {
+  height: 70px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.profile .exec-bio__text--view-all {
+  height: auto;
+  overflow: visible;
+}
+
+.profile .exec-bio__text__inner.text { margin-bottom: 0; }
+
+@container (width <= 560px) {
+  .profile .exec-bio__image { display: none; }
+  .profile .exec-bio__copy { margin-left: 0; }
+}

@@ -2,19 +2,49 @@ import { getMetadata } from '../../scripts/aem.js';
 import { loadFragment } from '../fragment/fragment.js';
 
 /**
- * loads and decorates the footer
- * @param {Element} block The footer block element
+ * footer — the live black utility footer (template-slotted).
+ *
+ * /footer document contract:
+ *   section 1: one <ul> of utility links
+ *   section 2: the copyright paragraph
  */
 export default async function decorate(block) {
-  // load footer as fragment
   const footerMeta = getMetadata('footer');
   const footerPath = footerMeta ? new URL(footerMeta, window.location).pathname : '/footer';
   const fragment = await loadFragment(footerPath);
 
-  // decorate footer DOM
-  block.textContent = '';
-  const footer = document.createElement('div');
-  while (fragment.firstElementChild) footer.append(fragment.firstElementChild);
+  const utility = document.createElement('div');
+  utility.className = 'footer__utility';
+  const inner = document.createElement('div');
+  inner.className = 'footer__inner';
+  utility.append(inner);
 
-  block.append(footer);
+  if (fragment) {
+    const list = fragment.querySelector('ul');
+    if (list) {
+      const nav = document.createElement('nav');
+      nav.className = 'footer__utility__nav';
+      nav.setAttribute('aria-label', 'Footer');
+      list.classList.add('footer__utility__list');
+      list.querySelectorAll(':scope > li').forEach((li) => {
+        li.classList.add('footer__item');
+        const a = li.querySelector('a');
+        if (a) {
+          if (a.parentElement.tagName === 'P') a.parentElement.replaceWith(a);
+          a.classList.add('footer__link');
+        }
+      });
+      nav.append(list);
+      inner.append(nav);
+    }
+    const copyright = [...fragment.querySelectorAll('p')].find((p) => !p.closest('ul'));
+    if (copyright) {
+      const wrap = document.createElement('div');
+      wrap.className = 'footer__copyright';
+      wrap.append(copyright);
+      inner.append(wrap);
+    }
+  }
+
+  block.replaceChildren(utility);
 }

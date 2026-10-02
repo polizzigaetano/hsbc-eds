@@ -1,0 +1,48 @@
+/* provenance: stardust:replica Phase 3 — A4 content-page archetype layer (rich-text lists, inline
+   download/external links, sidebar image + factbox, 3-3-3-3 grid of image-less promo cards).
+   Values lifted from application.css + computed styles at 1440 / 360 in the gate browser
+   (stardust/.work/replica/a4-lift*.json). */
+
+/* ---------- rich text lists ---------- */
+.text ul { margin: 24px 0 24px 17px; list-style: none; }
+.text li { margin: 0 0 12px; list-style-type: square; }
+.text li p { margin: -4px 0 0; }
+@media (max-width: 640px) { .text li p { margin-top: -3px; } }
+
+/* ---------- inline download link icon (glyph ⇓ 14px #272727, 5px gap) ---------- */
+.text .icon--download { font-family: var(--ff-italic); font-size: 14px; line-height: 0; color: #272727; }
+.text .icon--download::after { width: 0.9932em; margin-right: 5px; vertical-align: baseline; margin-top: -0.25em; margin-bottom: -0.0625em; }
+.text .icon--external { font-family: var(--ff-italic); line-height: 0; }
+.text .icon--external::after { vertical-align: baseline; margin-top: -0.25em; margin-bottom: -0.0625em; }
+
+/* ---------- sidebar image link ---------- */
+.layout__secondary .text img { display: inline; max-width: 100%; height: auto; }
+
+/* ---------- factbox (list variant) ---------- */
+.factbox { background: #ededed; color: #000; }
+.factbox__inner { padding: 29px 28px 25px; }
+.factbox__heading { margin: 0 0 20px; font-family: var(--ff-light); font-size: 30px; line-height: 1; letter-spacing: -0.04em; }
+.factbox__list ul { margin: 0 0 -11px; list-style-type: square; }
+.factbox__list li { margin: 0 0 11px 18px; line-height: 1.5; list-style-type: square; }
+
+/* ---------- 3-3-3-3 grid ---------- */
+.layout--3-3-3-3 { margin-bottom: 20px; clear: both; }
+.layout--3-3-3-3::before, .layout--3-3-3-3::after { content: " "; display: table; }
+.layout--3-3-3-3::after { clear: both; }
+.layout--3-3-3-3 > .layout__primary, .layout--3-3-3-3 > .layout__secondary, .layout--3-3-3-3 > .layout__tertiary, .layout--3-3-3-3 > .layout__quaternary {
+  float: left; width: 23.7288135593%; margin-right: 1.6949152542%;
+}
+.layout--3-3-3-3 > .layout__quaternary { float: right; margin-right: 0; }
+@media (max-width: 1080px) {
+  .layout--3-3-3-3 > .layout__primary { float: right; width: 100%; margin-right: 0; margin-bottom: 24px; }
+  .layout--3-3-3-3 > .layout__secondary, .layout--3-3-3-3 > .layout__tertiary, .layout--3-3-3-3 > .layout__quaternary { float: left; width: 32.2033898305%; margin-right: 1.6949152542%; }
+  .layout--3-3-3-3 > .layout__quaternary { float: right; margin-right: 0; }
+}
+@media (max-width: 800px) {
+  .layout--3-3-3-3 > .layout__primary, .layout--3-3-3-3 > .layout__secondary, .layout--3-3-3-3 > .layout__tertiary, .layout--3-3-3-3 > .layout__quaternary { float: right; width: 100%; margin-right: 0; margin-bottom: 24px; }
+  .layout--3-3-3-3 > .layout__quaternary { margin-bottom: 0; }
+}
+
+/* ---------- image-less promo card ---------- */
+.long-form-promo--no-image .long-form-promo__inner, .long-form-promo--no-image .long-form-promo__inner-content { margin: 0; padding: 0; }
+.long-form-promo--no-image .long-form-promo__inner-content { padding-bottom: 15px; }

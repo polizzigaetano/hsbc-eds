@@ -1,0 +1,12 @@
+{
+  "sites": {
+    "hsbc-eds": {
+      "previewOrg": "polizzigaetano",
+      "previewSite": "hsbc-eds",
+      "contentHostUrl": "https://content.da.live/polizzigaetano/hsbc-eds/"
+    }
+  },
+  "features": [
+    "site-planning"
+  ]
+}

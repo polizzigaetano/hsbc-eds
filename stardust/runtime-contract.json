@@ -1,0 +1,17 @@
+{
+  "_provenance": "stardust:deploy runtime-detection probe, 2026-10-02. Read: scripts/scripts.js (decorateButtons, buildAutoBlocks, loadEager/loadLazy/loadDelayed), scripts/aem.js (decorateBlock, wrapTextNodes, decorateSections, decorateIcons). Nothing synthesized.",
+  "runtime": "vanilla-eds",
+  "blockWrapperClass": "block",
+  "blockWrapper": "div.<name>-wrapper > div.<name>.block[data-block-name]; section gains .<name>-container",
+  "buttonClasses": "a.button + .primary (strong) / .secondary (em) / .accent (strong+em), parent p.button-wrapper",
+  "buttonization": "formatted-only",
+  "buttonizationGuards": "skips links containing <img>, links not alone in their <p>, and URL-display links (text === href)",
+  "wrapTextNodes": "cells whose first child is not P/PRE/UL/OL/PICTURE/TABLE/BLOCKQUOTE/H1-6 (or picture followed by more) are folded into one <p>",
+  "decorateIconsSyntax": ":name: -> span.icon.icon-<name> (single dash); the site's own mask icons use the icon--<name> (double dash) family so the two never collide",
+  "fragmentScriptPolicy": "inert-innerHTML",
+  "emptySectionCollapse": true,
+  "autoBlocks": ["fragment (/fragments/ links)", "widget (/widgets/ links)"],
+  "delayed": "scripts/consent-check.js (dummy CMP: declined by default; ?consent=accept loads consented.js)",
+  "fontsLoading": "styles/fonts.css via loadFonts(): eager when innerWidth >= 900 or session flag, always in loadLazy",
+  "chrome": "header/footer blocks load /nav and /footer (overridable by nav/footer metadata)"
+}

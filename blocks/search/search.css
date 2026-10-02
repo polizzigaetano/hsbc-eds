@@ -1,0 +1,62 @@
+/* search — the live /search page box and results (interim styling from the live tokens) */
+.search .search-box__fields {
+  position: relative;
+  display: flex;
+  max-width: 580px;
+  margin-bottom: 30px;
+}
+
+.search .search-box__input {
+  flex: 1;
+  min-width: 0;
+  height: 44px;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  border: 1px solid var(--c-rule-dark);
+  border-right: 0;
+  font-size: 16px;
+}
+
+.search .search-box__submit {
+  width: 48px;
+  height: 44px;
+  border: 0;
+  background: var(--c-black);
+  color: var(--c-white);
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.search .search__empty p { margin: -4px 0 15px; }
+.search .search__empty[hidden] { display: none; }
+
+.search .search__item {
+  padding: 20px 0;
+  border-top: 1px solid var(--c-rule);
+}
+
+.search .search__item a { display: inline-block; }
+
+.search .search__title {
+  font-family: var(--ff-bold);
+  font-size: 18px;
+  line-height: 1.34;
+}
+
+.search .search__item a:hover .search__title,
+.search .search__item a:focus .search__title { text-decoration: underline; }
+
+.search .search__date {
+  display: block;
+  margin-top: 6px;
+  font-family: var(--ff-bold);
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.search .search__description {
+  display: block;
+  margin-top: 6px;
+  font-size: 14px;
+  line-height: 1.5;
+}

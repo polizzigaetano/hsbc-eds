@@ -11,6 +11,7 @@ import {
   loadCSS,
   buildBlock,
 } from './aem.js';
+import { decorateLinks } from './site.js';
 
 if (window.trustedTypes && window.trustedTypes.createPolicy) {
   const innerTT = window.trustedTypes.createPolicy('tt-inner', {
@@ -74,11 +75,36 @@ function buildWidgetAutoBlocks(main) {
 }
 
 /**
+ * Fallback for documents rendered without the delivery pipeline's metadata processing (local
+ * html-folder previews, older rendering versions): applies section-metadata styles as section
+ * classes and drops the page metadata table from <main>. A no-op on pipeline-rendered pages.
+ * @param {Element} main The container element
+ */
+function applyMetadataFallback(main) {
+  const toClassName = (v) => v.toLowerCase().trim().replace(/[^0-9a-z]+/g, '-');
+  main.querySelectorAll(':scope > div > .section-metadata').forEach((meta) => {
+    const section = meta.parentElement;
+    [...meta.children].forEach((row) => {
+      const [key, value] = [...row.children].map((c) => c.textContent.trim());
+      if (!key) return;
+      if (toClassName(key) === 'style') {
+        value.split(',').map(toClassName).filter(Boolean).forEach((c) => section.classList.add(c));
+      } else {
+        section.dataset[toClassName(key).replace(/-([a-z])/g, (m, ch) => ch.toUpperCase())] = value;
+      }
+    });
+    meta.remove();
+  });
+  main.querySelectorAll(':scope > div > .metadata').forEach((meta) => meta.remove());
+}
+
+/**
  * Builds all synthetic blocks in a container element.
  * @param {Element} main The container element
  */
 function buildAutoBlocks(main) {
   try {
+    applyMetadataFallback(main);
     // auto load `*/fragments/*` references
     const fragments = [...main.querySelectorAll('a[href*="/fragments/"]')].filter((f) => !f.closest('.fragment'));
     if (fragments.length > 0) {
@@ -153,6 +179,8 @@ export function decorateMain(main) {
   decorateSections(main);
   decorateBlocks(main);
   decorateButtons(main);
+  // page content only: nav/footer fragments are decorated while still detached
+  if (main.isConnected) decorateLinks(main);
 }
 
 /**
@@ -194,6 +222,9 @@ async function loadLazy(doc) {
   if (hash && element) element.scrollIntoView();
 
   loadFooter(doc.querySelector('body > footer'));
+
+  // live leaving-HSBC / e-mail confirmations (delegated, loads its dialog on first use)
+  import('./leaving-confirmation.js').then(({ default: init }) => init());
 
   loadCSS(`${window.hlx.codeBasePath}/styles/lazy-styles.css`);
   loadFonts();

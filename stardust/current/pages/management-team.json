@@ -1,0 +1,186 @@
+{
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-10-01T13:02:20.347Z",
+    "waitMode": "medium",
+    "waitMs": 2500,
+    "httpStatus": 200
+  },
+  "slug": "management-team",
+  "url": "https://www.about.hsbc.co.uk/management-team",
+  "renderedBy": "playwright",
+  "fetchedAt": "2026-10-01T13:02:20.347Z",
+  "finalUrl": "https://www.about.hsbc.co.uk/management-team",
+  "title": "Management team - About HSBC | HSBC UK",
+  "description": "Management team of HSBC in the United Kingdom.",
+  "og": {
+    "title": null,
+    "description": null,
+    "image": null,
+    "type": null
+  },
+  "headings": [
+    {
+      "tag": "h1",
+      "text": "Management team"
+    },
+    {
+      "tag": "h2",
+      "text": "David Lindberg"
+    },
+    {
+      "tag": "h2",
+      "text": "Stuart Tait"
+    },
+    {
+      "tag": "h2",
+      "text": "José Carvalho"
+    },
+    {
+      "tag": "h2",
+      "text": "Cookies on this website"
+    }
+  ],
+  "body": [
+    "Share link to this page on X",
+    "Share link to this page on Facebook",
+    "Share link to this page on LinkedIn"
+  ],
+  "codeBlocks": [],
+  "ctas": [
+    {
+      "label": "Cookie Notice",
+      "href": "https://www.about.hsbc.co.uk/cookie-notice"
+    }
+  ],
+  "links": [
+    "https://www.about.hsbc.co.uk/management-team#",
+    "https://www.about.hsbc.co.uk/management-team#nav-tray-sub-view-1",
+    "https://www.about.hsbc.co.uk/management-team#nav-tray-sub-view-2",
+    "https://www.about.hsbc.co.uk/management-team#nav-tray-sub-view-3",
+    "https://www.about.hsbc.co.uk/management-team#nav-tray-sub-view-4",
+    "https://www.hsbc.co.uk/",
+    "https://www.business.hsbc.uk/en-gb",
+    "https://www.about.hsbc.co.uk/hsbc-uk",
+    "https://www.about.hsbc.co.uk/hsbc-uk/postcode-lending-data",
+    "https://www.about.hsbc.co.uk/hsbc-uk/inclusion",
+    "https://www.about.hsbc.co.uk/hsbc-uk/working-with-fintechs",
+    "https://www.about.hsbc.co.uk/hsbc-uk/regulated-covered-bond-programme",
+    "https://www.about.hsbc.co.uk/news-and-media",
+    "https://www.about.hsbc.co.uk/management-team",
+    "https://www.about.hsbc.co.uk/history-timeline",
+    "https://www.about.hsbc.co.uk/management-team#page",
+    "https://www.about.hsbc.co.uk/",
+    "http://twitter.com/intent/tweet?url={URL}",
+    "https://www.facebook.com/sharer/sharer.php?u={URL}",
+    "http://www.linkedin.com/shareArticle?mini=true&url={URL}&title={title}",
+    "https://www.about.hsbc.co.uk/accessibility",
+    "https://www.about.hsbc.co.uk/privacy-notice",
+    "https://www.about.hsbc.co.uk/terms-of-use",
+    "https://www.about.hsbc.co.uk/cookie-notice",
+    "https://www.hsbc.co.uk/help/"
+  ],
+  "media": {
+    "imgs": [
+      {
+        "src": "https://www.about.hsbc.co.uk/-/media/pws171/Logos/HSBC-logo.svg",
+        "alt": "HSBC",
+        "w": 125,
+        "h": 24
+      },
+      {
+        "src": "https://www.about.hsbc.co.uk/-/media/pws171/Logos/HSBC-logo.svg",
+        "alt": "HSBC",
+        "w": 125,
+        "h": 24
+      },
+      {
+        "src": "https://www.about.hsbc.co.uk/-/media/Images/management-team-1520x400.jpg",
+        "alt": "",
+        "w": 1520,
+        "h": 400
+      },
+      {
+        "src": "https://www.about.hsbc.co.uk/-/media/uk/images/251209-david-lindberg-179x179.jpg?sc_lang=en-GB&w=179&hash=53802C97FAE3E2134EC80EDDF8BE01F9",
+        "alt": "",
+        "w": 179,
+        "h": 179
+      },
+      {
+        "src": "https://www.about.hsbc.co.uk/-/media/uk/images/251209-stuart-tait-179x179.jpg?sc_lang=en-GB&w=179&hash=F79F21ADBF531E9D6BEEB4991055714F",
+        "alt": "",
+        "w": 179,
+        "h": 179
+      },
+      {
+        "src": "https://www.about.hsbc.co.uk/-/media/uk/images/251209-jose-carvalho-179x179.jpg?sc_lang=en-GB&w=179&hash=465249205F5082884808924C839BA3FC",
+        "alt": "",
+        "w": 179,
+        "h": 179
+      }
+    ],
+    "allImgCount": 6,
+    "cssBackgrounds": [],
+    "modals": [
+      "Cookies on this websiteWe use cookies to help keep our website and services working properly. These cookies are necessary and set automatically.We'd also like to use some optional cookies that:Make your visit more personalImprove our website based on how you use itSupport our marketingYou can either 'Accept' or 'Decline' these cookies or choose what cookies to accept in 'Manage cookies'.To learn more about how we use cookies, visit our Cookie Notice."
+    ],
+    "videos": [],
+    "iframes": []
+  },
+  "customProps": {},
+  "_signals": {
+    "filteredInterstitials": 0,
+    "distinctHeadings": 5,
+    "mainTextLen": 380,
+    "realImageCount": 6,
+    "trackingOnlyMedia": false,
+    "spaShellSuspect": false,
+    "screenshotMode": "fullPage"
+  },
+  "dynamic": {
+    "endpoints": [
+      {
+        "method": "GET",
+        "host": "akamai.tiqcdn.com",
+        "path": "/location/location.js",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/x-javascript",
+        "status": 200,
+        "bytes": 18,
+        "hits": 1,
+        "example": "https://akamai.tiqcdn.com/location/location.js",
+        "sameSite": false
+      }
+    ],
+    "thirdPartyScriptHosts": [
+      {
+        "host": "tags.tiqcdn.com",
+        "count": 2
+      },
+      {
+        "host": "sadmin.brightcove.com",
+        "count": 1
+      }
+    ],
+    "truncated": false,
+    "inlineData": [],
+    "globalState": [],
+    "frameworkHints": [],
+    "forms": [],
+    "ariaLiveRegions": 0,
+    "triggers": [],
+    "mediaIds": [],
+    "summary": {
+      "sameSiteEndpoints": 0,
+      "thirdPartyEndpoints": 1,
+      "thirdPartyScriptHosts": 2,
+      "inlineDataBlobs": 0,
+      "forms": 0,
+      "searchForms": 0,
+      "hydrated": false
+    }
+  },
+  "screenshot": "assets/screenshots/management-team.png",
+  "renderedHtml": "pages/management-team.html"
+}

@@ -1,0 +1,193 @@
+{
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-10-01T13:04:56.211Z",
+    "waitMode": "medium",
+    "waitMs": 2500,
+    "httpStatus": 200
+  },
+  "slug": "news-and-media-hsbc-uk-introduces-new-interest-rates-on-fixed-rate-saver",
+  "url": "https://www.about.hsbc.co.uk/news-and-media/hsbc-uk-introduces-new-interest-rates-on-fixed-rate-saver",
+  "renderedBy": "playwright",
+  "fetchedAt": "2026-10-01T13:04:56.211Z",
+  "finalUrl": "https://www.about.hsbc.co.uk/news-and-media/hsbc-uk-introduces-new-interest-rates-on-fixed-rate-saver",
+  "title": "HSBC UK introduces new interest rates of up to 2.00% AER/Gross on Fixed Rate Saver",
+  "description": "HSBC UK is increasing the interest rates on its Fixed Rate Saver account, the bank announced today. The account, often referred to as a bond, will provide some of the best rates of return on the high street across 1, 2 and 3 year terms.",
+  "og": {
+    "title": null,
+    "description": null,
+    "image": null,
+    "type": null
+  },
+  "headings": [
+    {
+      "tag": "h1",
+      "text": "HSBC UK introduces new interest rates of up to 2.00% AER/Gross on Fixed Rate Saver"
+    },
+    {
+      "tag": "h2",
+      "text": "Media enquiries to:"
+    },
+    {
+      "tag": "h2",
+      "text": "Cookies on this website"
+    }
+  ],
+  "body": [
+    "10 January 2019",
+    "From 10th January the new interest rates of up to 2% will be available on the Fixed Rate Saver account on balances from £2,000 to £1million.",
+    "Michelle Andrews, HSBC UK’s Head of Mortgages and Savings, said:\"We know how important interest rates are to our customers in helping them make their money work harder. ‎We hope these new interest rates will help our customers save for their hopes and dreams and help them to achieve their financial goals.",
+    "\"These improved rates complement our Regular Saver on monthly savings, which provides up to 5%, our newly launched ‘MyInvestment’ advice service and our new current account switching offers for those choosing to join us. We really hope this helps kick-start 2019 for new and existing savers.\"",
+    "The Fixed Rate Saver account, which can be opened online, over the phone or in branch, gives the option of saving for a fixed period of time from 3 months up to 3 years. The increased rates are on the 1, 2 and 3 year terms and for an example of the possible returns please see the table below:",
+    "*Interest rates correct at time of publication.",
+    "The new year current account switching offers:",
+    "The HSBC Premier Bank AccountLuxury Stay offer which, in addition to a choice of 50 luxury hotels and linked experiences, now offers the choice of a Family Getaway at a range of Merlin hotels, including Alton Towers, Thorpe Park and Legoland. This package is valued at £330 on average.",
+    "The HSBC Advance Bank Accountoffer of £150 in cash paid into the opened account within 30 days of switching. In addition, the account offers preferential rates, exclusive offers and more.",
+    "The HSBC Bank Account offer of £75 in cash paid into the opened account within 30 days of switching. To be eligible for this everyday account, customers need to pay in a minimum £500 per month (or £3000 over 6 months).",
+    "HSBC UK Press Office: ukpressoffice@hsbc.co.uk Steve Gracey - steve.gracey@hsbc.com / 020 7991 4118 Twitter: @HSBC_UK",
+    "Notes to editors:",
+    "The Fixed Rate Saver is available to existing customers with a current account or savings account or new customers, subject to eligibility criteria.",
+    "The Fixed Rate Saver is a bond which means that a fixed amount of money is deposited for a fixed period (term) at a fixed interest rate. At the end of the term the initial deposit is repaid.",
+    "Deposits of £50,000 or more: you may not withdraw your deposit in full or in part before the end of the fixed term.",
+    "Deposits up to £50,000: you may not withdraw part of your deposit during the fixed term. You may withdraw your deposit in full before the end of the fixed term but if you do we will charge you a fee equivalent to 90 days gross interest.",
+    "Interest is calculated daily and credited either monthly, annually, or at the end of the term.",
+    "If a customer chooses monthly interest, we'll pay interest on the monthly anniversary of the account being opened. If you choose annual interest, we'll pay it on the anniversary of your account being opened.",
+    "Eligibility for a Fixed Rate Saver account: Available to those aged 7 years or over who have an HSBC current account or savings account (excluding an ISA, Regular Savings Account or Basic Bank Account) which must be maintained for the duration of the fixed term.",
+    "Customers between 7 years and 15 years need the application to be signed by a parent or guardian.",
+    "Customers aged 18 years or over can open a beneficiary account for a child providing you also hold a Future Saver for Children in the same names. This can only be opened in branch.",
+    "To be eligible for a switching offer, applicants must not have held an HSBC current account of any type since 1 January 2016, who apply and start a full switch using CASS including a minimum of two Direct Debits and/or Standing Orders, within 30 days of the date of the account being opened.",
+    "More information about the switching offers and the current accounts can be found here.",
+    "The Regular Saver fixed rate of 5% AER/gross is available to HSBC Premier or HSBC Advance customers (providing the account is kept for the period the Regular Saver is held with us).",
+    "The fixed rate of 3% AER/gross is available to Bank Account, Bank Account Pay Monthly, Student Bank Account or Graduate Bank Account customers.",
+    "You can choose to set up a standing order to pay between £25 and £250 into your Regular Saver Account each month, up to a total of £3,000. (If your regular payments are less than £250, you can carry your allowance over and pay more in later months.)",
+    "You can only hold one Regular Saver Account at any given time.",
+    "For the latest news and updates, visit the HSBC UK newsroom: https://www.about.hsbc.co.uk/news-and-media",
+    "HSBC UK: HSBC UK serves around 14.5 million customers across the UK, supported by 32,000 colleagues. HSBC UK offers a complete range of retail banking and wealth management to personal and private banking customers, as well as commercial banking for small to medium businesses and large corporates. HSBC UK Bank plc is a wholly owned subsidiary of HSBC Holdings plc, which is part of the HSBC Group – one of the world’s largest banking and financial services groups with assets of US$2,603bn at 30 September 2018. Linked by advanced technology, the HSBC Group serves customers worldwide from around 3,800 offices in 66 countries and territories in Europe, Asia, North and Latin America, and the Middle East and North Africa.",
+    "HSBC UK introduces new interest rates of up to 2.00% AER/Gross on Fixed Rate Saver (2-page PDF 286 KB)"
+  ],
+  "codeBlocks": [],
+  "ctas": [
+    {
+      "label": "Cookie Notice",
+      "href": "https://www.about.hsbc.co.uk/cookie-notice"
+    }
+  ],
+  "links": [
+    "https://www.about.hsbc.co.uk/news-and-media/hsbc-uk-introduces-new-interest-rates-on-fixed-rate-saver#",
+    "https://www.about.hsbc.co.uk/news-and-media/hsbc-uk-introduces-new-interest-rates-on-fixed-rate-saver#nav-tray-sub-view-1",
+    "https://www.about.hsbc.co.uk/news-and-media/hsbc-uk-introduces-new-interest-rates-on-fixed-rate-saver#nav-tray-sub-view-2",
+    "https://www.about.hsbc.co.uk/news-and-media/hsbc-uk-introduces-new-interest-rates-on-fixed-rate-saver#nav-tray-sub-view-3",
+    "https://www.about.hsbc.co.uk/news-and-media/hsbc-uk-introduces-new-interest-rates-on-fixed-rate-saver#nav-tray-sub-view-4",
+    "https://www.hsbc.co.uk/",
+    "https://www.business.hsbc.uk/en-gb",
+    "https://www.about.hsbc.co.uk/hsbc-uk",
+    "https://www.about.hsbc.co.uk/hsbc-uk/postcode-lending-data",
+    "https://www.about.hsbc.co.uk/hsbc-uk/inclusion",
+    "https://www.about.hsbc.co.uk/hsbc-uk/working-with-fintechs",
+    "https://www.about.hsbc.co.uk/hsbc-uk/regulated-covered-bond-programme",
+    "https://www.about.hsbc.co.uk/news-and-media",
+    "https://www.about.hsbc.co.uk/management-team",
+    "https://www.about.hsbc.co.uk/history-timeline",
+    "https://www.about.hsbc.co.uk/news-and-media/hsbc-uk-introduces-new-interest-rates-on-fixed-rate-saver#page",
+    "https://www.about.hsbc.co.uk/",
+    "https://www.hsbc.co.uk/current-accounts/products/premier/day-to-day-banking/bank-account/#_blank",
+    "https://www.hsbc.co.uk/current-accounts/products/advance/#_blank",
+    "https://www.hsbc.co.uk/current-accounts/products/bank-account/#_blank",
+    "mailto:ukpressoffice@hsbc.co.uk",
+    "mailto:steve.gracey@hsbc.com",
+    "http://twitter.com/HSBC_UK",
+    "https://www.hsbc.co.uk/current-accounts/#_blank",
+    "https://www.about.hsbc.co.uk/news-and-media#_blank",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/news-and-media/20190110-hsbc-uk-introduces-new-interest-rates.pdf",
+    "https://www.about.hsbc.co.uk/accessibility",
+    "https://www.about.hsbc.co.uk/privacy-notice",
+    "https://www.about.hsbc.co.uk/terms-of-use",
+    "https://www.about.hsbc.co.uk/cookie-notice",
+    "https://www.hsbc.co.uk/help/"
+  ],
+  "media": {
+    "imgs": [
+      {
+        "src": "https://www.about.hsbc.co.uk/-/media/pws171/Logos/HSBC-logo.svg",
+        "alt": "HSBC",
+        "w": 125,
+        "h": 24
+      },
+      {
+        "src": "https://www.about.hsbc.co.uk/-/media/pws171/Logos/HSBC-logo.svg",
+        "alt": "HSBC",
+        "w": 125,
+        "h": 24
+      },
+      {
+        "src": "https://www.about.hsbc.co.uk/-/media/Images/images-v2/hsbc-press-release-banner-1520x400.jpg",
+        "alt": "",
+        "w": 1520,
+        "h": 400
+      }
+    ],
+    "allImgCount": 3,
+    "cssBackgrounds": [],
+    "modals": [
+      "Cookies on this websiteWe use cookies to help keep our website and services working properly. These cookies are necessary and set automatically.We'd also like to use some optional cookies that:Make your visit more personalImprove our website based on how you use itSupport our marketingYou can either 'Accept' or 'Decline' these cookies or choose what cookies to accept in 'Manage cookies'.To learn more about how we use cookies, visit our Cookie Notice."
+    ],
+    "videos": [],
+    "iframes": []
+  },
+  "customProps": {},
+  "_signals": {
+    "filteredInterstitials": 0,
+    "distinctHeadings": 3,
+    "mainTextLen": 6417,
+    "realImageCount": 3,
+    "trackingOnlyMedia": false,
+    "spaShellSuspect": false,
+    "screenshotMode": "fullPage"
+  },
+  "dynamic": {
+    "endpoints": [
+      {
+        "method": "GET",
+        "host": "akamai.tiqcdn.com",
+        "path": "/location/location.js",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/x-javascript",
+        "status": 200,
+        "bytes": 18,
+        "hits": 1,
+        "example": "https://akamai.tiqcdn.com/location/location.js",
+        "sameSite": false
+      }
+    ],
+    "thirdPartyScriptHosts": [
+      {
+        "host": "tags.tiqcdn.com",
+        "count": 2
+      },
+      {
+        "host": "sadmin.brightcove.com",
+        "count": 1
+      }
+    ],
+    "truncated": false,
+    "inlineData": [],
+    "globalState": [],
+    "frameworkHints": [],
+    "forms": [],
+    "ariaLiveRegions": 0,
+    "triggers": [],
+    "mediaIds": [],
+    "summary": {
+      "sameSiteEndpoints": 0,
+      "thirdPartyEndpoints": 1,
+      "thirdPartyScriptHosts": 2,
+      "inlineDataBlobs": 0,
+      "forms": 0,
+      "searchForms": 0,
+      "hydrated": false
+    }
+  },
+  "screenshot": "assets/screenshots/news-and-media-hsbc-uk-introduces-new-interest-rates-on-fixed-rate-saver.png",
+  "renderedHtml": "pages/news-and-media-hsbc-uk-introduces-new-interest-rates-on-fixed-rate-saver.html"
+}

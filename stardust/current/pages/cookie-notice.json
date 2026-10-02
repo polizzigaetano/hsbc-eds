@@ -1,0 +1,275 @@
+{
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-10-01T13:02:11.356Z",
+    "waitMode": "medium",
+    "waitMs": 2500,
+    "httpStatus": 200
+  },
+  "slug": "cookie-notice",
+  "url": "https://www.about.hsbc.co.uk/cookie-notice",
+  "renderedBy": "playwright",
+  "fetchedAt": "2026-10-01T13:02:11.356Z",
+  "finalUrl": "https://www.about.hsbc.co.uk/cookie-notice",
+  "title": "Cookie notice - About HSBC | HSBC in the UK",
+  "description": "Read our cookie policy to find out about the cookies we use on this website, the purposes for which we use them, and how you can manage your cookie preferences.",
+  "og": {
+    "title": null,
+    "description": null,
+    "image": null,
+    "type": null
+  },
+  "headings": [
+    {
+      "tag": "h1",
+      "text": "Cookie notice"
+    },
+    {
+      "tag": "h2",
+      "text": "Cookies on this website"
+    },
+    {
+      "tag": "h2",
+      "text": "What are cookies?"
+    },
+    {
+      "tag": "h2",
+      "text": "The cookies we use"
+    },
+    {
+      "tag": "h3",
+      "text": "Strictly necessary cookies"
+    },
+    {
+      "tag": "h4",
+      "text": "Cookies that help you log on"
+    },
+    {
+      "tag": "h4",
+      "text": "Cookies that help us provide core services and features"
+    },
+    {
+      "tag": "h4",
+      "text": "Cookies that help keep our website secure"
+    },
+    {
+      "tag": "h4",
+      "text": "Cookies that help us detect fraud or crime"
+    },
+    {
+      "tag": "h3",
+      "text": "Optional cookies"
+    },
+    {
+      "tag": "h4",
+      "text": "Cookies that we use to make your visit more personal"
+    },
+    {
+      "tag": "h4",
+      "text": "Cookies that help us improve our website"
+    },
+    {
+      "tag": "h4",
+      "text": "Cookies that support marketing"
+    },
+    {
+      "tag": "h2",
+      "text": "How we remember your cookie preferences"
+    },
+    {
+      "tag": "h2",
+      "text": "Cookies and your browser settings"
+    },
+    {
+      "tag": "h2",
+      "text": "Our websites"
+    },
+    {
+      "tag": "h2",
+      "text": "Cookies and your privacy"
+    }
+  ],
+  "body": [
+    "This Cookie notice provides you with information about the cookies we use and the purposes for which we use them.",
+    "You can manage your cookie preferences at any time by clicking on the button below.",
+    "Manage cookie settings",
+    "Cookies are small pieces of data that websites store on your browser when you visit them. Cookies are useful because they allow a website to recognise your visit and collect information about how you use that website.",
+    "The length of time for which cookies are stored on your browser varies depending on the cookie. Some cookies only last for your online session, whereas others will stay on your browser for a longer period. We aim to set our cookies for no longer than 13 months and are working with our trusted partners to ensure cookies are always set for a reasonable period of time.",
+    "The cookies we use are either strictly necessary or optional.",
+    "Strictly necessary cookies ensure that our website is able to function properly. We don’t have to ask for your consent to store these cookies on your browser. We’ve listed the categories of these strictly necessary cookies below.",
+    "We use these cookies to remember who you are when you log on to secure areas of our website. You won‘t be able to log on without them.",
+    "We use these cookies to provide core services and features on our website. These services and features won’t work without them.",
+    "We work with service providers and third parties who also set these cookies on this website.",
+    "We use these cookies to protect the security of our website. For example, to make sure the website is only accessed by genuine users. This helps us to keep you safe.",
+    "We use these cookies to help us identify suspicious behaviour on our website so we can protect both you and us from fraud.",
+    "We’d also like to use cookies to provide optional features, improve our website and support advertising and social media.",
+    "We understand that not everyone likes data to be collected about them when it’s not strictly necessary, and so we’ll ask you to set your preferences when you first visit our website. To make it easier to choose which optional cookies to accept, we’ve organised these cookies by category. These are set out below. Where relevant, we’ve also explained which of our trusted partners helps us make use of these optional cookies.",
+    "You can choose which categories you’d be happy for us to use in your cookie settings and make changes at any time by selecting ‘Manage cookie settings’ at the top of this page.",
+    "We use these cookies to ensure our optional features and services work. Our website will still work without them.",
+    "This category may also include:",
+    "Cookies that allow us to customise what you see on our website and where, based on what we know about you",
+    "Cookies that help prevent fraud on other websites or services that you haven’t asked to use when you’re on our website",
+    "Cookies that help keep secure other websites or services that you haven’t asked to use when you’re on our website",
+    "We use these cookies to help us understand how people use our website. We can then use this data to improve how our website works. For instance, we may use analytics providers to identify and count visits to our website and to see which pages people go to and what they do there.",
+    "We work with service providers and third parties who also set these cookies on this website.",
+    "We work with service providers and third parties who also set these cookies on this website.",
+    "Your preferences are stored in cookies stored on your browser. If you switch off a category of cookies that you’ve previously accepted, then for technical reasons those cookies will not be deleted.",
+    "To delete cookies from your browser, we recommend that you clear your browser data. If you do this, or change browser, we’ll ask for your preferences again when you next visit our website.",
+    "You can use your browser settings to delete cookies that have already been set at any time. You can also use your browser settings to manage cookies, for example, to switch off a cookie altogether. If you do this, it could mean that we can’t use strictly necessary cookies properly and so parts of our website may not work correctly.",
+    "For more information about how to use your browser settings to clear your browser data or to manage cookies, check your browser ‘Help’ function.",
+    "We’re changing the way we set cookies on the websites we manage. This means that some of our websites may ask you to accept cookies again, or they may not yet be able to fully respect your preferences. We’re working on this. Please contact us if you have any questions.",
+    "The information cookies collect, and how we use that information, may count as personal data. We may also be able to identify you by name, IP address or session ID. You have rights regarding how we collect, store and use your personal data."
+  ],
+  "codeBlocks": [],
+  "ctas": [
+    {
+      "label": "Main content",
+      "href": "#page"
+    },
+    {
+      "label": "Personal",
+      "href": "https://www.hsbc.co.uk/"
+    },
+    {
+      "label": "Business",
+      "href": "https://www.business.hsbc.uk/en-gb"
+    },
+    {
+      "label": "HSBC UK",
+      "href": "/hsbc-uk"
+    },
+    {
+      "label": "News and media",
+      "href": "/news-and-media"
+    },
+    {
+      "label": "Management team",
+      "href": "/management-team"
+    },
+    {
+      "label": "History",
+      "href": "/history-timeline"
+    },
+    {
+      "label": "Manage cookie settings",
+      "href": "#"
+    },
+    {
+      "label": "Accessibility",
+      "href": "/accessibility"
+    },
+    {
+      "label": "Terms of use",
+      "href": "/terms-of-use"
+    },
+    {
+      "label": "Cookie notice",
+      "href": "/cookie-notice"
+    },
+    {
+      "label": "Contact and support",
+      "href": "https://www.hsbc.co.uk/help/"
+    }
+  ],
+  "links": [
+    "https://www.about.hsbc.co.uk/cookie-notice#",
+    "https://www.about.hsbc.co.uk/cookie-notice#nav-tray-sub-view-1",
+    "https://www.about.hsbc.co.uk/cookie-notice#nav-tray-sub-view-2",
+    "https://www.about.hsbc.co.uk/cookie-notice#nav-tray-sub-view-3",
+    "https://www.about.hsbc.co.uk/cookie-notice#nav-tray-sub-view-4",
+    "https://www.hsbc.co.uk/",
+    "https://www.business.hsbc.uk/en-gb",
+    "https://www.about.hsbc.co.uk/hsbc-uk",
+    "https://www.about.hsbc.co.uk/hsbc-uk/postcode-lending-data",
+    "https://www.about.hsbc.co.uk/hsbc-uk/inclusion",
+    "https://www.about.hsbc.co.uk/hsbc-uk/working-with-fintechs",
+    "https://www.about.hsbc.co.uk/hsbc-uk/regulated-covered-bond-programme",
+    "https://www.about.hsbc.co.uk/news-and-media",
+    "https://www.about.hsbc.co.uk/management-team",
+    "https://www.about.hsbc.co.uk/history-timeline",
+    "https://www.about.hsbc.co.uk/cookie-notice#page",
+    "https://www.about.hsbc.co.uk/",
+    "https://www.about.hsbc.co.uk/privacy-notice",
+    "https://www.about.hsbc.co.uk/accessibility",
+    "https://www.about.hsbc.co.uk/terms-of-use",
+    "https://www.about.hsbc.co.uk/cookie-notice",
+    "https://www.hsbc.co.uk/help/"
+  ],
+  "media": {
+    "imgs": [
+      {
+        "src": "https://www.about.hsbc.co.uk/-/media/pws171/Logos/HSBC-logo.svg",
+        "alt": "HSBC",
+        "w": 125,
+        "h": 24
+      },
+      {
+        "src": "https://www.about.hsbc.co.uk/-/media/pws171/Logos/HSBC-logo.svg",
+        "alt": "HSBC",
+        "w": 125,
+        "h": 24
+      }
+    ],
+    "allImgCount": 2,
+    "cssBackgrounds": [],
+    "modals": [],
+    "videos": [],
+    "iframes": []
+  },
+  "customProps": {},
+  "_signals": {
+    "filteredInterstitials": 2,
+    "distinctHeadings": 17,
+    "mainTextLen": 6623,
+    "realImageCount": 2,
+    "trackingOnlyMedia": false,
+    "spaShellSuspect": false,
+    "screenshotMode": "fullPage"
+  },
+  "dynamic": {
+    "endpoints": [
+      {
+        "method": "GET",
+        "host": "akamai.tiqcdn.com",
+        "path": "/location/location.js",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/x-javascript",
+        "status": 200,
+        "bytes": 18,
+        "hits": 1,
+        "example": "https://akamai.tiqcdn.com/location/location.js",
+        "sameSite": false
+      }
+    ],
+    "thirdPartyScriptHosts": [
+      {
+        "host": "tags.tiqcdn.com",
+        "count": 3
+      },
+      {
+        "host": "sadmin.brightcove.com",
+        "count": 1
+      }
+    ],
+    "truncated": false,
+    "inlineData": [],
+    "globalState": [],
+    "frameworkHints": [],
+    "forms": [],
+    "ariaLiveRegions": 0,
+    "triggers": [],
+    "mediaIds": [],
+    "summary": {
+      "sameSiteEndpoints": 0,
+      "thirdPartyEndpoints": 1,
+      "thirdPartyScriptHosts": 2,
+      "inlineDataBlobs": 0,
+      "forms": 0,
+      "searchForms": 0,
+      "hydrated": false
+    }
+  },
+  "screenshot": "assets/screenshots/cookie-notice.png",
+  "renderedHtml": "pages/cookie-notice.html"
+}

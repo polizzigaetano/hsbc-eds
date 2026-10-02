@@ -1,0 +1,77 @@
+/* cinemagraph — live .cinemagraph (muted looping video; poster under 780px or when paused).
+   The live component sits in a bare layout container: no 20px layout-row gap after it. */
+main > .section:has(.cinemagraph) {
+  grid-column: content-start / content-end;
+  margin-bottom: 0;
+}
+
+.cinemagraph .cinemagraph {
+  position: relative;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.cinemagraph .cinemagraph::before,
+.cinemagraph .cinemagraph::after {
+  content: " ";
+  display: table;
+}
+
+.cinemagraph .cinemagraph::after { clear: both; }
+
+.cinemagraph .cinemagraph__video {
+  display: none;
+  max-width: 100%;
+  height: auto;
+}
+
+.cinemagraph .cinemagraph__poster { display: block; }
+.cinemagraph .cinemagraph__poster p { line-height: 0; }
+
+.cinemagraph .cinemagraph__poster img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.cinemagraph .cinemagraph__toggle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  display: none;
+  width: 44px;
+  height: 44px;
+  box-sizing: border-box;
+  padding: 22px 12px 2px;
+  border: none;
+  background-color: rgb(0 0 0 / 70%);
+  color: var(--c-white);
+  text-align: center;
+  cursor: pointer;
+}
+
+.cinemagraph .cinemagraph__toggle:hover,
+.cinemagraph .cinemagraph__toggle:focus {
+  background-color: rgb(0 0 0 / 85%);
+  outline-offset: 2px;
+}
+
+.cinemagraph .cinemagraph__toggle .icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  line-height: 0;
+}
+
+.cinemagraph .cinemagraph__toggle .icon::after { vertical-align: top; }
+
+@media (width >= 780px) {
+  .cinemagraph .cinemagraph--active .cinemagraph__video { display: block; }
+  .cinemagraph .cinemagraph--active .cinemagraph__poster { display: none; }
+  .cinemagraph .cinemagraph--active .cinemagraph__toggle { display: block; }
+}
+
+.cinemagraph .cinemagraph--paused[data-props-poster-on-pause="yes"] .cinemagraph__video { display: none; }
+.cinemagraph .cinemagraph--paused[data-props-poster-on-pause="yes"] .cinemagraph__poster { display: block; }

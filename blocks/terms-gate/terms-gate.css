@@ -1,0 +1,5 @@
+/* terms-gate — the dialog paints from styles/lightbox.css; its section takes no space in flow */
+main > .section.terms-gate-container {
+  height: 0;
+  margin: 0;
+}

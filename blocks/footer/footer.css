@@ -1,20 +1,47 @@
-footer {
-  background-color: var(--light-color);
-  font-size: var(--body-font-size-xs);
+/* footer — black utility bar (live application.css, gated in the replica canon layer) */
+footer .footer {
+  width: 100%;
+  color: var(--c-white);
+  font-size: 14px;
+  line-height: 1.5;
 }
 
-footer .footer > div {
-  margin: auto;
-  max-width: 1200px;
-  padding: 40px 24px 24px;
+footer .footer__utility {
+  padding: 14px 0 8px;
+  background: var(--c-black);
 }
 
-footer .footer p {
-  margin: 0;
+footer .footer__inner {
+  position: relative;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--container-pad);
 }
 
-@media (width >= 900px) {
-  footer .footer > div {
-    padding: 40px 32px 24px;
+footer .footer__inner::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer .footer__utility__nav { float: left; }
+
+footer .footer__item {
+  float: left;
+  margin: 0 20px 8px 0;
+}
+
+footer .footer__copyright { float: right; }
+footer .footer__copyright p { margin: 0; }
+
+@media (width <= 959px) {
+  footer .footer__copyright {
+    clear: left;
+    float: left;
+    padding: 1px 0 7px;
   }
+}
+
+@media (width <= 640px) {
+  footer .footer { line-height: 1.34; }
 }

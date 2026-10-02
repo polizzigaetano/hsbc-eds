@@ -1,0 +1,322 @@
+{
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-10-01T13:02:21.065Z",
+    "waitMode": "medium",
+    "waitMs": 2500,
+    "httpStatus": 200
+  },
+  "slug": "hsbc-uk-regulated-covered-bond-programme",
+  "url": "https://www.about.hsbc.co.uk/hsbc-uk/regulated-covered-bond-programme",
+  "renderedBy": "playwright",
+  "fetchedAt": "2026-10-01T13:02:21.065Z",
+  "finalUrl": "https://www.about.hsbc.co.uk/hsbc-uk/regulated-covered-bond-programme",
+  "title": "Regulated Covered Bond Programme - About HSBC | HSBC UK",
+  "description": "Information about HSBC UK Bank plc’s Regulated Covered Bond Programme, including monthly investor reports, programme documents and offering documents.",
+  "og": {
+    "title": null,
+    "description": null,
+    "image": null,
+    "type": null
+  },
+  "headings": [
+    {
+      "tag": "h1",
+      "text": "Regulated Covered Bond Programme"
+    },
+    {
+      "tag": "h2",
+      "text": "Prospectus documents"
+    },
+    {
+      "tag": "h2",
+      "text": "Final terms"
+    },
+    {
+      "tag": "h2",
+      "text": "Investor reports and Harmonisation Template"
+    },
+    {
+      "tag": "h2",
+      "text": "Issuer and LLP financial statements"
+    },
+    {
+      "tag": "h2",
+      "text": "Regulated Covered Bond Programme"
+    },
+    {
+      "tag": "h2",
+      "text": "Cookies on this website"
+    }
+  ],
+  "body": [
+    "Share link to this page on X",
+    "Share link to this page on Facebook",
+    "Share link to this page on LinkedIn",
+    "The programme is regulated by the UK Financial Conduct Authority and registered on the Regulated Covered Bonds Register Opens in new window.",
+    "To request access to key transaction documents and loan level data for the covered bond programme please visit the investor portal Opens in new window."
+  ],
+  "codeBlocks": [],
+  "ctas": [
+    {
+      "label": "Accept",
+      "href": "#"
+    },
+    {
+      "label": "Decline",
+      "href": "#"
+    },
+    {
+      "label": "Cookie Notice",
+      "href": "https://www.about.hsbc.co.uk/cookie-notice"
+    }
+  ],
+  "links": [
+    "https://www.about.hsbc.co.uk/hsbc-uk/regulated-covered-bond-programme#",
+    "https://www.about.hsbc.co.uk/hsbc-uk/regulated-covered-bond-programme#nav-tray-sub-view-1",
+    "https://www.about.hsbc.co.uk/hsbc-uk/regulated-covered-bond-programme#nav-tray-sub-view-2",
+    "https://www.about.hsbc.co.uk/hsbc-uk/regulated-covered-bond-programme#nav-tray-sub-view-3",
+    "https://www.about.hsbc.co.uk/hsbc-uk/regulated-covered-bond-programme#nav-tray-sub-view-4",
+    "https://www.hsbc.co.uk/",
+    "https://www.business.hsbc.uk/en-gb",
+    "https://www.about.hsbc.co.uk/hsbc-uk",
+    "https://www.about.hsbc.co.uk/hsbc-uk/postcode-lending-data",
+    "https://www.about.hsbc.co.uk/hsbc-uk/inclusion",
+    "https://www.about.hsbc.co.uk/hsbc-uk/working-with-fintechs",
+    "https://www.about.hsbc.co.uk/hsbc-uk/regulated-covered-bond-programme",
+    "https://www.about.hsbc.co.uk/news-and-media",
+    "https://www.about.hsbc.co.uk/management-team",
+    "https://www.about.hsbc.co.uk/history-timeline",
+    "https://www.about.hsbc.co.uk/hsbc-uk/regulated-covered-bond-programme#page",
+    "https://www.about.hsbc.co.uk/",
+    "http://twitter.com/intent/tweet?url={URL}",
+    "https://www.facebook.com/sharer/sharer.php?u={URL}",
+    "http://www.linkedin.com/shareArticle?mini=true&url={URL}&title={title}",
+    "https://www.fca.org.uk/firms/regulated-covered-bonds/register",
+    "https://investorreporting.gbm.hsbc.com/",
+    "https://www.hsbc.com/investors/fixed-income-investors/issuance-programmes?page=1&take=20&issuer=hsbc-uk-bank-plc",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/prospectus-documents/260804-base-prospectus-supplement-dated-05-august-2026.pdf?sc_lang=en-GB",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/prospectus-documents/260624-base-prospectus-supplement-dated-24-june-2026.pdf?sc_lang=en-GB",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/prospectus-documents/260226-base-prospectus-supplement-dated-26-february-2026.pdf?sc_lang=en-GB",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/prospectus-documents/250731-base-prospectus-supplement-dated-31-july-2025.pdf?sc_lang=en-GB",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/prospectus-documents/250624-base-prospectus-supplement-dated-24-june-2025.pdf?sc_lang=en-GB",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/prospectus-documents/250220-base-prospectus-supplement-dated-20-february-2025.pdf?sc_lang=en-GB",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/prospectus-documents/240801-base-prospectus-supplement-dated-1-august-2024.pdf",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/prospectus-documents/240619-base-prospectus-supplement-dated-19-june-2024.pdf",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/prospectus-documents/240223-base-prospectus-supplement-dated-23-february-2024.pdf",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/prospectus-documents/230905-base-prospectus-dated-5-september-2023.pdf",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/prospectus-documents/230619-base-prospectus-dated-19-june-2023.pdf",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/prospectus-documents/230223-hbuk-base-prospectus-supplement-dated-23-february-2023.pdf",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/prospectus-documents/220802-base-prospectus-dated-2-august-2022.pdf",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/prospectus-documents/220701-base-prospectus-dated-30-june-2022.pdf",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/prospectus-documents/210819-base-prospectus-supplement-dated-19-august-2021.pdf",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/prospectus-documents/210608-base-prospectus-dated-8-june-2021.pdf",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/210326-base-prospectus-dated-26-march-2021.pdf",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/final-terms/250610-hbuk-series-2025-1-final-terms.pdf?sc_lang=en-GB",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/final-terms/230918-hbuk-series-2023-1-final-terms.pdf",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/final-terms/220915-series-2022-1-final-terms.pdf",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/260925-harmonized-template-sep-2026.xlsx?sc_lang=en-GB&hash=4C8F96F7145D90B17A9A9F072312AF97",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/260925-investor-report-sep-2026.pdf?sc_lang=en-GB",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/260925-investor-report-sep-2026-xlsx.xlsx?sc_lang=en-GB&hash=F06502E23D4148A8AF0F3CBF4BC0654F",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/260825-investor-report-aug-2026.pdf?sc_lang=en-GB",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/260825-investor-report-aug-2026-xlsx.xlsx?sc_lang=en-GB&hash=CB71F81665E1D9B4FAED04485CA23DA4",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/260727-investor-report-jul-2026.pdf?sc_lang=en-GB",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/260727-investor-report-jul-2026-xlsx.xlsx?sc_lang=en-GB&hash=1F6E4E110960EA33F081458623D66DBD",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/260625-harmonized-template-jun-2026.xlsx?sc_lang=en-GB&hash=83D8F266391D6309DF173CD453AD5BFC",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/260625-investor-report-jun-2026.pdf?sc_lang=en-GB",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/260625-investor-report-jun-2026-xlsx.xlsx?sc_lang=en-GB&hash=420C2C22453826FCD0724219C5A2A861",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/260526-investor-report-may-2026.pdf?sc_lang=en-GB",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/260526-investor-report-may-2026-xlsx.xlsx?sc_lang=en-GB&hash=2C130E20CE0DA0B4B70F611784A951A8",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/260428-investor-report-apr-2026.pdf?sc_lang=en-GB",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/260428-investor-report-apr-2026-xlsx.xlsx?sc_lang=en-GB&hash=6CCD571F323CE89F8734FBDF3293B952",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/260325-harmonized-template-mar-2026.xlsx?sc_lang=en-GB&hash=562109CB8D01D624F7525FFB1EBC93A8",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/260429-investor-report-mar-2026.pdf?sc_lang=en-GB",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/260325-investor-report-mar-2026-xlsx.xlsx?sc_lang=en-GB&hash=A70E892F4B11E2575765A11F856F0E68",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/260429-investor-report-feb-2026.pdf?sc_lang=en-GB",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/260225-investor-report-feb-2026-xlsx.xlsx?sc_lang=en-GB&hash=B415C1DAD284B4642FCAC5E4F8157ABB",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/260429-investor-report-jan-2026.pdf?sc_lang=en-GB",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/260126-investor-report-jan-2026-xlsx.xlsx?sc_lang=en-GB&hash=F2F3785FC7592B9307A06D2C8BEA62AF",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/260102-harmonized-template-dec-2025.xlsx?sc_lang=en-GB&hash=43222ADCF6B25D2F97F42F7D67F3F315",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/260102-investor-report-dec-2025.pdf?sc_lang=en-GB",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/260102-investor-report-dec-2025-xlsx.xlsx?sc_lang=en-GB&hash=864CB95DA5728CDA76D0C192AA92F7AA",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/251125-investor-report-nov-2025.pdf?sc_lang=en-GB",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/251125-investor-report-nov-2025-xlsx.xlsx?sc_lang=en-GB&hash=093F8AC3D246C5EFF526C6D05408258D",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/251027-investor-report-oct-2025.pdf?sc_lang=en-GB",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/251027-investor-report-oct-2025-xlsx.xlsx?sc_lang=en-GB&hash=F0F37D294E0BBAA6C6546600E6D06684",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/250925-harmonized-template-sep-2025.xlsx?sc_lang=en-GB&hash=98492A74966CB161A75E92536C659E3B",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/250925-investor-report-sep-2025.pdf?sc_lang=en-GB",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/250925-investor-report-sep-2025-xlsx.xlsx?sc_lang=en-GB&hash=913CA6B4767A33A99855A477AC196C47",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/250826-investor-report-august-2025.pdf?sc_lang=en-GB",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/250826-investor-report-august-2025-xlsx.xlsx?sc_lang=en-GB&hash=0A4A4CE687A08F6374B113F0ACB18F81",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/250725-investor-report-july-2025.pdf?sc_lang=en-GB",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/250725-investor-report-july-2025-xlsx.xlsx?sc_lang=en-GB&hash=98311B232C23800E28B5190F6BB2338A",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/250627-harmonized-template-jun-2025.xlsx?sc_lang=en-GB&hash=5FC92F3B768A4A08C59BB5B579A5CA7D",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/250626-investor-report-jun-2025.pdf?sc_lang=en-GB",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/250626-investor-report-jun-2025-xlsx.xlsx?sc_lang=en-GB&hash=F1AEE701820AFE46CCFAE35B81DA8370",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/250527-investor-report-may-2025.pdf?sc_lang=en-GB",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/250527-investor-report-may-2025-xlsx.xlsx?sc_lang=en-GB&hash=A8F5AC0A199757639D0EC0AEF10A7139",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/250425-investor-report-apr-2025.pdf?sc_lang=en-GB",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/250425-investor-report-apr-2025-xlsx.xlsx?sc_lang=en-GB&hash=2D582518777ECC51526E16D6B07346C3",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/250725-harmonized-template-mar-2025.xlsx?sc_lang=en-GB&hash=15AEE286F1A98F490A6FF072464AA2C4",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/250326-investor-report-mar-2025.pdf?sc_lang=en-GB",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/250326-investor-report-mar-2025-xlsx.xlsx?sc_lang=en-GB&hash=54D155F7C8B7AE3B626922BC076154F4",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/250225-investor-report-feb-2025.pdf?sc_lang=en-GB",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/250225-investor-report-feb-2025-xlsx.xlsx?sc_lang=en-GB&hash=EB4E3726A9EBB233471E906BB84FBD1F",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/250128-investor-report-jan-2025.pdf?sc_lang=en-GB",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/250128-investor-report-dec-2025-xlsx.xlsx?sc_lang=en-GB&hash=12DCAB2552FF26ED2FCC85AC346CE1FA",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/250306-harmonisation-template-december-2024.xlsx?sc_lang=en-GB&hash=48C7CCE9571073BA9AC81356DF67B3A9",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/241223-investor-report-dec-2024.pdf?sc_lang=en-GB",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/241223-investor-report-dec-2024-xlsx.xlsx?sc_lang=en-GB&hash=6A9720C0CFBCFDAA8725032862BF42BE",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/241128-investor-report-november.pdf?sc_lang=en-GB",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/241128-investor-report-november-xlsx.xlsx?sc_lang=en-GB&hash=62DE8BE21FD6DD8515D18C1D2B64C9F2",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/241025-investor-report-october.pdf?sc_lang=en-GB",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/241025-investor-report-october-xlsx.xlsx?sc_lang=en-GB&hash=F053437674485ABC3F6A6619002F098C",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/240930-investor-report-september.pdf?sc_lang=en-GB",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/240930-investor-report-september-xlsx.xlsx?sc_lang=en-GB&hash=49E3F7EB406F0A56FC1E35A837AE878D",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/240827-investor-report-august.pdf?sc_lang=en-GB",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/240827-investor-report-august-xlsx.xlsx?sc_lang=en-GB&hash=6F9004B78FD10E2BE1584389A2B0C66D",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/240725-investor-report-july.pdf",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/240725-investor-report-july-xlsx.xlsx",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/240725-investor-report-june.pdf",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/240725-investor-report-june-xlsx.xlsx",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/240528-investor-report-may.pdf",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/240528-investor-report-may-xls.xlsx",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/240501-investor-report-april.pdf",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/240501-investor-report-april-xlsx.xlsx",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/240501-investor-report-march.pdf",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/240501-investor-report-march-xlsx.xlsx",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/240227-investor-report-february.pdf",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/240227-investor-report-february-xlsx.xlsx",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/240125-investor-report-january.pdf",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/240125-investor-report-january-xlsx.xlsx",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/231227-investor-report-december.pdf",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/231227-investor-report-december-xlsx.xlsx",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/231124-investor-report-november.pdf",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/231124-investor-report-november-xlsx.xlsx",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/231031-investor-report-october.pdf",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/231031-investor-report-october-xlsx.xlsx",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/230828-investor-report-september.pdf",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/230828-investor-report-september-xlsx.xlsx",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/230908-investor-report-august.pdf",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/230908-investor-report-august-xlsx.xlsx",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/230828-investor-report-august.pdf",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/230828-investor-report-august-xlsx.xlsx",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/230726-hsbc-uk-bank-plc-covered-bonds-investor-report-dated-july-2023.pdf",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/230726-hsbc-uk-bank-plc-covered-bonds-investor-report-dated-july-2023-xls.xlsb",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/230623-hsbc-uk-bank-plc-covered-bonds-investor-report-dated-june-2023.pdf",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/230623-hsbc-uk-bank-plc-covered-bonds-investor-report-dated-june-2023-xls.xlsx",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/230525-hsbc-uk-bank-plc-covered-bonds-investor-report-dated-may-2023.pdf",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/230525-hsbc-uk-bank-plc-covered-bonds-investor-report-dated-may-2023-xlsx.xlsx",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/230425-hsbc-uk-bank-plc-covered-bonds-investor-report-april-2023.pdf",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/230425-hsbc-uk-bank-plc-covered-bonds-investor-report-april-2023-xlsx.xlsx",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/230327-hsbc-uk-bank-plc-covered-bonds-investor-report-march-2023.pdf",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/230327-hsbc-uk-bank-plc-covered-bonds-investor-report-march-2023-xlsx.xlsx",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/230227-hsbc-uk-bank-plc-covered-bonds-investor-report-february-2023.pdf",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/230227-hsbc-uk-bank-plc-covered-bonds-investor-report-february-2023-xlsx.xlsx",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/230125-hsbc-uk-bank-plc-covered-bonds-investor-report-january-2023.pdf",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/230125-hsbc-uk-bank-plc-covered-bonds-investor-report-january-2023-excel.xls",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/221222-hsbc-uk-bank-plc-covered-bonds-investor-report-december-2022.pdf",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/221222-hsbc-uk-bank-plc-covered-bonds-investor-report-december-2022-xls.xlsx",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/221221-hsbc-uk-bank-plc-covered-bonds-investor-report-november-2022.pdf",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/221221-hsbc-uk-bank-plc-covered-bonds-investor-report-november-2022-xls.xlsx",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/221221-hsbc-uk-bank-plc-covered-bonds-investor-report-october-2022.pdf",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/221221-hsbc-uk-bank-plc-covered-bonds-investor-report-october-2022-xls.xlsx",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/221221-hsbc-uk-bank-plc-covered-bonds-investor-report-september-2022.pdf",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/221221-hsbc-uk-bank-plc-covered-bonds-investor-report-september-2022-xls.xlsx",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/221221-hsbc-uk-bank-plc-covered-bonds-investor-report-august-2022.pdf",
+    "https://www.about.hsbc.co.uk/-/media/uk/en/hsbc-uk/uk-regulated-covered-bond-programme/investor-reports/221221-hsbc-uk-bank-plc-covered-bonds-investor-report-august-2022-xls.xlsx",
+    "https://www.hsbc.com/investors/results-and-announcements/all-reporting/subsidiaries?page=1&take=20&company-new=hsbc-bank-plc-ring-fenced-bank",
+    "https://find-and-update.company-information.service.gov.uk/company/OC432297/filing-history",
+    "https://www.about.hsbc.co.uk/accessibility",
+    "https://www.about.hsbc.co.uk/privacy-notice",
+    "https://www.about.hsbc.co.uk/terms-of-use",
+    "https://www.about.hsbc.co.uk/cookie-notice",
+    "https://www.hsbc.co.uk/help/"
+  ],
+  "media": {
+    "imgs": [
+      {
+        "src": "https://www.about.hsbc.co.uk/-/media/pws171/Logos/HSBC-logo.svg",
+        "alt": "HSBC",
+        "w": 125,
+        "h": 24
+      },
+      {
+        "src": "https://www.about.hsbc.co.uk/-/media/pws171/Logos/HSBC-logo.svg",
+        "alt": "HSBC",
+        "w": 125,
+        "h": 24
+      },
+      {
+        "src": "https://www.about.hsbc.co.uk/-/media/uk/images/hsbc-in-the-uk/global-covered-bonds-programme/210326-uk-regulated-covered-bond-programme-1520x400.jpg",
+        "alt": "",
+        "w": 1520,
+        "h": 400
+      }
+    ],
+    "allImgCount": 3,
+    "cssBackgrounds": [],
+    "modals": [
+      "Regulated Covered Bond Programme HSBC UK Bank plc Regulated Covered Bond Programme - Terms of Access PLEASE READ CAREFULLY THE FOLLOWING TERMS AND CONDITIONS. BY ACCESSING THIS WEBSITE AND THE INFORMATION CONTAINED HEREIN, YOU AGREE TO BE BOUND BY THE TERMS AND CONDITIONS BELOW. IF YOU DO NOT AGREE TO THESE TERMS AND CONDITIONS, DO NOT ACCESS THIS WEBSITE OR ANY OF THE INFORMATION CONTAINED HEREIN. Use of Information This material has been placed on this website by HSBC UK Bank plc and its affiliates (\"HSBC UK Group\") for information purposes only. The information and data contained herein is confidential and is intended solely for your personal use benefit and for your internal informational use only and may not be reproduced, disseminated or distributed in whole or in part at any time, in any manner or for any purpose, without obtaining the prior written consent of HSBC UK Bank plc in each specific instance. The offering documents relating to each offering of covered bonds is accurate as of the date thereof but may not be accurate as of any subsequent date. Likewise, the information contained in any investor report on this website speaks only as of the date of such investor report. HSBC UK Group has undertaken no obligation, and has assumed no responsibility, to update the information contained on this website for facts or events arising after completion of the related offering documents delivery period for such offering documents, except as required under applicable securities legislation or the UK regulated covered bond regulations. Review by any person accessing this website of the material contained herein is not a substitute for a detailed review of the information contained in the programme prospectus, as the same may be updated, amended and/or supplemented from time to time. Potential investors in the securities described herein are required and advised by HSBC UK Group to read in full the programme prospectus, and are reminded that the contents thereof will be updated, amended and/or supplemented from time to time to take account of (amongst other things) further publically available information about HSBC UK Group. No Offer or Solicitation Neither this site nor anything contained herein shall constitute financial, legal, tax or other advice or an invitation or recommendation to invest or otherwise deal in, or an offer to sell or the solicitation of an offer to buy or subscribe for, any security or financial instrument. Neither this website nor anything contained herein shall constitute an offer of securities to the public as defined in any laws or rules implementing Directive 2003/71/EU, as amended, including by Directive 2010/73/EU, nor make such an offer. There shall be no sale of any securities or other financial instruments in any jurisdiction in which such an offer, solicitation or sale would be unlawful prior to qualification under the securities laws of such state or jurisdiction. Any products or services mentioned herein shall only be available subject to local legal and regulatory requirements. Prospective investors should consult their own financial and legal advisors about risks associated with investment in a particular issue of securities and the suitability of investing in such securities in light of their particular circumstances. Legal Considerations Nothing in this site constitutes an offer of securities for sale in the United States. The Securities may not be offered or sold in the United States absent registration or an exemption from registration under the Securities Act of 1933, as amended (the \"Securities Act\"). It is not intended that the Securities will be registered under the Securities Act or any U.S. state securities laws. Persons accessing this website are deemed to represent that they are (a) not a U.S. person (within the meaning of Regulation S) or acting for the account or benefit of a U.S. person and the person accessing this website is not located in the United States, its territories and possessions (including Puerto Rico, the U.S. Virgin Islands, Guam, American Samoa, Wake Island and the Northern Mariana Islands) or the District of Columbia and (b) if you are a person in the United Kingdom, then you are a person who (i) has professional experience in matters relating to investments falling within Article 19(1) of the Financial Services and Markets Act 2000 (Financial Promotion) Order 2005 and/or (ii) is a high net worth entity falling within Article 49(2)(a) to (d) of the Financial Services and Markets Act 2000 (Financial Promotion) Order 2005 and/or (iii) any other person to whom this material may otherwise be lawfully communicated. The distribution of material on this site may be restricted by local law in jurisdictions other than the United States and failure to comply with such restrictions may constitute a violation of the laws of any such other jurisdiction. Persons accessing this site should inform themselves about, and observe any such restrictions. In particular, no information contained in this site is for distribution directly or indirectly in Australia, Japan or the United Kingdom unless in circumstances in which Section 21(1) of the Financial Services and Markets Act 2000 (as amended) do not apply. No Liability The material on this website has no regard to the specific investment objectives, financial situation or particular needs of any recipient. The information is historical in nature and should not be relied on when making any investment decision. No representation or warranty, express or implied, is or will be made in relation to, the accuracy or completeness of the information on this website. No liability whatsoever is or will be accepted by HSBC UK Group nor any person who controls it nor any affiliate, director, officer, employee nor agent of it or affiliate of such person for any loss or damage howsoever arising from any use of this website or its contents. If you are not permitted to view materials on this or subsequent webpage(s) or are in any doubt as to whether you are permitted to view these materials, please exit this webpage or click \"Decline\" below. I ACKNOWLEDGE AND CONFIRM THAT I HAVE READ, UNDERSTAND AND ACCEPT THE ABOVE TERMS AND CONDITIONS. Accept Decline",
+      "Cookies on this websiteWe use cookies to help keep our website and services working properly. These cookies are necessary and set automatically.We'd also like to use some optional cookies that:Make your visit more personalImprove our website based on how you use itSupport our marketingYou can either 'Accept' or 'Decline' these cookies or choose what cookies to accept in 'Manage cookies'.To learn more about how we use cookies, visit our Cookie Notice."
+    ],
+    "videos": [],
+    "iframes": []
+  },
+  "customProps": {},
+  "_signals": {
+    "filteredInterstitials": 0,
+    "distinctHeadings": 6,
+    "mainTextLen": 8868,
+    "realImageCount": 3,
+    "trackingOnlyMedia": false,
+    "spaShellSuspect": false,
+    "screenshotMode": "fullPage"
+  },
+  "dynamic": {
+    "endpoints": [
+      {
+        "method": "GET",
+        "host": "akamai.tiqcdn.com",
+        "path": "/location/location.js",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/x-javascript",
+        "status": 200,
+        "bytes": 18,
+        "hits": 1,
+        "example": "https://akamai.tiqcdn.com/location/location.js",
+        "sameSite": false
+      }
+    ],
+    "thirdPartyScriptHosts": [
+      {
+        "host": "tags.tiqcdn.com",
+        "count": 2
+      },
+      {
+        "host": "sadmin.brightcove.com",
+        "count": 1
+      }
+    ],
+    "truncated": false,
+    "inlineData": [],
+    "globalState": [],
+    "frameworkHints": [],
+    "forms": [],
+    "ariaLiveRegions": 0,
+    "triggers": [],
+    "mediaIds": [],
+    "summary": {
+      "sameSiteEndpoints": 0,
+      "thirdPartyEndpoints": 1,
+      "thirdPartyScriptHosts": 2,
+      "inlineDataBlobs": 0,
+      "forms": 0,
+      "searchForms": 0,
+      "hydrated": false
+    }
+  },
+  "screenshot": "assets/screenshots/hsbc-uk-regulated-covered-bond-programme.png",
+  "renderedHtml": "pages/hsbc-uk-regulated-covered-bond-programme.html"
+}

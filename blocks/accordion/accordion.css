@@ -1,0 +1,297 @@
+/* accordion — live .accordion / .accordion-nested with .tabular-list rows (gated replica values,
+   closed and open states at 1440 / 360). Live element query [max-width~="800px"] → container
+   query on the panel. Heading colour #000 comes from the inline style the live pages ship. */
+
+/* stylelint-disable no-descending-specificity */
+
+/* ---------- item heading (EW7: the row is the click target, the button a chevron toggle) ---------- */
+.accordion .accordion__heading,
+.accordion .accordion-nested__heading {
+  position: relative;
+  box-sizing: border-box;
+  min-height: 74.43px; /* live: 73.43px Univers strut button + the heading's 1px rule */
+  padding: 22px 12px 19px 20px;
+  border-top: 1px solid var(--c-rule);
+  color: var(--c-black);
+  font-family: var(--ff-light);
+  font-size: 30px;
+  line-height: 1;
+  letter-spacing: -0.028em;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.accordion .accordion__title,
+.accordion .accordion-nested__title {
+  display: inline-block;
+  width: 90%;
+  vertical-align: middle;
+}
+
+.accordion .accordion__title :is(h1, h2, h3, h4, h5, h6),
+.accordion .accordion-nested__title :is(h1, h2, h3, h4, h5, h6) {
+  margin: 0;
+  font: inherit;
+  letter-spacing: inherit;
+}
+
+.accordion .accordion__toggle,
+.accordion .accordion-nested__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 48px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+.accordion .accordion__toggle .icon::after,
+.accordion .accordion-nested__toggle .icon::after {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  width: 1em;
+  height: 1em;
+  margin-top: calc(-5px - 0.5em);
+}
+
+.accordion .accordion__heading:hover,
+.accordion .accordion__heading:focus-within { background: var(--c-panel); }
+
+.accordion .accordion__content {
+  height: 0;
+  overflow: hidden;
+  outline: none;
+  background: var(--c-panel);
+}
+
+.accordion .accordion__item--active > .accordion__heading,
+.accordion .accordion__item--active > .accordion__heading:focus-within {
+  background: var(--c-panel-dark);
+  color: var(--c-white);
+}
+
+.accordion .accordion__item--active > .accordion__content {
+  height: auto;
+  border-bottom: 1px solid var(--c-panel-rule);
+}
+
+.accordion .accordion__inner {
+  padding: 29px 20px 27px;
+  container-type: inline-size;
+}
+
+.accordion .accordion__inner .text p:last-child { margin-bottom: 15px; }
+
+/* ---------- nested accordion (year groups) ---------- */
+.accordion .accordion-nested__mid--hiddenitems { margin: -31px 0 -47px; }
+.accordion .accordion-nested__item { margin: -20px -20px 20px; }
+
+.accordion .accordion-nested__heading {
+  border-top-color: var(--c-rule-dark);
+  background: var(--c-nested);
+}
+
+.accordion .accordion-nested__content {
+  height: 0;
+  overflow: hidden;
+  background: var(--c-panel);
+}
+
+.accordion .accordion-nested__item--active > .accordion-nested__heading {
+  background: var(--c-divider-dark);
+  color: var(--c-white);
+}
+
+.accordion .accordion-nested__item--active > .accordion-nested__content {
+  height: auto;
+  border-bottom: 1px solid var(--c-panel-rule);
+}
+
+.accordion .accordion-nested__inner {
+  padding: 29px 20px 27px;
+  container-type: inline-size;
+}
+
+@media (width <= 640px) {
+  .accordion .accordion__heading,
+  .accordion .accordion-nested__heading {
+    min-height: 61.17px;
+    font-family: var(--ff-regular);
+    font-size: 18px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .accordion .accordion__heading { transition: none; }
+}
+
+/* ---------- tabular list ---------- */
+.accordion .tabular-list { margin: 0 0 26px; }
+.accordion .tabular-list:last-child { margin-bottom: 0; }
+
+.accordion .tabular-list > ul {
+  display: table;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.accordion .tabular-list__item {
+  display: table-row;
+  margin-bottom: 21px;
+  font-size: 14px;
+  line-height: 1.5;
+  list-style: none;
+}
+
+@media (width >= 640px) {
+  .accordion .tabular-list__item { margin-top: -4px; }
+}
+
+.accordion .tabular-list__item:last-child { margin-bottom: 0; }
+
+.accordion .tabular-list__cell {
+  display: table-cell;
+  width: 1%;
+  padding: 0 24px 21px 0;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.accordion .tabular-list__date {
+  width: 125px;
+  padding: 0;
+}
+
+.accordion .tabular-list__details {
+  display: table-row;
+  margin: 0;
+}
+
+.accordion .tabular-list__title-wrapper {
+  display: table-cell;
+  padding-bottom: 27px;
+  vertical-align: top;
+}
+
+.accordion .tabular-list__title-wrapper::before,
+.accordion .tabular-list__title-wrapper::after {
+  content: " ";
+  display: table;
+}
+
+.accordion .tabular-list__title-wrapper::after { clear: both; }
+
+.accordion .tabular-list__item a {
+  width: 85%;
+  overflow: hidden;
+  background-image: none;
+  cursor: default;
+}
+
+.accordion .tabular-list__item a:hover .tabular-list__title,
+.accordion .tabular-list__item a:focus .tabular-list__title { text-decoration: underline; }
+
+/* substitute-bold metrics grew the mobile line box; line-height 1 keeps it inside the strut */
+.accordion .tabular-list__title {
+  font-family: var(--ff-bold);
+  line-height: 1;
+  cursor: pointer;
+}
+
+.accordion .tabular-list__item .icon--download {
+  position: relative;
+  float: left;
+  display: inline-block;
+  width: 20px;
+  margin-right: 12px;
+  font-size: 18px;
+  line-height: 0;
+  vertical-align: middle;
+}
+
+.accordion .tabular-list__item .icon--chevron {
+  font-size: 18px;
+  line-height: 0;
+}
+
+.accordion .tabular-list__item .icon::after {
+  margin: -0.25em 0 -0.0625em;
+  vertical-align: baseline;
+}
+
+.accordion .tabular-list__description {
+  display: block;
+  clear: left;
+  max-width: 430px;
+  margin-left: 32px;
+}
+
+.accordion .tabular-list__row {
+  float: right;
+  display: table-column;
+}
+
+.accordion .tabular-list__file-size {
+  min-width: 75px;
+  padding-right: 0;
+  text-align: right;
+}
+
+/* document lists (live ul.tabular-list) */
+.accordion:not(.news-archive) .tabular-list__details { display: table-row; }
+
+@media (width <= 640px) {
+  .accordion:not(.news-archive) .tabular-list__item + .tabular-list__item { margin-top: -3px; }
+  .accordion .tabular-list__item { line-height: 1.34; }
+}
+
+@media (width <= 560px) {
+  .accordion .tabular-list__row { float: left; }
+}
+
+@container (width <= 800px) {
+  .accordion .tabular-list { margin-bottom: 30px; }
+
+  .accordion .tabular-list__item {
+    display: block;
+    clear: left;
+    overflow: hidden;
+  }
+
+  .accordion .tabular-list__title-wrapper {
+    display: block;
+    padding-bottom: 6px;
+  }
+
+  .accordion .tabular-list__cell {
+    display: block;
+    float: left;
+    width: auto;
+    min-width: 0;
+    margin-right: -8px;
+    padding: 0 0 0 32px;
+  }
+
+  .accordion .tabular-list__cell:first-child,
+  .accordion .tabular-list__cell:empty + .tabular-list__cell { padding-left: 0; }
+
+  .accordion .tabular-list__file-size { margin-right: 0; }
+
+  .accordion .tabular-list__date {
+    width: 100%;
+    margin-bottom: 15px;
+    padding-left: 0;
+  }
+
+  .accordion .tabular-list__description { margin: 10px 0 0; }
+  .accordion .tabular-list__row { float: left; }
+}

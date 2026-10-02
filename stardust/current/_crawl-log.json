@@ -1,0 +1,105 @@
+{
+  "discovery": {
+    "fetchTechnique": "headless",
+    "count": 298,
+    "concurrency": 6
+  },
+  "consent": {
+    "method": "auto"
+  },
+  "favicon": {
+    "url": "https://www.about.hsbc.co.uk/-/media/pws171/StarterKit/Favicons/hsbc.png",
+    "file": "assets/favicon.png"
+  },
+  "crawl": {
+    "failures": []
+  },
+  "dynamicSurface": {
+    "pages": 298,
+    "pagesWithSameSiteData": 0,
+    "pagesWithSearchForm": 0,
+    "pagesHydrated": 0,
+    "truncatedPages": 0,
+    "endpoints": [
+      {
+        "method": "GET",
+        "host": "akamai.tiqcdn.com",
+        "path": "/location/location.js",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/x-javascript",
+        "sameSite": false,
+        "example": "https://akamai.tiqcdn.com/location/location.js",
+        "pages": 298,
+        "examples": [
+          "accessibility",
+          "hsbc-uk-community",
+          "cookie-notice"
+        ]
+      }
+    ],
+    "thirdPartyScriptHosts": [
+      {
+        "host": "tags.tiqcdn.com",
+        "pages": 298,
+        "examples": [
+          "accessibility",
+          "hsbc-uk-community",
+          "cookie-notice"
+        ]
+      },
+      {
+        "host": "sadmin.brightcove.com",
+        "pages": 298,
+        "examples": [
+          "accessibility",
+          "hsbc-uk-community",
+          "cookie-notice"
+        ]
+      }
+    ],
+    "frameworkHints": [],
+    "globalState": [],
+    "formTargets": []
+  },
+  "visionCheck": [
+    {
+      "slug": "history-timeline",
+      "verdict": "recaptured",
+      "notes": "cookie consent dialog not dismissed; overlay scrim covers top viewport \u2014 recaptured with banner declined"
+    },
+    {
+      "slug": "news-and-media",
+      "verdict": "recaptured",
+      "notes": "cookie consent dialog not dismissed \u2014 recaptured with banner declined"
+    },
+    {
+      "slug": "hsbc-uk-inclusion",
+      "verdict": "recaptured",
+      "notes": "cookie consent dialog not dismissed \u2014 recaptured with banner declined"
+    },
+    {
+      "slug": "hsbc-uk",
+      "verdict": "ok",
+      "notes": "redirects to / (finalUrl https://www.about.hsbc.co.uk/); DUP-OF index"
+    },
+    {
+      "slug": "hsbc-uk-community",
+      "verdict": "ok",
+      "notes": "redirects to /; DUP-OF index"
+    }
+  ],
+  "notes": "Planning-only run: consent overlay persisted in captures; recapture with --dismiss before Phase 3/4 gates. Consent dialog heading leaked into headings[] on most pages.",
+  "recapture": {
+    "at": "2026-10-01T14:12:35Z",
+    "tool": "replica/stitch-shot.mjs --settle --dismiss #teal-decline-consent",
+    "pages": 296,
+    "consentDismissed": 294,
+    "noBannerShown": [
+      "cookie-notice",
+      "privacy-notice"
+    ],
+    "mode": "stitched (fixed header repeats at 900px seams)",
+    "reason": "crawl.mjs consent dismissal ran before Tealium injected the HSBC banner buttons (#teal-consent-prompt-submit / #teal-decline-consent)"
+  }
+}
