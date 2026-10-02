@@ -1,0 +1,127 @@
+/* share — live .share-actions: absolute at the top-right of the primary column, over the banner */
+main > .section > .share-wrapper {
+  position: relative;
+  z-index: 2;
+  display: block;
+  height: 0;
+}
+
+.share-wrapper .share {
+  position: absolute;
+  top: -90px;
+  left: 100%;
+  z-index: 2;
+}
+
+.share .share-actions__label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.share .share-actions__label__inner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  display: inline-block;
+  height: 61px;
+  padding: 0 30px 0 24px;
+  background-color: var(--c-share-label);
+  color: var(--c-white);
+  font-family: var(--ff-bold);
+  font-size: 12px;
+  line-height: 60px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.share .share-actions__label__inner p { display: inline; }
+
+.share .share-actions__label__inner .icon {
+  position: relative;
+  top: 2px;
+  margin-right: 30px;
+  font-size: 15px;
+}
+
+.share .share-actions__list { float: left; }
+
+.share .share-actions__item {
+  position: relative;
+  display: table-cell;
+}
+
+.share .share-actions__item p { display: contents; }
+
+.share .share-actions__item a {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 61px;
+  background-color: var(--c-white);
+  line-height: 60px;
+  text-align: center;
+  vertical-align: middle;
+  transition: all 0.3s ease;
+}
+
+.share .share-actions__item a::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 0;
+  z-index: 1;
+  width: 1px;
+  height: 36px;
+  background-color: var(--c-rule);
+}
+
+.share .share-actions__item:first-child a::after { display: none; }
+
+.share .share-actions__item a:hover,
+.share .share-actions__item a:focus { background: var(--c-red); }
+
+.share .share-actions__item a:hover::after,
+.share .share-actions__item a:focus::after { display: none; }
+
+.share .share-actions__item .icon {
+  position: relative;
+  top: 2px;
+  color: var(--c-red);
+  font-size: 19px;
+}
+
+.share .share-actions__item--twitter .icon {
+  top: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 20px 20px 21px;
+  font-size: 20px;
+  line-height: 0;
+}
+
+.share .share-actions__item--twitter .icon::after { vertical-align: top; }
+
+@media (prefers-reduced-motion: reduce) {
+  .share .share-actions__item a { transition: none; }
+}
+
+@media screen and (width <= 480px) {
+  main > .section > .share-wrapper { height: auto; }
+
+  .share-wrapper .share {
+    position: static;
+    margin: 0 auto 15px;
+    text-align: center;
+  }
+
+  .share .share-actions__label { display: none; }
+
+  .share .share-actions__list {
+    float: none;
+    display: inline-block;
+  }
+}

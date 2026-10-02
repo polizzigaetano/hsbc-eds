@@ -1,0 +1,264 @@
+/* lightbox + leaving-confirmation dialogs (live .lightbox / .leaving-confirmation, gated in the
+   replica on the Covered Bond Terms of Access). Shared by blocks/terms-gate and
+   scripts/leaving-confirmation.js. */
+
+/* stylelint-disable no-descending-specificity */
+.no-scroll,
+.no-scroll body {
+  height: 100%;
+  overflow: hidden;
+}
+
+.lightbox {
+  position: fixed;
+  top: -999999px;
+  left: -999999px;
+  z-index: 100;
+  width: 100%;
+  max-width: 580px;
+  height: auto;
+  box-sizing: border-box;
+  padding: 30px;
+  background: var(--c-white);
+  color: var(--c-text);
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: left;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.lightbox.lightbox--active {
+  top: 20%;
+  left: 50%;
+  max-height: 80vh;
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(-50%);
+}
+
+.lightbox.lightbox--active.lightbox--scroll {
+  bottom: 20px;
+  overflow-y: auto;
+}
+
+.lightbox__inner {
+  position: relative;
+  z-index: 100;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.lightbox__close {
+  position: absolute;
+  top: 0;
+  right: 18px;
+  margin-top: 2.5px;
+  color: #929292;
+  font-family: var(--ff-thin);
+  font-size: 45px;
+  line-height: 0.8888888889;
+}
+
+.lightbox__close::after { content: "×"; }
+
+.lightbox__close:hover::after,
+.lightbox__close:focus::after { color: #6d6d6d; }
+
+.lightbox-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  background: var(--c-black);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.lightbox-overlay.lightbox-overlay--active {
+  opacity: 0.7;
+  visibility: visible;
+  cursor: pointer;
+}
+
+@media (width <= 640px) {
+  .lightbox.lightbox--active {
+    top: 20px;
+    right: 20px;
+    left: 20px;
+    width: auto;
+    max-height: none;
+    transform: translateX(0);
+  }
+}
+
+@media (width <= 500px) {
+  .lightbox.lightbox--active {
+    inset: 0 !important;
+    height: 100% !important;
+  }
+
+  .lightbox__close {
+    top: -5px;
+    right: 10px;
+  }
+}
+
+/* ---------- confirmation copy ---------- */
+.leaving-confirmation__heading {
+  max-width: 380px;
+  margin: -4px 0 12px;
+  font-family: var(--ff-thin);
+  font-size: 40px;
+  line-height: 1.2;
+  word-break: break-all;
+}
+
+.leaving-confirmation__heading :is(h2, h3) {
+  font: inherit;
+}
+
+.leaving-confirmation__copy p {
+  margin: -3px 0 50px;
+  font-family: var(--ff-light);
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.leaving-confirmation__copy strong { font-family: var(--ff-bold); }
+
+.leaving-confirmation__checkbox-wrap {
+  position: relative;
+  margin-bottom: 44px;
+}
+
+.leaving-confirmation__checkbox-wrap::before,
+.leaving-confirmation__checkbox-wrap::after {
+  content: " ";
+  display: table;
+}
+
+.leaving-confirmation__checkbox-wrap::after { clear: both; }
+
+.leaving-confirmation__checkbox {
+  position: absolute;
+  left: -9999px;
+}
+
+.leaving-confirmation__checkbox-label {
+  position: relative;
+  float: left;
+  display: block;
+  margin-top: -3px;
+  padding: 2px 0 0 36px;
+  font-family: var(--ff-light);
+  font-size: 12px;
+  line-height: 18px;
+  cursor: pointer;
+}
+
+.leaving-confirmation__checkbox-label p { margin: 0; }
+
+.leaving-confirmation__checkbox-label::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  box-sizing: border-box;
+  border: 1px solid var(--c-rule);
+}
+
+.leaving-confirmation__checkbox-label::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 1px;
+  width: 24px;
+  height: 24px;
+  background-color: var(--c-check);
+  opacity: 0;
+  mask: url("/icons/check.svg") no-repeat 3px 3px / 18px 18px;
+}
+
+.leaving-confirmation__checkbox:checked + .leaving-confirmation__checkbox-label::before { border-color: #404040; }
+.leaving-confirmation__checkbox:checked + .leaving-confirmation__checkbox-label::after { opacity: 1; }
+.leaving-confirmation__checkbox:focus-visible + .leaving-confirmation__checkbox-label::before { outline: 2px solid var(--c-text); }
+
+.leaving-confirmation__links::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.leaving-confirmation__links p { display: contents; }
+
+.leaving-confirmation__links a {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 14px 20px 11px;
+  border: 1px solid transparent;
+  font-size: 18px;
+  line-height: 23.4px;
+  cursor: pointer;
+}
+
+.leaving-confirmation__links .leaving-confirmation__proceed {
+  float: right;
+  display: block;
+  border-color: var(--c-red);
+  background: var(--c-red);
+  color: var(--c-white);
+}
+
+.leaving-confirmation__links .leaving-confirmation__proceed:hover,
+.leaving-confirmation__links .leaving-confirmation__proceed:focus {
+  border-color: var(--c-red-dark);
+  background: var(--c-red-dark);
+}
+
+.leaving-confirmation__links .leaving-confirmation__proceed.button--disabled,
+.leaving-confirmation__links .leaving-confirmation__proceed.button--disabled:hover {
+  border-color: var(--c-rule);
+  background: var(--c-rule);
+  color: var(--c-text);
+  cursor: default;
+}
+
+.leaving-confirmation__links .leaving-confirmation__close {
+  padding-right: 0;
+  padding-left: 0;
+  color: var(--c-text);
+}
+
+.leaving-confirmation__links .leaving-confirmation__close:hover,
+.leaving-confirmation__links .leaving-confirmation__close:focus { text-decoration: underline; }
+
+@media (width <= 640px) {
+  .leaving-confirmation__links a {
+    float: none;
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .leaving-confirmation__links .leaving-confirmation__proceed {
+    float: none;
+    padding: 14px 40px 11px 50px;
+    white-space: normal;
+  }
+}
+
+@media (width <= 560px) {
+  .leaving-confirmation__heading {
+    max-width: 100%;
+    margin-top: -1.5px;
+    padding-right: 30px;
+    font-size: 35px;
+    line-height: 1.0857142857;
+  }
+}

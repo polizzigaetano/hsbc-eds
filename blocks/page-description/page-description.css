@@ -1,0 +1,70 @@
+/* page-description — live .page-description (default on landing pages, --tertiary on articles) */
+.page-description::before,
+.page-description::after {
+  content: " ";
+  display: table;
+}
+
+.page-description::after { clear: both; }
+
+.page-description .page-description__meta {
+  margin: -2px 0 14px;
+  font-family: var(--ff-bold);
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.page-description .page-description__heading {
+  margin: -8px 0 21px;
+  font-family: var(--ff-thin);
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -1.4px;
+}
+
+.page-description .page-description__heading :is(h1, h2) {
+  font: inherit;
+  letter-spacing: inherit;
+}
+
+.page-description .page-description__summary {
+  margin-top: -3px;
+  font-family: var(--ff-light);
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.page-description .page-description__summary p + p { margin-top: 15px; }
+
+.page-description.tertiary .page-description__heading {
+  margin: -7px 0 9px;
+  font-family: var(--ff-ultra-light);
+}
+
+@media (width <= 1080px) {
+  .page-description .page-description__heading,
+  .page-description.tertiary .page-description__heading { margin-top: 0; }
+}
+
+@media (width <= 780px) {
+  .page-description .page-description__heading { overflow-wrap: break-word; }
+}
+
+@media (width <= 640px) {
+  .page-description .page-description__heading {
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -1px;
+  }
+
+  .page-description.tertiary .page-description__heading {
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -1.2px;
+  }
+
+  .page-description .page-description__summary {
+    font-size: 18px;
+    line-height: 1.34;
+  }
+}

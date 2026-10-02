@@ -1,0 +1,78 @@
+/* stylelint-disable no-descending-specificity */
+
+/* aside — live .layout--9-3 > .layout__secondary (contact details, sidebar image, factbox) */
+main > .section.aside-container {
+  grid-column: aside-start / aside-end;
+  margin-bottom: 20px;
+}
+
+@media (width > 800px) {
+  main > .section.aside-container.aside-placed {
+    grid-row: var(--aside-row) / span var(--aside-span);
+  }
+}
+
+@media (width <= 800px) {
+  main > .section.aside-container { grid-column: content-start / content-end; }
+}
+
+/* sidebar rich text: the live secondary column paragraphs */
+.aside .aside__text { margin-bottom: 0; }
+.aside .aside__text + .aside__text { margin-top: 20px; }
+
+.aside .aside__text :is(h2, h3) {
+  margin: 0 0 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--c-rule);
+  font-family: var(--ff-regular);
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: normal;
+}
+
+/* contact details: the live column spaces its groups with <br> lines (24px), which the authored
+   content does not carry — the same rhythm comes from margins (p.text 20px, plain p 15px) */
+.aside .aside__text:has(h2) p { margin-bottom: 20px; }
+.aside .aside__text:has(h2) :is(h2, h3):first-child + p { margin: 36px 0 15px; }
+.aside .aside__text:has(h2) p:not(:has(> strong:first-child)) + p:has(> strong:first-child) { margin-top: 40px; }
+.aside .aside__text:has(h2) p:last-child { margin-bottom: 0; }
+.aside .aside__text :is(h2, h3):not(:first-child) { margin-top: 44px; }
+
+.aside .aside__text img {
+  display: inline;
+  max-width: 100%;
+  height: auto;
+}
+
+/* factbox (list variant) */
+.aside .factbox {
+  background: var(--c-panel);
+  color: var(--c-black);
+}
+
+.aside .aside__text + .factbox { margin-top: 20px; }
+.aside .factbox__inner { padding: 29px 28px 25px; }
+
+.aside .factbox__heading {
+  margin: 0 0 20px;
+  font-family: var(--ff-light);
+  font-size: 30px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.aside .factbox__heading :is(h2, h3, h4) {
+  font: inherit;
+  letter-spacing: inherit;
+}
+
+.aside .factbox__list ul {
+  margin: 0 0 -11px;
+  list-style-type: square;
+}
+
+.aside .factbox__list li {
+  margin: 0 0 11px 18px;
+  line-height: 1.5;
+  list-style-type: square;
+}
