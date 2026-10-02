@@ -70,3 +70,9 @@
 - **Built:** inline-image, table, promo, factbox, carousel blocks; columns 3-3-6; importer handles nested components, wrappers, multiple notes blocks, rich summaries, blank-line breaks.
 - **Content:** 297 documents imported (284 articles ≥ 90% completeness), uploaded to DA and previewed; delivered check 297/297 (200, one h1, 0 about:error).
 - **Gates:** archetypes unchanged vs prototypes; 11-article sample vs live: 7 within ±4px, 4 one-off residuals (great-block, Loughborough, Lincoln, Footasylum).
+
+## 2026-10-02T16:48:41Z — Wave 3: postcode lending data + working with fintechs
+- **Prompt:** "migrate the following pages: …/hsbc-uk/postcode-lending-data, …/hsbc-uk/working-with-fintechs"
+- Both use only existing components; imported (95% / 97.7%), home re-imported so its two cards link locally; uploaded to DA and previewed.
+- vs live: 1440 Δ0 / Δ0 (5.6% / 5.2% pixel, font residual), 360 within ±1px.
+- Fixes: rich-text images inline as on live (−7px on postcode lending); news-archive index top-up limited to releases newer than the newest authored row (the filled index had added a 2019 year the live archive does not show).

@@ -25,6 +25,8 @@ export const MIGRATED_PATHS = [
   '/history-timeline',
   '/management-team',
   '/search',
+  '/hsbc-uk/postcode-lending-data',
+  '/hsbc-uk/working-with-fintechs',
   ...MIGRATED_ARTICLES,
 ];
 

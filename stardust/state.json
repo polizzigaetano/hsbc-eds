@@ -151,11 +151,16 @@
       "url": "https://www.about.hsbc.co.uk/hsbc-uk/postcode-lending-data",
       "title": "Postcode lending data - About HSBC | HSBC UK",
       "type": "static",
-      "status": "extracted",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
           "at": "2026-10-01T13:02:19.091Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-10-02T16:48:41Z",
+          "note": "wave 3 (sibling tier of the A4 content-page archetype): imported, uploaded to DA and previewed"
         }
       ],
       "stale": false,
@@ -202,11 +207,16 @@
       "url": "https://www.about.hsbc.co.uk/hsbc-uk/working-with-fintechs",
       "title": "Working with fintechs - About HSBC | HSBC UK",
       "type": "static",
-      "status": "extracted",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
           "at": "2026-10-01T13:02:19.935Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-10-02T16:48:41Z",
+          "note": "wave 3 (sibling tier of the A4 content-page archetype): imported, uploaded to DA and previewed"
         }
       ],
       "stale": false,
