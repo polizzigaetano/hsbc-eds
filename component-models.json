@@ -68,6 +68,92 @@
     ]
   },
   {
+    "id": "title",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "title",
+        "label": "Title"
+      },
+      {
+        "component": "select",
+        "name": "titleType",
+        "label": "Heading level",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "h1",
+            "value": "h1"
+          },
+          {
+            "name": "h2",
+            "value": "h2"
+          },
+          {
+            "name": "h3",
+            "value": "h3"
+          },
+          {
+            "name": "h4",
+            "value": "h4"
+          },
+          {
+            "name": "h5",
+            "value": "h5"
+          },
+          {
+            "name": "h6",
+            "value": "h6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "button",
+    "fields": [
+      {
+        "component": "aem-content",
+        "name": "link",
+        "label": "Link",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "linkText",
+        "label": "Text"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "linkTitle",
+        "label": "Title"
+      },
+      {
+        "component": "select",
+        "name": "linkType",
+        "label": "Type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "link",
+            "value": ""
+          },
+          {
+            "name": "primary (bold)",
+            "value": "primary"
+          },
+          {
+            "name": "secondary (italic)",
+            "value": "secondary"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "section",
     "fields": [
       {
@@ -294,6 +380,13 @@
         "name": "columns",
         "label": "Columns",
         "value": 2
+      },
+      {
+        "component": "number",
+        "valueType": "number",
+        "name": "rows",
+        "label": "Rows (AEM)",
+        "value": 1
       },
       {
         "component": "multiselect",

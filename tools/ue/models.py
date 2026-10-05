@@ -62,13 +62,24 @@ def image(name='image', label='Image'):
     return {'component': 'reference', 'valueType': 'string', 'name': name, 'label': label, 'multi': False}
 
 
+def block_name(id_):
+    """
+    AEM (crosswalk) block name: AEM derives the block's CSS class from it ("Inline Image" ->
+    inline-image), and md2jcr matches the importer's table header (html2md's
+    classNameToBlockType) against it, so it is the title-cased block id, never the UE title
+    (items too, so every name is unique: "Profile" block vs "Profile Item").
+    """
+    return ' '.join(part.capitalize() for part in id_.split('-'))
+
+
 def block(id_, title, model=None, filter_=None, da=None):
+    item = id_ in ITEM_COMPONENTS
     d = {
         'title': title,
         'id': id_,
         'plugins': {
             'da': da or {'name': id_, 'rows': 1, 'columns': 1},
-            'xwalk': xwalk_page(title, model, filter_, id_ in ITEM_COMPONENTS),
+            'xwalk': xwalk_page(block_name(id_), model, filter_, item),
         },
     }
     if model:
@@ -338,16 +349,22 @@ BLOCKS['table'] = {
     'filters': [{'id': 'table', 'components': ['table-row']}],
 }
 
-# columns: the da-block-collection columns behaviour (rows of cells holding default content)
+# columns: the da-block-collection columns behaviour (rows of cells holding default content); on
+# AEM (crosswalk) the core columns component (rows x columns of default content, filter `column`)
+COLUMNS = block('columns', 'Columns', 'columns', 'columns', da={'name': 'columns', 'rows': 1, 'columns': 2, 'behaviour': 'columns'})
+COLUMNS['plugins']['xwalk'] = xwalk_page(
+    None, resource_type='core/franklin/components/columns/v1/columns',
+    template_values={'columns': '2', 'rows': '1'})
 BLOCKS['columns'] = {
     'definitions': [
-        block('columns', 'Columns', 'columns', 'columns', da={'name': 'columns', 'rows': 1, 'columns': 2, 'behaviour': 'columns'}),
+        COLUMNS,
         block('columns-row', 'Columns row', 'columns-row', 'columns-row', da={'name': 'columns-row', 'behaviour': 'columns-row'}),
         block('columns-cell', 'Column', 'columns-cell', 'columns-cell', da={'unsafeHTML': '<div></div>', 'behaviour': 'columns-cell'}),
     ],
     'models': [
         {'id': 'columns', 'fields': [
             {'component': 'number', 'valueType': 'number', 'name': 'columns', 'label': 'Columns', 'value': 2},
+            {'component': 'number', 'valueType': 'number', 'name': 'rows', 'label': 'Rows (AEM)', 'value': 1},
             classes(('3-3-6 layout (two narrow, one wide)', 'layout-3-3-6')),
         ]},
         {'id': 'columns-row', 'fields': []},
@@ -357,6 +374,8 @@ BLOCKS['columns'] = {
         {'id': 'columns', 'components': ['columns-row']},
         {'id': 'columns-row', 'components': ['columns-cell']},
         {'id': 'columns-cell', 'components': ['text', 'image']},
+        # AEM (crosswalk) columns cells (title/button are AEM-only default content)
+        {'id': 'column', 'components': ['text', 'image', 'title', 'button']},
     ],
 }
 
@@ -406,6 +425,32 @@ write('image.json', {
     'models': [{'id': 'image', 'fields': [image(), text('imageAlt', 'Alt text')]}],
 })
 
+# AEM (crosswalk) default content: AEM stores headings and link-only paragraphs as Title and Button
+# components. Defined so they are selectable and editable in the editor on AEM; xwalk-only, so
+# not in the section's + menu (headings and links are added through Text, on both hosts).
+write('title.json', {
+    'definitions': [{'title': 'Title', 'id': 'title', 'model': 'title', 'plugins': {
+        'xwalk': xwalk_page(None, 'title', resource_type='core/franklin/components/title/v1/title'),
+    }}],
+    'models': [{'id': 'title', 'fields': [
+        text('title', 'Title'),
+        {'component': 'select', 'name': 'titleType', 'label': 'Heading level', 'valueType': 'string',
+         'options': [opt(f'h{i}', f'h{i}') for i in range(1, 7)]},
+    ]}],
+})
+write('button.json', {
+    'definitions': [{'title': 'Button', 'id': 'button', 'model': 'button', 'plugins': {
+        'xwalk': xwalk_page(None, 'button', resource_type='core/franklin/components/button/v1/button'),
+    }}],
+    'models': [{'id': 'button', 'fields': [
+        {'component': 'aem-content', 'name': 'link', 'label': 'Link', 'valueType': 'string'},
+        text('linkText', 'Text'),
+        text('linkTitle', 'Title'),
+        {'component': 'select', 'name': 'linkType', 'label': 'Type', 'valueType': 'string',
+         'options': [opt('link', ''), opt('primary (bold)', 'primary'), opt('secondary (italic)', 'secondary')]},
+    ]}],
+})
+
 write('section.json', {
     'definitions': [{'title': 'Section', 'id': 'section', 'plugins': {
         'da': {'unsafeHTML': '<div></div>'},
@@ -440,12 +485,14 @@ write('section.json', {
 
 write('component-definition.json', {'groups': [
     {'title': 'Default Content', 'id': 'default', 'components': [
-        {'...': './text.json#/definitions'}, {'...': './image.json#/definitions'}]},
+        {'...': './text.json#/definitions'}, {'...': './image.json#/definitions'},
+        {'...': './title.json#/definitions'}, {'...': './button.json#/definitions'}]},
     {'title': 'Sections', 'id': 'sections', 'components': [{'...': './section.json#/definitions'}]},
     {'title': 'Blocks', 'id': 'blocks', 'components': [{'...': './blocks/*.json#/definitions'}]},
 ]})
 write('component-models.json', [
     {'...': './page.json#/models'}, {'...': './text.json#/models'}, {'...': './image.json#/models'},
+    {'...': './title.json#/models'}, {'...': './button.json#/models'},
     {'...': './section.json#/models'}, {'...': './blocks/*.json#/models'},
 ])
 write('component-filters.json', [

@@ -45,7 +45,7 @@
           "page": {
             "resourceType": "core/franklin/components/block/v1/block/item",
             "template": {
-              "name": "Accordion item",
+              "name": "Accordion Item",
               "model": "accordion-item"
             }
           }
