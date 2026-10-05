@@ -23,6 +23,13 @@ Reference: https://www.aem.live/docs/ew/developing/universal-editor and `aemsite
 Every component definition needs `plugins.xwalk.page` creation metadata as well as the `plugins.da`
 configuration; without it, the Universal Editor cannot create the component.
 
+Header, Footer and Widget are defined (existing instances show in the content tree) but are not in
+a section's + menu (`NOT_ADDABLE` in `models.py`): header and footer are page chrome loaded on every
+page from `/nav` and `/footer`, and no widget exists yet. A new Fragment points to
+`/fragments/notes-hsbc-uk`; its path and link text are edited in the properties panel. In the editor
+the fragment renders inside its block, so it stays selectable; on the published page it is unwrapped
+as before.
+
 New default Text components start with an empty paragraph (`<p><br></p>`) so there is a visible
 editing area before the author types.
 

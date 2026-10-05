@@ -335,7 +335,22 @@
   },
   {
     "id": "fragment",
-    "fields": []
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "url",
+        "label": "Fragment path",
+        "required": true,
+        "description": "Path of the fragment page, e.g. /fragments/notes-hsbc-uk"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "urlText",
+        "label": "Link text"
+      }
+    ]
   },
   {
     "id": "header",

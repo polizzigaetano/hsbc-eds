@@ -20,6 +20,9 @@ ITEM_COMPONENTS = {
     'profile-item',
     'table-row',
 }
+# defined (so existing instances show in the content tree) but not offered by a section's + menu:
+# header/footer are page chrome loaded on every page from /nav and /footer, and no widget exists yet
+NOT_ADDABLE = {'footer', 'header', 'widget'}
 
 
 def xwalk_page(title, model=None, filter_=None, item=False, resource_type=None, template_values=None):
@@ -213,9 +216,14 @@ BLOCKS['footer'] = {
 BLOCKS['fragment'] = {
     'definitions': [block('fragment', 'Fragment', 'fragment', da={
         'name': 'fragment',
-        'unsafeHTML': '<div class="fragment"><div><div><p><a href="/fragments/example">Fragment</a></p></div></div></div>',
+        'unsafeHTML': '<div class="fragment"><div><div><p><a href="/fragments/notes-hsbc-uk">/fragments/notes-hsbc-uk</a></p></div></div></div>',
+        'fields': [{'name': 'url', 'selector': 'div>div>p>a[href]'}, {'name': 'urlText', 'selector': 'div>div>p>a'}],
     })],
-    'models': [{'id': 'fragment', 'fields': []}],
+    'models': [{'id': 'fragment', 'fields': [
+        text('url', 'Fragment path', required=True,
+             description='Path of the fragment page, e.g. /fragments/notes-hsbc-uk'),
+        text('urlText', 'Link text'),
+    ]}],
     'filters': [],
 }
 
@@ -427,8 +435,7 @@ write('section.json', {
     }]}],
     'filters': [{'id': 'section', 'components': ['text', 'image'] + sorted(
         [d['id'] for b in BLOCKS.values() for d in b['definitions']
-         if d['id'] not in ('card', 'accordion-item', 'aside-item', 'profile-item', 'carousel-item',
-                            'table-row', 'columns-row', 'columns-cell')])}],
+         if d['id'] not in ITEM_COMPONENTS | NOT_ADDABLE])}],
 })
 
 write('component-definition.json', {'groups': [
