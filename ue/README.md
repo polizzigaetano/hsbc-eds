@@ -23,6 +23,9 @@ Reference: https://www.aem.live/docs/ew/developing/universal-editor and `aemsite
 Every component definition needs `plugins.xwalk.page` creation metadata as well as the `plugins.da`
 configuration; without it, the Universal Editor cannot create the component.
 
+New default Text components start with an empty paragraph (`<p><br></p>`) so there is a visible
+editing area before the author types.
+
 ## How the replica blocks behave in the editor
 
 - **Blocks and items** (cards, accordion items, sidebar items, profiles, slides, table rows, columns

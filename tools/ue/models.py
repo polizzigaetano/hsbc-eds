@@ -22,12 +22,13 @@ ITEM_COMPONENTS = {
 }
 
 
-def xwalk_page(title, model=None, filter_=None, item=False, resource_type=None):
-    template = {'name': title}
+def xwalk_page(title, model=None, filter_=None, item=False, resource_type=None, template_values=None):
+    template = {'name': title} if title else {}
     if model:
         template['model'] = model
     if filter_:
         template['filter'] = filter_
+    template.update(template_values or {})
     return {'page': {
         'resourceType': resource_type or (
             'core/franklin/components/block/v1/block/item' if item
@@ -379,8 +380,9 @@ write('text.json', {'definitions': [{'title': 'Text', 'id': 'text', 'model': 'te
                                      'plugins': {
                                          'da': {'name': 'text', 'type': 'text'},
                                          'xwalk': xwalk_page(
-                                             'Text',
+                                             None,
                                              resource_type='core/franklin/components/text/v1/text',
+                                             template_values={'text': '<p><br></p>'},
                                          ),
                                      }}], 'models': []})
 write('image.json', {
