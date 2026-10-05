@@ -13,6 +13,9 @@ import {
 } from './aem.js';
 import { decorateLinks, isUE } from './site.js';
 
+// Universal Editor support module (ue/scripts/ue.js), loaded below only inside the editor
+let editor;
+
 if (window.trustedTypes && window.trustedTypes.createPolicy) {
   const innerTT = window.trustedTypes.createPolicy('tt-inner', {
     createHTML: (s) => s, // avoid stack overflow
@@ -190,6 +193,7 @@ export function decorateMain(main) {
   // page content only: nav/footer fragments are decorated while still detached; not in the
   // Universal Editor, where inline editing would save the presentational glyphs into content
   if (main.isConnected && !isUE()) decorateLinks(main);
+  editor?.decorate(main);
 }
 
 /**
@@ -255,10 +259,11 @@ async function loadPage() {
   loadDelayed();
 }
 
-// Universal Editor support (da.live content edited through *.ue.da.live), before the page loads
+// Universal Editor support (*.ue.da.live or AEM Author), before the page loads
 if (isUE()) {
   // eslint-disable-next-line import/no-cycle
-  await import(`${window.hlx.codeBasePath}/ue/scripts/ue.js`).then(({ default: ue }) => ue());
+  editor = await import(`${window.hlx.codeBasePath}/ue/scripts/ue.js`);
+  editor.default();
 }
 
 loadPage();

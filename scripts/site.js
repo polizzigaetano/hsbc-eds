@@ -154,11 +154,23 @@ export function pathOf(href) {
   return url.pathname.replace(/\.html$/, '').replace(/\/$/, '') || '/';
 }
 
-/* ---------- Universal Editor (da.live content edited through *.ue.da.live) ---------- */
+/* ---------- Universal Editor (da.live via *.ue.da.live, or AEM Author / crosswalk) ---------- */
+
+/**
+ * The Universal Editor host the page is rendered in: 'da' (da.live content through
+ * *.ue.da.live), 'aem' (AEM Author, crosswalk) or null outside the editor.
+ */
+export function editorHost() {
+  const { hostname } = window.location;
+  if (/\.(stage-ue|ue)\.da\.live$/.test(hostname)) return 'da';
+  if (/^author-p\d+-e\d+(-cmstg)?\.adobeaemcloud\.(com|net)$/.test(hostname)
+    || document.querySelector('meta[name^="urn:adobe:aue:system:"][content^="aem:"]')) return 'aem';
+  return null;
+}
 
 /** true when the page is rendered inside the Universal Editor */
 export function isUE() {
-  return /\.(stage-ue|ue)\.da\.live$/.test(window.location.hostname);
+  return !!editorHost();
 }
 
 /**
