@@ -9,6 +9,12 @@
     "...": "./image.json#/models"
   },
   {
+    "...": "./title.json#/models"
+  },
+  {
+    "...": "./button.json#/models"
+  },
+  {
     "...": "./section.json#/models"
   },
   {

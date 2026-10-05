@@ -26,6 +26,11 @@ Reference: https://www.aem.live/docs/ew/developing/universal-editor and `aemsite
 
 Every component definition needs `plugins.xwalk.page` creation metadata as well as the `plugins.da`
 configuration; without it, the Universal Editor cannot create the component.
+On AEM the block's CSS class comes from `template.name`, so it is the title-cased block id ("Inline
+Image" → `inline-image`), never the editor title (`block_name()` in `models.py`). Columns use AEM's
+core columns component (filter `column`); Title and Button are AEM's default content for headings
+and link paragraphs (defined for editing, not in the + menu). Content for the AEM site is
+generated with `tools/xwalk/convert.mjs` (see its README).
 
 Header, Footer and Widget are defined (existing instances show in the content tree) but are not in
 a section's + menu (`NOT_ADDABLE` in `models.py`): header and footer are page chrome loaded on every

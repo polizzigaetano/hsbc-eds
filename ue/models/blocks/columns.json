@@ -12,11 +12,10 @@
         },
         "xwalk": {
           "page": {
-            "resourceType": "core/franklin/components/block/v1/block",
+            "resourceType": "core/franklin/components/columns/v1/columns",
             "template": {
-              "name": "Columns",
-              "model": "columns",
-              "filter": "columns"
+              "columns": "2",
+              "rows": "1"
             }
           }
         }
@@ -36,7 +35,7 @@
           "page": {
             "resourceType": "core/franklin/components/block/v1/block/item",
             "template": {
-              "name": "Columns row",
+              "name": "Columns Row",
               "model": "columns-row",
               "filter": "columns-row"
             }
@@ -58,7 +57,7 @@
           "page": {
             "resourceType": "core/franklin/components/block/v1/block/item",
             "template": {
-              "name": "Column",
+              "name": "Columns Cell",
               "model": "columns-cell",
               "filter": "columns-cell"
             }
@@ -79,6 +78,13 @@
           "name": "columns",
           "label": "Columns",
           "value": 2
+        },
+        {
+          "component": "number",
+          "valueType": "number",
+          "name": "rows",
+          "label": "Rows (AEM)",
+          "value": 1
         },
         {
           "component": "multiselect",
@@ -121,6 +127,15 @@
       "components": [
         "text",
         "image"
+      ]
+    },
+    {
+      "id": "column",
+      "components": [
+        "text",
+        "image",
+        "title",
+        "button"
       ]
     }
   ]
