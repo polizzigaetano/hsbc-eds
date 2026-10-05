@@ -13,7 +13,7 @@
           "page": {
             "resourceType": "core/franklin/components/text/v1/text",
             "template": {
-              "name": "Text"
+              "text": "<p><br></p>"
             }
           }
         }
