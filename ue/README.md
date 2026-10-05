@@ -2,6 +2,8 @@
 
 Content lives in da.live (Author Bus); the Universal Editor edits it through
 `https://<branch>--hsbc-eds--polizzigaetano.ue.da.live/<path>` (open a page from da.live → *Open in UE*).
+The same code also supports the Universal Editor on AEM Author (crosswalk, `/content/hsbc-eds`), which
+loads `scripts/editor-support.js`; `editorHost()` tells the two apart.
 Reference: https://www.aem.live/docs/ew/developing/universal-editor and `aemsites/da-block-collection`.
 
 ## Files
@@ -11,7 +13,9 @@ Reference: https://www.aem.live/docs/ew/developing/universal-editor and `aemsite
 | `ue/models/**` | per-block definitions, models and filters (generated from `tools/ue/models.py`) |
 | `component-definition.json`, `component-models.json`, `component-filters.json` (root) | the bundles the editor reads |
 | `ue/scripts/ue.js` | loaded by `scripts/scripts.js` only on `*.ue.da.live`: re-renders a block from the editor's response after each change (reload fallback); selecting an accordion item / carousel slide reveals it |
-| `scripts/site.js` → `moveInstrumentation()`, `isUE()` | blocks move the `data-aue-*` markers from authored rows/cells to the elements they render |
+| `scripts/editor-support.js` | requested by AEM Author (crosswalk) for pages opened in the editor; starts the same `ue.js` in AEM mode |
+| `ue/scripts/ue-richtext.js` | AEM Author only: groups default text instrumented element by element (`data-richtext-*`) into one editable wrapper |
+| `scripts/site.js` → `moveInstrumentation()`, `isUE()`, `editorHost()` | blocks move the `data-aue-*` markers from authored rows/cells to the elements they render |
 
 ## Changing a model
 
