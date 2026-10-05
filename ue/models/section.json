@@ -98,9 +98,7 @@
         "cinemagraph",
         "columns",
         "factbox",
-        "footer",
         "fragment",
-        "header",
         "hero",
         "inline-image",
         "page-description",
@@ -109,8 +107,7 @@
         "search",
         "share",
         "table",
-        "terms-gate",
-        "widget"
+        "terms-gate"
       ]
     }
   ]

@@ -12,6 +12,7 @@ import {
 import {
   loadSections,
 } from '../../scripts/aem.js';
+import { isUE } from '../../scripts/site.js';
 
 /**
  * Loads a fragment.
@@ -47,6 +48,13 @@ export default async function decorate(block) {
   const path = link ? link.getAttribute('href') : block.textContent.trim();
   const fragment = await loadFragment(path);
   if (!fragment) return;
+
+  // Universal Editor: keep the instrumented block (and its section) so the author can select,
+  // re-point or remove it; the fragment renders inside it
+  if (isUE()) {
+    block.replaceChildren(...fragment.childNodes);
+    return;
+  }
 
   const wrapper = block.closest('.fragment-wrapper');
   const section = wrapper.closest('.section');
