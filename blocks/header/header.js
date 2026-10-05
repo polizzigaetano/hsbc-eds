@@ -5,7 +5,8 @@ import { loadFragment } from '../fragment/fragment.js';
  * header — the live about.hsbc.co.uk chrome (template-slotted).
  *
  * /nav document contract (one section per role):
- *   1. brand: a paragraph holding the logo link (<a href="/"><img alt="HSBC"></a>)
+ *   1. brand: a paragraph holding the logo link (<a href="/"><img alt="HSBC"></a>), or the logo
+ *      image alone (AEM / Universal Editor Image component), which then links home
  *   2. primary navigation: one <ul> of links
  *   3. divisions: one <ul> of links (Personal / Business)
  *
@@ -111,7 +112,12 @@ export default async function decorate(block) {
     class: 'nav-tray__toggle', href: '#', 'aria-expanded': 'false', 'aria-controls': 'nav-tray',
   }, el('span', { class: 'nav-tray__toggle-label' }, 'Menu'), icon('menu'));
   const brand = el('div', { class: 'brand' });
-  const logoLink = brandSection?.querySelector('a');
+  let logoLink = brandSection?.querySelector('a');
+  if (!logoLink) {
+    // a logo authored without a link (the Universal Editor's Image component on AEM) links home
+    const logo = brandSection?.querySelector('picture') || brandSection?.querySelector('img');
+    if (logo) logoLink = el('a', { href: '/' }, logo);
+  }
   if (logoLink) {
     logoLink.classList.add('brand__logo');
     const img = logoLink.querySelector('img');
