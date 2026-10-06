@@ -12,7 +12,8 @@ import { loadFragment } from '../fragment/fragment.js';
  *   3. divisions: one <ul> of links (Personal / Business)
  *
  * Desktop: the item's link toggles its doormat (live: it opens on click, stays open until
- * closed; Escape or a click elsewhere closes it). Below 960px the live off-canvas tray: every
+ * closed; Escape or a click elsewhere closes it); with a mouse it also opens on hover (not on the
+ * live site). Below 960px the live off-canvas tray: every
  * primary item drills down to a sub-view (the item as an overview link, then its nested links).
  *
  * Chrome-only generated text (a11y labels and controls, allowlisted in the conversion log):
@@ -293,14 +294,36 @@ export default async function decorate(block) {
   header.append(skip, secondary, primary, tray, mask);
   block.replaceChildren(header);
 
-  // doormat: the item's link toggles it; Escape or a click elsewhere closes it
-  primaryNav.querySelectorAll('.primary-nav__item--has-doormat > .primary-nav__link').forEach((a) => {
+  // doormat: the item's link toggles it; Escape or a click elsewhere closes it. With a mouse it
+  // also opens on hover (an addition to the live site, which opens on click only) and closes
+  // shortly after the pointer leaves the item and its doormat; clicking the link of a doormat
+  // opened by hovering leaves it open instead of closing it.
+  const canHover = window.matchMedia('(hover: hover) and (pointer: fine)');
+  primaryNav.querySelectorAll('.primary-nav__item--has-doormat').forEach((item) => {
+    const a = item.querySelector(':scope > .primary-nav__link');
+    let leaveTimer;
     a.addEventListener('click', (e) => {
       e.preventDefault();
-      const item = a.parentElement;
-      const open = !item.classList.contains('primary-nav__item--open');
+      const open = item.dataset.hoverOpen === 'true' || !item.classList.contains('primary-nav__item--open');
+      delete item.dataset.hoverOpen;
       closeDoormats(primaryNav, item);
       setOpen(item, open);
+    });
+    item.addEventListener('mouseenter', () => {
+      if (!canHover.matches || !isDesktop.matches) return;
+      clearTimeout(leaveTimer);
+      if (item.classList.contains('primary-nav__item--open')) return;
+      closeDoormats(primaryNav, item);
+      setOpen(item, true);
+      item.dataset.hoverOpen = 'true';
+    });
+    item.addEventListener('mouseleave', () => {
+      if (!canHover.matches || !isDesktop.matches) return;
+      clearTimeout(leaveTimer);
+      leaveTimer = setTimeout(() => {
+        delete item.dataset.hoverOpen;
+        setOpen(item, false);
+      }, 200);
     });
   });
   document.addEventListener('click', (e) => {
