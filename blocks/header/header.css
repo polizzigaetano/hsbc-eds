@@ -286,17 +286,18 @@ header .nav-tray__view {
   position: absolute;
   inset: 0 auto 0 0;
   width: 100%;
-  transition: margin-left 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
+/* the live tray slides its views with margin-left; transform moves them identically */
 header .nav-tray__sub-view {
-  margin-left: 276px;
+  transform: translateX(276px);
   background-color: var(--c-panel);
 }
 
 header .nav-tray__sub-view[hidden] { display: none; }
-header .nav-tray--show-sub-view .nav-tray__default-view { margin-left: -276px; }
-header .nav-tray--show-sub-view .nav-tray__sub-view--active { margin-left: 0; }
+header .nav-tray--show-sub-view .nav-tray__default-view { transform: translateX(-276px); }
+header .nav-tray--show-sub-view .nav-tray__sub-view--active { transform: none; }
 
 @media (prefers-reduced-motion: reduce) {
   header .nav-tray__view { transition: none; }
