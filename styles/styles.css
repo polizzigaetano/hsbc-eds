@@ -207,6 +207,7 @@ button { font: inherit; }
 .icon--x { --icon: url("/icons/x.svg"); }
 .icon--external { --icon: url("/icons/external.svg"); }
 .icon--chevron { --icon: url("/icons/chevron-right-small.svg"); }
+.icon--chevron-left { --icon: url("/icons/chevron-left-small.svg"); }
 .icon--chevron-down { --icon: url("/icons/chevron-down.svg"); }
 .icon--chevron-up { --icon: url("/icons/chevron-up.svg"); }
 .icon--download { --icon: url("/icons/download.svg"); }
