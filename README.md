@@ -1,5 +1,5 @@
 # Your Project's Title...
-Your project's description...
+HSBC EDS - Proof of Concept migrating the https://www.about.hsbc.co.uk with Modernisation Agent as EDS implementation running on AEM Sites (xwalk)
 
 ## Environments
 - Preview: https://main--hsbc-eds--polizzigaetano.aem.page/
