@@ -12,10 +12,12 @@ Reference: https://www.aem.live/docs/ew/developing/universal-editor and `aemsite
 |---|---|
 | `ue/models/**` | per-block definitions, models and filters (generated from `tools/ue/models.py`) |
 | `component-definition.json`, `component-models.json`, `component-filters.json` (root) | the bundles the editor reads |
-| `ue/scripts/ue.js` | loaded by `scripts/scripts.js` only on `*.ue.da.live`: re-renders a block from the editor's response after each change (reload fallback); selecting an accordion item / carousel slide reveals it |
+| `ue/scripts/ue.js` | loaded by `scripts/scripts.js` inside the editor only (`*.ue.da.live` and AEM Author, `editorHost()`): re-renders a block from the editor's response after each change (reload fallback); selecting an accordion item / carousel slide reveals it |
 | `scripts/editor-support.js` | requested by AEM Author (crosswalk) for pages opened in the editor; starts the same `ue.js` in AEM mode |
 | `ue/scripts/ue-richtext.js` | AEM Author only: groups default text instrumented element by element (`data-richtext-*`) into one editable wrapper |
 | `scripts/site.js` → `moveInstrumentation()`, `isUE()`, `editorHost()` | blocks move the `data-aue-*` markers from authored rows/cells to the elements they render |
+
+Each block's own behaviour in the editor is described in its `blocks/<name>/README.md`.
 
 ## Changing a model
 
