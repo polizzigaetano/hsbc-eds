@@ -1,6 +1,6 @@
 # AGENTS.md
 
-Edge Delivery Services. Read a block first. Omissions are in the repo or known.
+Edge Delivery Services. Read a block first (`blocks/<name>/README.md` is its functional spec; update it with the block). Omissions are in the repo or known.
 
 ## Avoid
 - `scripts/aem.js` is vendored. Never edit.
